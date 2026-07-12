@@ -30,8 +30,8 @@ const SERVICES = [
     slug: 'avaliacao',
     nav: 'Avaliação de Imóveis',
     title: 'Avaliação de Imóveis Urbanos e Rurais',
-    seoTitle: 'Avaliação de Imóveis em Itajaí e Florianópolis | Laudo NBR 14653',
-    seoDesc: 'Laudo de avaliação de imóveis urbanos e rurais conforme a NBR 14653, aceito por bancos, juízos e órgãos públicos. Engenheiros avaliadores em Itajaí e Florianópolis. Orçamento pelo WhatsApp.',
+    seoTitle: 'Avaliação de Imóveis (NBR 14653)',
+    seoDesc: 'Laudo de avaliação de imóveis urbanos e rurais conforme a NBR 14653, aceito por bancos, juízos e órgãos públicos, em Itajaí, Florianópolis e todo o Sul.',
     tagline: 'O valor justo e fundamentado do seu imóvel, com laudo conforme a NBR 14653. Aceito por bancos, juízos e órgãos públicos.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=2000&q=80',
     wa: 'uma avaliação de imóvel',
@@ -63,8 +63,8 @@ const SERVICES = [
     slug: 'pericia',
     nav: 'Perícia e Assistência Técnica',
     title: 'Perícia Judicial e Assistência Técnica',
-    seoTitle: 'Perito Judicial e Assistente Técnico em Engenharia | SC, PR e RS',
-    seoDesc: 'Perícia judicial de engenharia e assistência técnica para advogados: quesitos, pareceres, impugnação de laudos e acompanhamento pericial. Mais de 500 processos assessorados no Sul do Brasil.',
+    seoTitle: 'Perícia Judicial e Assistência Técnica',
+    seoDesc: 'Perícia judicial de engenharia e assistência técnica para advogados: quesitos, pareceres e impugnação de laudos. +500 processos assessorados em SC, PR e RS.',
     tagline: 'Base técnica para decisões judiciais e apoio estratégico para advogados. Mais de 500 processos assessorados em SC, PR e RS.',
     img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80',
     wa: 'assistência técnica judicial ou perícia',
@@ -96,20 +96,21 @@ const SERVICES = [
     slug: 'topografia',
     nav: 'Topografia e Drones',
     title: 'Topografia, Georreferenciamento e Drones',
-    seoTitle: 'Topografia, Georreferenciamento e Drone em SC | Mestre Engenharia',
-    seoDesc: 'Levantamento topográfico, georreferenciamento INCRA/SIGEF e mapeamento com drones em Santa Catarina. Usucapião, retificação de área, desmembramento e cálculo de volumes.',
-    tagline: 'Tecnologia e precisão cartográfica para regularização, projetos e planejamento territorial do seu imóvel.',
-    img: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=2000&q=80',
+    seoTitle: 'Topografia, Georreferenciamento e Drone',
+    seoDesc: 'Georreferenciamento INCRA/SIGEF, aerofotogrametria com drone, locação de obra e cálculo de volumes em SC. Precisão para projetos, regularização e obras.',
+    tagline: 'Precisão cartográfica para regularizar, projetar e construir: do georreferenciamento à aerofotogrametria com drone, da locação de obra ao monitoramento de estruturas.',
+    img: 'https://images.unsplash.com/photo-1610081340031-ea312b8a9d9a?auto=format&fit=crop&w=2000&q=80',
     wa: 'um levantamento topográfico',
     introTitle: 'Limites precisos, decisões seguras.',
-    intro: 'Fazemos levantamentos com equipamentos de alta precisão e mapeamento aéreo com drones. O resultado são produtos cartográficos confiáveis para regularização, projetos, processos judiciais e gestão territorial, no campo e na cidade.',
+    intro: 'Unimos equipamentos de alta precisão (estação total e GNSS) ao mapeamento aéreo com drones. O resultado são produtos cartográficos confiáveis para projetar, regularizar, locar obras, monitorar estruturas e sustentar processos judiciais, no campo e na cidade.',
     includes: [
-      { i: 'map', b: 'Georreferenciamento', s: 'Rural (INCRA/SIGEF) e urbano, com definição precisa de limites e confrontações.' },
-      { i: 'drone', b: 'Mapeamento com drones', s: 'Ortofotos, mapas 2D e 3D, modelos digitais de terreno e cálculos de volume.' },
-      { i: 'doc', b: 'Usucapião e retificação', s: 'Plantas e memoriais descritivos para ações de usucapião e retificação de área.' },
-      { i: 'gear', b: 'Desmembramento e unificação', s: 'Projetos e diligências junto a prefeituras e cartórios de registro de imóveis.' },
-      { i: 'chart', b: 'Cálculos de volume', s: 'Movimentação de terra, jazidas e aterros com precisão para obras e mineração.' },
-      { i: 'pin', b: 'Base para projetos', s: 'Levantamentos planialtimétricos para arquitetura, engenharia e loteamentos.' }
+      { i: 'map', b: 'Georreferenciamento', s: 'Rural (INCRA/SIGEF) e urbano, com definição exata de limites, confrontações e coordenadas oficiais.' },
+      { i: 'drone', b: 'Aerofotogrametria com drone', s: 'Ortofotos, ortomosaicos, modelos digitais de terreno (MDT/MDS) e modelos 3D de grandes áreas em pouco tempo.' },
+      { i: 'pin', b: 'Levantamento planialtimétrico', s: 'Base precisa de posição e cotas para projetos de arquitetura, engenharia, drenagem e loteamentos.' },
+      { i: 'gear', b: 'Locação de obra', s: 'Marcação em campo de eixos, fundações e alinhamentos, transpondo o projeto para o terreno com exatidão.' },
+      { i: 'chart', b: 'Monitoramento de recalques', s: 'Acompanhamento de deslocamentos e recalques em estruturas, taludes e edificações vizinhas.' },
+      { i: 'scale', b: 'Volumetria e cálculo de volumes', s: 'Jazidas, aterros, silos e estoques quantificados com precisão para obras e mineração.' },
+      { i: 'doc', b: 'Usucapião, retificação e desmembramento', s: 'Plantas e memoriais descritivos georreferenciados para regularização e ações judiciais.' }
     ],
     scenarios: [
       { i: 'map', b: 'Meu imóvel rural precisa de georreferenciamento', s: 'Exigência do INCRA para transferências, desmembramentos e financiamentos.' },
@@ -129,8 +130,8 @@ const SERVICES = [
     slug: 'regularizacao',
     nav: 'Regularização de Imóveis',
     title: 'Regularização de Imóveis e Regularização Fundiária',
-    seoTitle: 'Regularização de Imóveis, Averbação e Habite-se em SC',
-    seoDesc: 'Regularização de imóveis urbanos e rurais: averbação de construção, Habite-se, retificação de área, REURB, INCRA e CAR. Do projeto ao registro em cartório, em Itajaí, Florianópolis e região.',
+    seoTitle: 'Regularização de Imóveis e Habite-se',
+    seoDesc: 'Regularização de imóveis: averbação, Habite-se, retificação de área, REURB, INCRA e CAR. Do projeto ao registro em cartório, em Itajaí, Florianópolis e região.',
     tagline: 'Transformamos a sua propriedade em um ativo legalmente reconhecido, do alvará ao registro em cartório.',
     img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80',
     wa: 'regularização de imóvel',
@@ -161,29 +162,32 @@ const SERVICES = [
   {
     slug: 'vistorias',
     nav: 'Vistorias e Inspeções',
-    title: 'Vistorias Cautelares e Inspeções Técnicas',
-    seoTitle: 'Vistoria Cautelar de Vizinhança e Inspeção Predial em SC',
-    seoDesc: 'Vistoria cautelar de vizinhança (NBR 12722), inspeção predial e residencial, laudo de recebimento de chaves e diagnóstico de patologias. Proteção documental para quem constrói e quem compra.',
-    tagline: 'Documentação preventiva e diagnóstico técnico que evitam litígios e protegem quem constrói e quem compra.',
-    img: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=80',
+    title: 'Vistorias Cautelares, Laudos e Inspeções Técnicas',
+    seoTitle: 'Inspeção Predial e Vistoria Cautelar',
+    seoDesc: 'Inspeção predial (NBR 16747), vistoria cautelar (NBR 12722), recebimento de obra, patologias, fachada e laudo de desempenho (NBR 15575) em SC.',
+    tagline: 'Do recebimento de chaves à inspeção predial: o laudo técnico que evita litígios e protege quem constrói, compra e administra imóveis.',
+    img: 'https://images.unsplash.com/photo-1694521787799-ad4ad241cb39?auto=format&fit=crop&w=2000&q=80',
     wa: 'uma vistoria ou inspeção técnica',
     introTitle: 'Registrar antes é mais barato que litigar depois.',
-    intro: 'A vistoria cautelar registra o estado dos imóveis vizinhos antes da obra começar. A inspeção técnica diagnostica patologias e aponta responsabilidades. Nos dois casos, o laudo é a sua proteção documental.',
+    intro: 'Engenharia diagnóstica para cada momento do imóvel: antes da obra, na entrega, na compra e ao longo da vida do edifício. Cada vistoria vira um laudo técnico fundamentado, a sua proteção documental contra prejuízos e disputas.',
     includes: [
-      { i: 'shield', b: 'Vistoria cautelar de vizinhança', s: 'Registro fotográfico e relatório técnico dos imóveis confrontantes antes da obra (NBR 12722).' },
-      { i: 'eye', b: 'Inspeção predial', s: 'Diagnóstico do estado de conservação de edifícios, com plano de manutenção e prioridades.' },
-      { i: 'home', b: 'Inspeção residencial', s: 'Avaliação completa antes da compra: estrutura, instalações, umidade e vícios ocultos.' },
-      { i: 'key', b: 'Recebimento de chaves', s: 'Vistoria de unidades novas na entrega, documentando vícios para reparo pela construtora.' },
-      { i: 'gear', b: 'Patologias construtivas', s: 'Causas, responsabilidades e soluções para fissuras, infiltrações e recalques.' },
-      { i: 'doc', b: 'Laudos para seguradoras', s: 'Documentação técnica de sinistros e danos para processos de indenização.' }
+      { i: 'shield', b: 'Vistoria cautelar de vizinhança', s: 'Registro fotográfico e relatório do estado dos imóveis confrontantes antes da obra (NBR 12722).' },
+      { i: 'eye', b: 'Inspeção predial', s: 'Diagnóstico de conservação do edifício, classificação de anomalias e plano de manutenção (NBR 16747).' },
+      { i: 'home', b: 'Inspeção residencial (pré-compra)', s: 'Estrutura, instalações, umidade e vícios ocultos avaliados antes de você fechar negócio.' },
+      { i: 'key', b: 'Recebimento e entrega de obra', s: 'Vistoria de unidades novas, documentando não conformidades para reparo pela construtora.' },
+      { i: 'gear', b: 'Patologias e vícios construtivos', s: 'Fissuras, infiltrações e recalques: causa, gravidade, responsabilidade e solução.' },
+      { i: 'doc', b: 'Inspeção de estruturas', s: 'Vigas, pilares, lajes e fundações avaliados quanto à integridade e segurança estrutural.' },
+      { i: 'scale', b: 'Inspeção de fachada', s: 'Segurança, desgaste e conformidade de revestimentos e elementos da fachada.' },
+      { i: 'chart', b: 'Laudo de desempenho (NBR 15575)', s: 'Verificação de desempenho e conformidade da edificação com a norma de desempenho.' },
+      { i: 'drop', b: 'Laudos para seguradoras e sinistros', s: 'Documentação técnica de danos e sinistros para processos de indenização.' }
     ],
     scenarios: [
       { i: 'shield', b: 'Vou iniciar uma obra', s: 'A cautelar de vizinhança protege a construtora de cobranças por danos que já existiam.' },
       { i: 'key', b: 'Vou receber as chaves do imóvel novo', s: 'O laudo de recebimento documenta vícios enquanto a construtora ainda responde por eles.' },
       { i: 'home', b: 'Vou comprar um imóvel usado', s: 'A inspeção revela problemas ocultos antes de você assinar.' },
-      { i: 'eye', b: 'Meu prédio tem fissuras ou infiltrações', s: 'O diagnóstico aponta causa, gravidade e responsável.' }
+      { i: 'eye', b: 'Sou síndico(a) e o prédio pede manutenção', s: 'A inspeção predial prioriza os reparos e embasa decisões em assembleia.' }
     ],
-    norms: ['NBR 12722 · Vizinhança', 'NBR 16747 · Inspeção predial', 'NBR 13752 · Perícias', 'IBAPE'],
+    norms: ['NBR 16747 · Inspeção predial', 'NBR 12722 · Vizinhança', 'NBR 15575 · Desempenho', 'NBR 13752 · Perícias', 'IBAPE'],
     faq: [
       { q: 'A vistoria de vizinhança é obrigatória?', a: 'Muitos municípios exigem para liberar o alvará. E mesmo onde não é obrigatória, ela é a principal defesa da construtora contra alegações de danos que já existiam. O custo é pequeno perto do risco.' },
       { q: 'O que a inspeção residencial verifica?', a: 'Estrutura, cobertura, instalações elétricas e hidráulicas, esquadrias, revestimentos, umidade e indícios de vícios ocultos. Tudo com relatório fotográfico e classificação de gravidade.' },
@@ -195,10 +199,10 @@ const SERVICES = [
     slug: 'incorporacao',
     nav: 'Incorporação e Viabilidade',
     title: 'Incorporação Imobiliária e Estudo de Viabilidade',
-    seoTitle: 'Estudo de Viabilidade e Quadros NBR 12.721 | Incorporação em SC',
-    seoDesc: 'Estudo de viabilidade técnica e econômica, Quadros da NBR 12.721, tabela de vendas e aferição de INSS de obra. Suporte técnico completo para construtoras e incorporadoras em Santa Catarina.',
+    seoTitle: 'Estudo de Viabilidade e Incorporação',
+    seoDesc: 'Estudo de viabilidade (EVTE), Quadros da NBR 12.721, tabela de vendas e aferição de INSS de obra para construtoras e incorporadoras em Santa Catarina.',
     tagline: 'Da análise do terreno ao registro da incorporação: os números e os documentos técnicos que sustentam o seu empreendimento.',
-    img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80',
+    img: 'https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=2000&q=80',
     wa: 'estudo de viabilidade ou apoio à incorporação',
     introTitle: 'Decida com números, não com intuição.',
     intro: 'O estudo de viabilidade técnica e econômica analisa legislação, zoneamento, potencial construtivo, custos e retorno antes de você comprar o terreno. Depois, cuidamos dos Quadros da NBR 12.721 e de todo o suporte técnico até a entrega.',
@@ -229,8 +233,8 @@ const SERVICES = [
     nav: 'Laudos Ambientais',
     novo: true,
     title: 'Laudos e Estudos Ambientais',
-    seoTitle: 'Laudo Ambiental, Viabilidade Ambiental e Estudo Hidrológico em SC',
-    seoDesc: 'Laudos ambientais, estudo de viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento em Santa Catarina. Diagnóstico de APPs, drenagem e conformidade com órgãos ambientais.',
+    seoTitle: 'Laudo Ambiental e Estudo Hidrológico',
+    seoDesc: 'Laudos ambientais, viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento em SC. Diagnóstico de APPs, drenagem e conformidade com órgãos ambientais.',
     tagline: 'Nossa nova área de atuação: viabilidade ambiental, hidrologia e conformidade com os órgãos licenciadores. Segurança para o seu empreendimento desde a origem.',
     img: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=80',
     wa: 'laudos ou estudos ambientais',
@@ -296,10 +300,14 @@ function schema(s) {
   }, null, 2);
 }
 
+const WA_ICON = '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4.1.1.1.6-.3 1.1z"/></svg>';
+// mensagem pré-preenchida por serviço clicado
+const msgItem = t => WA + encodeURIComponent(`Olá, vim pelo site da Mestre Engenharia e preciso de "${t}".`);
+
 function page(s) {
   const waHref = msg(s.wa);
   const includes = s.includes.map((it, k) =>
-    `<div class="inc reveal${k % 3 ? ' d' + (k % 3) : ''}">${I(it.i)}<b>${it.b}</b><span>${it.s}</span></div>`
+    `<a class="inc reveal${k % 3 ? ' d' + (k % 3) : ''}" href="${msgItem(it.b)}" target="_blank" rel="noopener" title="Solicitar ${it.b} pelo WhatsApp">${I(it.i)}<b>${it.b}</b><span>${it.s}</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>`
   ).join('\n      ');
   const scenarios = s.scenarios.map((it, k) =>
     `<div class="scn reveal${k % 2 ? ' d1' : ''}">${I(it.i)}<div><b>${it.b}</b><span>${it.s}</span></div></div>`
@@ -317,7 +325,13 @@ function page(s) {
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#06253D">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mestre Engenharia">
+<meta name="format-detection" content="telephone=no">
 <title>${s.seoTitle} | Mestre Engenharia</title>
 <meta name="description" content="${s.seoDesc}">
 <link rel="canonical" href="${SITE}/servicos/${s.slug}.html">
@@ -490,6 +504,16 @@ ${schema(s)}
 <a class="wa-float" href="${waHref}" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4.1.1.1.6-.3 1.1z"/></svg>
 </a>
+
+<div class="m-cta">
+  <a class="m-orc" href="${waHref}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4.1.1.1.6-.3 1.1z"/></svg>
+    Solicitar orçamento
+  </a>
+  <a class="m-tel" href="tel:+554730839548" aria-label="Ligar para a Mestre Engenharia">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+  </a>
+</div>
 
 <script src="../assets/site.js"></script>
 </body>

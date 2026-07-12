@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#06253D">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="format-detection" content="telephone=no">
+<title>Painel Interno | Mestre Engenharia</title>
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .painel-wrap{min-height:100svh;display:flex;flex-direction:column;background:var(--deep)}
+  .painel-main{flex:1;display:flex;align-items:center;padding:60px 0}
+  .p-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+  .p-card{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+    border-radius:var(--r-lg);padding:36px 32px;transition:.3s var(--ease);display:block;
+  }
+  .p-card:hover{background:rgba(255,255,255,.1);border-color:var(--gold-line);transform:translateY(-4px)}
+  .p-card .ico{
+    width:54px;height:54px;border-radius:12px;background:var(--gold-soft);
+    display:grid;place-items:center;margin-bottom:20px;border:1px solid var(--gold-line);
+  }
+  .p-card .ico svg{width:26px;height:26px;fill:var(--gold-2)}
+  .p-card h2{color:var(--white);font-size:1.2rem;margin-bottom:10px}
+  .p-card p{color:var(--mist);font-size:.95rem;margin-bottom:20px}
+  .p-card .go{
+    font-family:'Montserrat',sans-serif;font-weight:700;font-size:.74rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);
+    display:inline-flex;align-items:center;gap:9px;
+  }
+  .p-card .go svg{width:14px;height:14px;fill:var(--gold-2)}
+  .p-note{
+    margin-top:36px;display:flex;gap:12px;align-items:flex-start;
+    background:rgba(191,148,40,.08);border:1px solid var(--gold-line);
+    border-radius:var(--r);padding:18px 20px;color:var(--mist);font-size:.9rem;
+  }
+  .p-note svg{width:18px;height:18px;fill:var(--gold-2);flex-shrink:0;margin-top:2px}
+  .painel-foot{padding:26px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--mist-2);font-size:.8rem;text-align:center}
+  @media(max-width:760px){.p-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="painel-wrap">
+  <div class="topbar">
+    <div class="wrap" style="justify-content:center">
+      <a class="brand" href="index.html" aria-label="Voltar ao site">
+        <img src="assets/img/logo-lateral-branco.png" alt="Mestre Engenharia" style="height:40px;width:auto">
+      </a>
+    </div>
+  </div>
+
+  <main class="painel-main">
+    <div class="wrap" style="max-width:920px">
+      <span class="kicker">Acesso restrito</span>
+      <h1 style="color:var(--white);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800">Painel interno</h1>
+      <p style="color:var(--mist);margin-top:12px;max-width:560px">Plataformas de uso exclusivo da equipe Mestre Engenharia. O acesso exige e-mail autorizado; atividades são registradas.</p>
+
+      <div class="p-grid">
+        <a class="p-card" href="https://gestao.mestreengenharia.com" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg></div>
+          <h2>Gestão Mestre</h2>
+          <p>ERP interno: perícias, funil comercial, agendamentos, WhatsApp e documentos.</p>
+          <span class="go">Entrar <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></span>
+        </a>
+        <a class="p-card" href="https://processos.mestreengenharia.com" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 8.4-4.2V15h2V8L12 3zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.5-7-3.5z"/></svg></div>
+          <h2>Monitor Judicial</h2>
+          <p>Acompanhamento de processos: DataJud, DJEN, marcadores periciais e radar de nomeações.</p>
+          <span class="go">Entrar <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></span>
+        </a>
+      </div>
+
+      <div class="p-note">
+        <svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm0 10h7c-.5 4.1-3.3 7.9-7 9V12H5V6.3l7-3.1V11z"/></svg>
+        <span>Ao clicar, você passará por uma verificação de identidade (e-mail autorizado). Caso precise de acesso, fale com a coordenação. Problemas para entrar? WhatsApp (47) 99155-0224.</span>
+      </div>
+    </div>
+  </main>
+
+  <div class="painel-foot">
+    Mestre Engenharia Avaliações e Perícias · uso interno ·
+    <a href="https://one.dash.cloudflare.com/" target="_blank" rel="noopener" style="color:var(--gold-2)">Gerenciar acessos</a>
+    <span style="opacity:.7">(restrito à administração)</span>
+  </div>
+</div>
+</body>
+</html>

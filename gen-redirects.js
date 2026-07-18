@@ -34,7 +34,28 @@ const map = {
   'projetos': 'servicos/incorporacao.html',
   'contato': '',
   'sobre': '',
-  'servicos': ''
+  'servicos': '',
+
+  // --- slugs dos SITELINKS de conta do Google Ads (titulos lidos no painel) ---
+  'regularizeseuimovel': 'servicos/regularizacao.html',
+  'alvaradeconstrucao': 'servicos/regularizacao.html',
+  'alvara': 'servicos/regularizacao.html',
+  'alvaradeconstrucaoehabitese': 'servicos/regularizacao.html',
+  'escritura': 'servicos/regularizacao.html',
+  'matricula': 'servicos/regularizacao.html',
+  'cnddoinss': 'servicos/regularizacao.html',
+  'cndinss': 'servicos/regularizacao.html',
+  'cndinssrf': 'servicos/regularizacao.html',
+  'cnd': 'servicos/regularizacao.html',
+  'projetoarquitetonico': 'servicos/incorporacao.html',
+  'projeto-arquitetonico': 'servicos/incorporacao.html',
+  'projetoarquitetura': 'servicos/incorporacao.html',
+  'laudoderecebimento': 'servicos/vistorias.html',
+  'laudodereceb': 'servicos/vistorias.html',
+  'vistoriadevizinhanca': 'servicos/vistorias.html',
+  'laudodevizinhanca': 'servicos/vistorias.html',
+  'avaliacaoimobiliaria': 'servicos/avaliacao.html',
+  'laudodeavaliacao': 'servicos/avaliacao.html'
 };
 
 const tpl = (url) => `<!DOCTYPE html>

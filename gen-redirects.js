@@ -15,7 +15,6 @@ const map = {
   'inspeçaopredialeresidencial': 'servicos/vistorias.html',
   'estudodeviabilidade': 'servicos/ambiental.html',
   'laudodeobra': 'servicos/vistorias.html',
-  'afericaodeobra': 'servicos/topografia.html',
 
   // --- rede de seguranca p/ Google Ads e links antigos ---
   'regularizacaodeimoveis': 'servicos/regularizacao.html',   // <- destino do anuncio reprovado
@@ -55,7 +54,18 @@ const map = {
   'vistoriadevizinhanca': 'servicos/vistorias.html',
   'laudodevizinhanca': 'servicos/vistorias.html',
   'avaliacaoimobiliaria': 'servicos/avaliacao.html',
-  'laudodeavaliacao': 'servicos/avaliacao.html'
+  'laudodeavaliacao': 'servicos/avaliacao.html',
+
+  // --- variantes de busca do pilar INSS de Obra e CND ---
+  'inss-de-obra': 'inss-de-obra-cnd/',
+  'inssdeobra': 'inss-de-obra-cnd/',
+  'cnd-de-obra': 'inss-de-obra-cnd/',
+  'cnddeobra': 'inss-de-obra-cnd/',
+  'afericao-de-obra': 'inss-de-obra-cnd/',
+  'afericaodeobra': 'inss-de-obra-cnd/',
+  'sero': 'inss-de-obra-cnd/',
+  'cno': 'inss-de-obra-cnd/',
+  'regularizacao-de-obra': 'inss-de-obra-cnd/'
 };
 
 const tpl = (url) => `<!DOCTYPE html>

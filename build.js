@@ -157,7 +157,7 @@ const SERVICES = [
       { q: 'Imóvel irregular pode ser vendido?', a: 'Pode, mas com desconto grande e sem financiamento, porque o comprador não consegue crédito. Regularizar antes de vender costuma se pagar várias vezes.' },
       { q: 'Vocês cuidam de tudo ou eu preciso ir aos órgãos?', a: 'A gente conduz todo o processo técnico e administrativo: prefeitura, INCRA e cartório. Você só acompanha o andamento.' }
     ],
-    related: ['topografia', 'avaliacao', 'incorporacao']
+    related: ['inss', 'topografia', 'avaliacao']
   },
   {
     slug: 'vistorias',
@@ -226,7 +226,7 @@ const SERVICES = [
       { q: 'O que são os Quadros da NBR 12.721?', a: 'São os quadros de cálculo de áreas e custos (I a VIII) que compõem o memorial de incorporação registrado em cartório. Sem eles, não dá para vender unidades na planta.' },
       { q: 'Vocês acompanham o empreendimento inteiro?', a: 'Sim. Da due diligence do terreno à vistoria cautelar de vizinhança, entrega das unidades e pós-obra. Um único parceiro técnico em todas as fases.' }
     ],
-    related: ['vistorias', 'topografia', 'ambiental']
+    related: ['inss', 'vistorias', 'topografia']
   },
   {
     slug: 'ambiental',
@@ -261,6 +261,16 @@ const SERVICES = [
       { q: 'Esse serviço se integra aos demais da Mestre?', a: 'Sim, e essa é a vantagem: viabilidade técnica, econômica e ambiental, topografia e regularização em um único diagnóstico, sem retrabalho entre empresas diferentes.' }
     ],
     related: ['incorporacao', 'topografia', 'pericia']
+  },
+  {
+    /* Página PILAR gerada por template próprio (pilarPage) em /inss-de-obra-cnd/.
+       Esta entrada existe para o serviço aparecer no menu do rodapé e nos
+       blocos "Você também pode precisar" das demais páginas. */
+    slug: 'inss',
+    pilar: true,
+    novo: true,
+    nav: 'INSS de Obra e CND',
+    href: '../inss-de-obra-cnd/'
   }
 ];
 
@@ -318,7 +328,7 @@ function page(s) {
   ).join('\n      ');
   const related = s.related.map(slug => {
     const r = SERVICES.find(x => x.slug === slug);
-    return `<a class="rel reveal" href="${r.slug}.html"><b>${r.nav}${r.novo ? ' <span class="tag-novo">Novo</span>' : ''}</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>`;
+    return `<a class="rel reveal" href="${r.href || r.slug + '.html'}"><b>${r.nav}${r.novo ? ' <span class="tag-novo">Novo</span>' : ''}</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>`;
   }).join('\n      ');
 
   return `<!DOCTYPE html>
@@ -464,7 +474,7 @@ ${schema(s)}
       <div>
         <h4>Serviços</h4>
         <ul>
-          ${SERVICES.map(x => `<li><a href="${x.slug}.html">${x.nav}${x.novo ? ' <span class="tag-novo">Novo</span>' : ''}</a></li>`).join('\n          ')}
+          ${SERVICES.map(x => `<li><a href="${x.href || x.slug + '.html'}">${x.nav}${x.novo ? ' <span class="tag-novo">Novo</span>' : ''}</a></li>`).join('\n          ')}
         </ul>
       </div>
       <div>
@@ -521,15 +531,494 @@ ${schema(s)}
 `;
 }
 
+/* ============================================================
+   PÁGINA PILAR: INSS de Obra e CND  →  /inss-de-obra-cnd/
+   Página de vendas própria (método "pilar + satélites"), fora do
+   template padrão. Copy sem travessão. Dados normativos conferidos
+   na IN RFB 2.021/2021 e no Manual do Sero v3.0.
+   ============================================================ */
+function pilarSchema() {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ProfessionalService',
+        '@id': `${SITE}/inss-de-obra-cnd/#servico`,
+        name: 'Mestre Engenharia Avaliações e Perícias',
+        description: 'Engenharia especializada em regularização de obras na Receita Federal: INSS de obra, aferição no SERO, CNO, DCTFWeb e emissão de CND para averbação.',
+        url: `${SITE}/inss-de-obra-cnd/`,
+        telephone: '+55-47-99155-0224',
+        email: 'contato@mestreengenharia.com',
+        address: { '@type': 'PostalAddress', streetAddress: 'Rua João Bauer, 498, Sala 810', addressLocality: 'Itajaí', addressRegion: 'SC', postalCode: '88301-500', addressCountry: 'BR' },
+        areaServed: [{ '@type': 'State', name: 'Santa Catarina' }, { '@type': 'State', name: 'Paraná' }, { '@type': 'State', name: 'Rio Grande do Sul' }, { '@type': 'Country', name: 'Brasil' }]
+      },
+      {
+        '@type': 'Service',
+        name: 'Regularização de INSS de Obra e emissão de CND',
+        serviceType: 'Regularização de obra de construção civil na Receita Federal',
+        provider: { '@id': `${SITE}/inss-de-obra-cnd/#servico` },
+        areaServed: { '@type': 'Country', name: 'Brasil' },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Serviços de regularização de obra na Receita Federal',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Inscrição e correção do CNO (Cadastro Nacional de Obras)' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Aferição de obra no SERO e DCTFWeb Aferição de Obras' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Análise e prova técnica de decadência com ART' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Resposta ao Aviso de Regularização de Obra (ARO)' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Emissão de CND ou CPEND de obra para averbação' } }
+          ]
+        }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Início', item: SITE + '/' },
+          { '@type': 'ListItem', position: 2, name: 'Serviços', item: SITE + '/#servicos' },
+          { '@type': 'ListItem', position: 3, name: 'INSS de Obra e CND', item: `${SITE}/inss-de-obra-cnd/` }
+        ]
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: PILAR_FAQ.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+      }
+    ]
+  }, null, 2);
+}
+
+const PILAR_FAQ = [
+  { q: 'O que é o INSS de obra?', a: 'São as contribuições previdenciárias e as destinadas a outras entidades que incidem sobre a remuneração da mão de obra usada na construção, previstas na Lei 8.212/1991 e regulamentadas pela IN RFB 2.021/2021. A apuração é feita no SERO, o Serviço Eletrônico para Aferição de Obras da Receita Federal, e confessada na DCTFWeb Aferição de Obras.' },
+  { q: 'Para que serve a CND de obra?', a: 'A CND (Certidão Negativa de Débitos) comprova a regularidade previdenciária da construção. Sem ela o cartório não averba o habite-se na matrícula do imóvel. E sem averbação travam a venda financiada, o inventário, a partilha e a integralização do imóvel em holding.' },
+  { q: 'Minha obra tem mais de 5 anos. Ainda preciso pagar INSS?', a: 'Muitas vezes não. O INSS de obra caduca: o direito de a Receita cobrar se extingue em 5 anos (CTN, art. 173). Se a obra foi concluída em período decadente e isso for comprovado com os documentos aceitos pela IN RFB 2.021/2021 (art. 42), o débito pode ser total ou parcialmente extinto. Atenção: a decadência dispensa o pagamento, mas não dispensa a aferição no SERO nem a certidão para averbar. A CND de obra antiga sai com a declaração zerada.' },
+  { q: 'Recebi um Aviso de Regularização de Obra (ARO). O que eu faço?', a: 'Não abra o SERO nem clique em nada antes de uma análise técnica. O prazo do aviso corre mesmo que a carta chegue atrasada, e a transmissão da DCTFWeb é confissão de dívida. Primeiro se analisam decadência, créditos e enquadramento. Só depois se conclui a aferição, com o valor certo.' },
+  { q: 'O que é o SERO?', a: 'É o Serviço Eletrônico para Aferição de Obras, criado pela IN RFB 2.021/2021 em substituição à antiga DISO. É o sistema onde a obra é aferida, ou seja, onde se calculam as contribuições devidas sobre a mão de obra da construção, com base nas informações do CNO e nos créditos vinculados.' },
+  { q: 'O que é o CNO e qual o prazo para cadastrar a obra?', a: 'O CNO (Cadastro Nacional de Obras) é o banco de dados da Receita Federal que identifica cada obra de construção civil. A inscrição deve ser feita em até 30 dias do início das atividades (IN RFB 1.845/2018, atualizada pela IN 2.061/2021). Metragem ou datas erradas no CNO geram imposto errado, por isso a correção do cadastro faz parte do nosso trabalho.' },
+  { q: 'O que acontece se eu não regularizar a obra?', a: 'Desde a implantação do SisobraPref, em 2019, as prefeituras informam alvarás e habite-se diretamente à Receita Federal, e os avisos de regularização são disparados em massa desde 2023. Sem regularização não há CND nem averbação, e a cobrança de ofício vem acompanhada de multa que parte de 75% e pode chegar a 225% das contribuições, além de juros.' },
+  { q: 'Quanto custa o serviço?', a: 'Depende da complexidade: área e destinação da obra, período de execução, documentação existente e necessidade de produção de prova em campo. Você recebe uma proposta fechada antes de qualquer trabalho. A análise inicial é sem custo e sem compromisso.' },
+  { q: 'Meu contador não resolve isso sozinho?', a: 'Ele resolve bem a parte fiscal. Mas quando o caso depende de provar data de execução, área construída ou estágio da obra, a prova exige peça técnica com ART, como laudo e planta aerofotogramétrica. Isso só engenheiro ou arquiteto assina. Contador e advogado não emitem ART.' },
+  { q: 'É seguro assinar a procuração eletrônica? Vou ter que dar minha senha?', a: 'Não. Você nunca compartilha a sua senha. A procuração eletrônica é assinada por você dentro do próprio e-CAC, vale somente para os serviços da obra (CNO, SERO e DCTFWeb) e pode ser revogada por você a qualquer momento, com um clique. É o mecanismo oficial da Receita Federal para representação.' },
+  { q: 'Vocês atendem fora de Santa Catarina?', a: 'Sim. A legislação é federal e os sistemas (CNO, SERO, DCTFWeb) são todos eletrônicos. Atendemos SC, PR e RS com equipe de campo própria e o restante do país de forma remota. Quando o caso exige levantamento no local, temos drone e topografia próprios.' }
+];
+
+function pilarPage() {
+  const waHero = msgItem('regularização do INSS da minha obra e emissão da CND');
+  const waAnalise = msgItem('uma análise da minha obra (INSS de obra e CND)');
+  const faqHtml = PILAR_FAQ.map(f => `<details class="reveal"><summary>${f.q}</summary><div class="faq-body">${f.a}</div></details>`).join('\n      ');
+
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#06253D">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mestre Engenharia">
+<meta name="format-detection" content="telephone=no">
+<title>INSS de Obra e CND ${new Date().getFullYear()} | Regularização na Receita Federal</title>
+<meta name="description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Análise inicial sem custo.">
+<link rel="canonical" href="${SITE}/inss-de-obra-cnd/">
+<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+<meta property="og:title" content="INSS de Obra e CND | Regularização na Receita Federal em SC">
+<meta property="og:description" content="A Receita presume uma equipe inteira de pedreiros na sua obra e cobra o INSS deles. Nosso trabalho é provar quem esteve lá de verdade, com ART e laudo de engenharia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${SITE}/inss-de-obra-cnd/">
+<meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .prova{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .prova span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:9px 14px;color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .prova svg{width:15px;height:15px;fill:var(--gold-2);flex-shrink:0}
+  .nao-lista{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px;max-width:760px}
+  .nao-lista li{display:flex;gap:12px;align-items:flex-start;font-size:1.05rem;color:var(--ink-2);background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px}
+  .nao-lista li b{color:var(--ink)}
+  .nao-lista .x,.nao-lista .ok{font-weight:800;flex-shrink:0;font-size:1.05rem;line-height:1.5}
+  .nao-lista .x{color:#c0392b}
+  .nao-lista .ok{color:#1DA851}
+  .nao-lista li.sim{border-color:#1DA851;background:#f2faf5}
+  .steps{width:100%;border-collapse:collapse;margin-top:30px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 14px rgba(6,37,61,.06)}
+  .steps th{background:var(--deep);color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 16px;text-align:left}
+  .steps td{padding:14px 16px;border-top:1px solid var(--line);font-size:.98rem;color:var(--ink-2);vertical-align:top}
+  .steps td:first-child{font-family:'Montserrat',sans-serif;font-weight:800;color:var(--gold-2);width:44px}
+  .steps td b{color:var(--ink)}
+  .steps .quem{white-space:nowrap;font-weight:600;color:var(--deep);width:130px}
+  .tbl-wrap{overflow-x:auto;margin-top:22px}
+  .tbl{width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 14px rgba(6,37,61,.06);min-width:420px}
+  .tbl th{background:var(--navy);color:#fff;font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:11px 14px;text-align:left}
+  .tbl td{padding:11px 14px;border-top:1px solid var(--line);font-size:.95rem;color:var(--ink-2)}
+  .tbl td:last-child{font-weight:700;color:var(--deep);white-space:nowrap}
+  .tbl caption{caption-side:bottom;text-align:left;font-size:.82rem;color:var(--mist-2);padding:10px 2px 0}
+  .alav{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px}
+  .alav article{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:var(--r);padding:26px 26px 22px}
+  .alav h3{font-size:1.08rem;color:var(--deep);margin-bottom:10px}
+  .alav p{font-size:.96rem;color:var(--ink-2)}
+  .alav .ref{display:block;margin-top:12px;font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-2);font-weight:700}
+  .fosso{background:var(--deep)}
+  .fosso h2,.fosso h3{color:#fff}
+  .fosso p,.fosso li{color:var(--mist)}
+  .fosso .section-head p{color:var(--mist)}
+  .fosso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+  .fosso-grid article{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:26px}
+  .fosso-grid svg{width:30px;height:30px;fill:var(--gold-2);margin-bottom:14px}
+  .fosso-grid b{display:block;color:#fff;font-size:1.02rem;margin-bottom:8px}
+  .fosso-grid span{color:var(--mist);font-size:.93rem;line-height:1.55}
+  .fosso-frase{margin-top:36px;text-align:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--gold-2)}
+  .assina{display:flex;gap:28px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:34px;margin-top:30px}
+  .assina .ini{flex-shrink:0;width:72px;height:72px;border-radius:50%;background:var(--deep);color:var(--gold-2);display:grid;place-items:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.5rem}
+  @media(max-width:900px){.alav,.fosso-grid{grid-template-columns:1fr}.assina{flex-direction:column}}
+</style>
+<script type="application/ld+json">
+${pilarSchema()}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <a href="tel:+554730839548"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>(47) 3083-9548</a>
+      <a href="mailto:contato@mestreengenharia.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>contato@mestreengenharia.com</a>
+    </div>
+    <div class="tb-right">
+      <span><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Itajaí e Florianópolis · atendimento em todo o Brasil</span>
+    </div>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Mestre Engenharia, página inicial">
+      <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="240" height="120">
+    </a>
+    <nav class="menu" id="menu">
+      <a href="../index.html#servicos">Todos os serviços</a>
+      <a href="#alavancas">Como reduzir</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="${waHero}" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="hamb" id="hamb" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="svc-hero">
+  <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=2000&q=80')"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>INSS de Obra e CND</span></div>
+    <h1>INSS de Obra e CND: regularize sua construção na Receita Federal <span class="tag-novo">Novo</span></h1>
+    <p>A Receita presume que você contratou uma equipe inteira de pedreiros e cobra o INSS deles, mesmo os que nunca existiram. Nosso trabalho é provar quem esteve lá de verdade. Com ART, laudo e assinatura de engenheiro.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Quero a análise da minha obra <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      <a class="btn btn-ghost" href="#alavancas">Como o valor é reduzido</a>
+    </div>
+    <div class="prova">
+      <span>${I('shield')}CREA-SC PJ 177486-6</span>
+      <span>${I('doc')}Emitimos ART, o que contador e advogado não podem</span>
+      <span>${I('scale')}10+ anos · 80+ comarcas</span>
+      <span>${I('drone')}Drone e topografia próprios</span>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">O problema</span>
+      <h2>A Receita cobra o INSS de pedreiros que você nunca contratou.</h2>
+      <p>Chama-se aferição indireta. Quando não há comprovação de quanto se pagou de mão de obra, a Receita não pergunta: ela arbitra. Aplica o custo unitário oficial (VAU) sobre a metragem da obra e presume uma folha de pagamento inteira, que só existe na planilha dela.</p>
+    </div>
+    <div class="reveal" style="max-width:800px">
+      <p style="font-size:1.06rem;color:var(--ink-2);margin-bottom:16px">O resultado é uma dívida previdenciária de uma equipe fantasma. Você pagou os pedreiros de verdade, muitas vezes sem recibo, e agora paga de novo, sobre gente que nunca pisou no terreno.</p>
+      <p style="font-size:1.15rem;font-weight:700;color:var(--deep);margin-bottom:16px">Não dá para negociar com fantasma. Dá para provar que ele não existe.</p>
+      <p style="font-size:1.06rem;color:var(--ink-2)">É exatamente o que a legislação permite: decadência, créditos vinculados, fator de ajuste e enquadramento correto. Cada alavanca exige um tipo de prova. E prova de obra, em engenharia, tem assinatura e número de ART.</p>
+      <div style="margin-top:28px"><a class="btn btn-gold" href="${msgItem('descobrir quantos fantasmas tem na minha obra (INSS de obra)')}" target="_blank" rel="noopener">Descobrir quantos fantasmas tem na minha obra <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section mistbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Quando você precisa</span>
+      <h2>Você provavelmente está em uma destas cinco situações.</h2>
+    </div>
+    <div class="scn-grid">
+      <div class="scn reveal">${I('doc')}<div><b>Recebi o Aviso de Regularização de Obra (ARO)</b><span>A carta da Receita chegou com prazo. Ele corre mesmo que o envelope tenha atrasado. Não abra o SERO antes de uma análise.</span></div></div>
+      <div class="scn reveal d1">${I('key')}<div><b>O cartório exigiu a CND para averbar</b><span>Sem a certidão, a construção não entra na matrícula e o imóvel continua sendo terreno nu no papel.</span></div></div>
+      <div class="scn reveal">${I('home')}<div><b>O banco travou o financiamento</b><span>A última parcela não sai, ou o comprador desistiu, porque a matrícula não bate com a casa construída.</span></div></div>
+      <div class="scn reveal d1">${I('shield')}<div><b>A obra é antiga e nunca foi cadastrada</b><span>Construções de 2000, 2010, 2015. É onde mora a maior chance de extinguir o débito pela decadência.</span></div></div>
+      <div class="scn reveal">${I('chart')}<div><b>A obra ainda vai começar</b><span>A hora mais barata de resolver. Decisões de projeto, metragem e forma de contratação mudam o imposto antes da primeira parede.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Zero burocracia para você</span>
+      <h2>A lista do que você não vai fazer.</h2>
+      <p>O mercado vende o que faz. Nós preferimos mostrar o que sai das suas costas.</p>
+    </div>
+    <ul class="nao-lista reveal">
+      <li><span class="x">✕</span><span>Você <b>não</b> vai abrir o e-CAC.</span></li>
+      <li><span class="x">✕</span><span>Você <b>não</b> vai precisar entender o que é CNO, RMT, VAU, SERO ou DCTFWeb.</span></li>
+      <li><span class="x">✕</span><span>Você <b>não</b> vai clicar em "Concluir" sem saber que aquilo é confissão de dívida.</span></li>
+      <li><span class="x">✕</span><span>Você <b>não</b> vai caçar conta de luz de 2016 sozinho. A gente diz exatamente qual documento serve e qual não serve.</span></li>
+      <li><span class="x">✕</span><span>Você <b>não</b> vai descobrir o valor final por susto.</span></li>
+      <li class="sim"><span class="ok">✓</span><span>Você assina uma procuração eletrônica, envia os documentos e recebe a CND.</span></li>
+    </ul>
+    <div style="margin-top:28px" class="reveal"><a class="btn btn-gold" href="${msgItem('começar a regularização da minha obra pela procuração eletrônica')}" target="_blank" rel="noopener">Começar pela procuração <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section mistbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Como funciona</span>
+      <h2>Cinco etapas. Você participa de duas.</h2>
+    </div>
+    <div class="tbl-wrap reveal">
+      <table class="steps">
+        <thead><tr><th>#</th><th>Etapa</th><th>Quem faz</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><b>Triagem técnica.</b> Responsável (PF ou PJ), categoria, destinação, tipo construtivo, áreas, datas e declarações do período.</td><td class="quem">Mestre</td></tr>
+          <tr><td>2</td><td><b>Procuração eletrônica no e-CAC.</b> Acesso da nossa equipe aos sistemas da obra, sem pedir a sua senha.</td><td class="quem">Você assina</td></tr>
+          <tr><td>3</td><td><b>CNO e diagnóstico.</b> Cadastro ou correção da obra, vinculação de alvará e habite-se, varredura de créditos existentes.</td><td class="quem">Mestre</td></tr>
+          <tr><td>4</td><td><b>Estratégia antes do cálculo.</b> Decadência, créditos, fator de ajuste e enquadramento. Só depois a aferição no SERO.</td><td class="quem">Mestre</td></tr>
+          <tr><td>5</td><td><b>DCTFWeb, DARF ou parcelamento e emissão da CND.</b></td><td class="quem">Mestre</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="reveal" style="margin-top:22px;font-weight:700;color:var(--deep);font-size:1.05rem">Só clicamos em "Concluir" depois de saber o número. Nunca antes.</p>
+  </div>
+</section>
+
+<section class="section fosso">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">O diferencial que não dá para copiar</span>
+      <h2>Prova de obra quem assina é engenheiro.</h2>
+      <p>A decadência do INSS de obra não se pede: se prova. E boa parte das provas aceitas pela Receita são peças técnicas de engenharia, não peças jurídicas nem contábeis.</p>
+    </div>
+    <div class="fosso-grid">
+      <article class="reveal">${I('drone')}<b>Planta aerofotogramétrica com laudo e ART</b><span>Prova de que a obra já existia no período decadente, com a área construída identificada (IN RFB 2.021/2021, art. 42, § 4º).</span></article>
+      <article class="reveal d1">${I('doc')}<b>Laudo de avaliação técnica com ART</b><span>Para obra inacabada, quando é preciso aferir apenas a parte executada (IN RFB 2.021/2021, art. 27).</span></article>
+      <article class="reveal d2">${I('map')}<b>Levantamento cadastral e planialtimétrico</b><span>Quando a metragem do CNO não bate com a construção real. Metragem errada é imposto errado.</span></article>
+    </div>
+    <p class="fosso-frase reveal">Outros preenchem o formulário. Nós produzimos a prova que sustenta o formulário.</p>
+  </div>
+</section>
+
+<section class="section light" id="alavancas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">As quatro alavancas legais</span>
+      <h2>Por que o valor da Receita quase nunca é o valor final.</h2>
+      <p>Nenhuma promessa de percentual mágico: o que existe são mecanismos previstos em norma. Quais se aplicam, e quanto valem, depende do seu caso.</p>
+    </div>
+    <div class="alav">
+      <article class="reveal"><h3>1 · Decadência</h3><p>O direito de cobrar se extingue em 5 anos. Obra concluída em período decadente, com prova aceita, pode ter o débito parcial ou totalmente extinto. O ônus da prova é do contribuinte, e é aqui que a maioria dos casos se ganha ou se perde.</p><span class="ref">CTN, art. 173 · IN 2.021/2021, arts. 29 e 42</span></article>
+      <article class="reveal d1"><h3>2 · Fator de ajuste (pessoa física)</h3><p>Se as remunerações declaradas do período não decadente atingirem 50% da remuneração presumida (obras até 350 m²) ou 70% (acima de 350 m²), com DCTFWeb entregue de forma ininterrupta, a aferição pode fechar sem valor residual a pagar.</p><span class="ref">IN 2.021/2021, art. 33</span></article>
+      <article class="reveal"><h3>3 · Créditos já pagos</h3><p>eSocial, GFIP, GPS vinculada ao CNO, contribuição de autônomos e MEI, aferições parciais anteriores. Só entram créditos do período de aferição e vinculados à obra. Recolhimento sem vínculo com o CNO é dinheiro que some.</p><span class="ref">IN 2.021/2021, arts. 31 e 32</span></article>
+      <article class="reveal d1"><h3>4 · Enquadramento e materiais</h3><p>Categoria (reforma reduz 65% da base), fator social por metragem, tipo construtivo, concreto usinado e pré-moldados. Cada característica real da obra, comprovada por nota fiscal, reduz a remuneração presumida.</p><span class="ref">IN 2.021/2021, arts. 25 e 26</span></article>
+    </div>
+
+    <div class="reveal" style="margin-top:56px">
+      <span class="kicker">Conteúdo técnico exclusivo</span>
+      <h3 style="font-size:1.35rem;color:var(--deep);margin:10px 0 4px">Os números oficiais que ninguém publica.</h3>
+      <p style="color:var(--ink-2);max-width:760px">Percentuais da IN RFB 2.021/2021 aplicáveis em Santa Catarina. São dados da norma, não promessas: o efeito real depende da combinação das alavancas no seu caso.</p>
+    </div>
+
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <caption>Fator social (obra de pessoa física): percentual da remuneração presumida que permanece após a redução, por área total da obra. IN RFB 2.021/2021, art. 26.</caption>
+        <thead><tr><th>Área total da obra</th><th>Remuneração considerada</th><th>Redução efetiva</th></tr></thead>
+        <tbody>
+          <tr><td>Até 100 m²</td><td>20% da presumida</td><td>80%</td></tr>
+          <tr><td>De 100 a 200 m²</td><td>40% da presumida</td><td>60%</td></tr>
+          <tr><td>De 200 a 300 m²</td><td>55% da presumida</td><td>45%</td></tr>
+          <tr><td>De 300 a 400 m²</td><td>70% da presumida</td><td>30%</td></tr>
+          <tr><td>Acima de 400 m²</td><td>90% da presumida</td><td>10%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <caption>Abatimento por concreto usinado, argamassa usinada ou massa asfáltica em SC: percentuais do Anexo I da IN RFB 2.021/2021 aplicados no cálculo do desconto, por destinação da obra. Exige nota fiscal.</caption>
+        <thead><tr><th>Destinação da obra</th><th>Percentual do Anexo I (SC)</th></tr></thead>
+        <tbody>
+          <tr><td>Residencial unifamiliar</td><td>4,79%</td></tr>
+          <tr><td>Residencial multifamiliar</td><td>6,19%</td></tr>
+          <tr><td>Conjunto habitacional de interesse social</td><td>2,93%</td></tr>
+          <tr><td>Comercial (salas e lojas)</td><td>8,36%</td></tr>
+          <tr><td>Galpão industrial</td><td>2,87%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <caption>Composição usual das alíquotas sobre a remuneração aferida (exemplo do Manual do Sero; Simples Nacional e desoneração alteram os códigos devidos).</caption>
+        <thead><tr><th>Contribuição</th><th>Alíquota</th></tr></thead>
+        <tbody>
+          <tr><td>Patronal (INSS)</td><td>20%</td></tr>
+          <tr><td>Segurados (trabalhadores)</td><td>8%</td></tr>
+          <tr><td>Outras entidades e fundos</td><td>5,8%</td></tr>
+          <tr><td>GILRAT (risco do trabalho)</td><td>3%</td></tr>
+          <tr><td><b>Total usual</b></td><td><b>36,8%</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:30px" class="reveal"><a class="btn btn-gold" href="${msgItem('saber quais alavancas legais se aplicam à minha obra (INSS de obra)')}" target="_blank" rel="noopener">Ver quais alavancas se aplicam à minha obra <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a></div>
+
+    <div class="reveal" style="margin-top:44px;padding:20px 24px;background:var(--mist-bg,#f5f7f9);border:1px solid var(--line);border-radius:var(--r)">
+      <span class="kicker">Fontes oficiais</span>
+      <p style="font-size:.9rem;color:var(--ink-2);margin-top:8px">Conteúdo elaborado com base na norma e nas páginas oficiais da Receita Federal: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/sero" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">Aferição de Obras (Sero)</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/cno" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">Cadastro Nacional de Obras</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/cnd" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">CND de Obra</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/sero/decadencia" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">Regularização de construção antiga</a>. Norma central: IN RFB nº 2.021/2021 e alterações. Conteúdo revisado por engenheiro responsável. Atualizado em ${new Date().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })}.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section mistbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Quem assina</span>
+      <h2>Responsabilidade técnica com nome e registro.</h2>
+    </div>
+    <div class="assina reveal">
+      <div class="ini">RS</div>
+      <div>
+        <h3 style="color:var(--deep);font-size:1.15rem;margin-bottom:6px">Robson Schneider · Sócio-Diretor</h3>
+        <p style="color:var(--ink-2);font-size:.98rem">Engenheiro, mestre em Tecnologia Ambiental, pós-graduado em Avaliações e Perícias, Direito Imobiliário e Agrimensura. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS.</p>
+        <p style="color:var(--ink-2);font-size:.98rem;margin-top:10px"><b style="color:var(--deep)">Por que isso importa aqui:</b> perito judicial passa a carreira provando fato técnico para juiz. Provar data e área de obra para a Receita é a mesma competência, aplicada a outro leitor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light faq" id="faq">
+  <div class="wrap" style="max-width:900px">
+    <div class="section-head center reveal">
+      <span class="kicker center">Dúvidas frequentes</span>
+      <h2>Sobre INSS de obra, SERO e CND.</h2>
+    </div>
+    ${faqHtml}
+  </div>
+</section>
+
+<section class="section light" style="padding-top:0">
+  <div class="wrap">
+    <div class="svc-cta reveal">
+      <div>
+        <h3>A Receita já sabe da sua obra.</h3>
+        <p>Desde 2019 as prefeituras informam alvarás e habite-se direto à Receita Federal. A obra que não foi regularizada não está escondida: está na fila. Melhor chegar antes do envelope.</p>
+      </div>
+      <a class="btn btn-gold" href="${msgItem('falar com o engenheiro sobre a regularização da minha obra (INSS e CND)')}" target="_blank" rel="noopener">Falar com o engenheiro agora <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+    </div>
+    <div style="margin-top:60px" class="reveal">
+      <span class="kicker">Você também pode precisar</span>
+      <div class="rel-grid" style="margin-top:20px">
+      <a class="rel reveal" href="../servicos/regularizacao.html"><b>Regularização de Imóveis</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      <a class="rel reveal" href="../servicos/incorporacao.html"><b>Incorporação e Viabilidade</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      <a class="rel reveal" href="../servicos/topografia.html"><b>Topografia e Drones</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="brand" href="../index.html">
+          <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="240" height="120">
+        </a>
+        <p style="margin-top:18px;max-width:320px">Engenharia com propósito, precisão e resultado. Avaliações, perícias e laudos técnicos em engenharia civil, agronomia e meio ambiente.</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          ${SERVICES.map(x => `<li><a href="${x.pilar ? './' : '../servicos/' + x.slug + '.html'}">${x.nav}${x.novo ? ' <span class="tag-novo">Novo</span>' : ''}</a></li>`).join('\n          ')}
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="../index.html#sobre">Sobre nós</a></li>
+          <li><a href="../index.html#processo">Como trabalhamos</a></li>
+          <li><a href="../index.html#faq">Dúvidas frequentes</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5547991550224" target="_blank" rel="noopener">(47) 99155-0224 · WhatsApp</a></li>
+          <li><a href="tel:+554730839548">(47) 3083-9548</a></li>
+          <li><a href="mailto:contato@mestreengenharia.com">contato@mestreengenharia.com</a></li>
+          <li>Itajaí · Rua João Bauer, 498, Sala 810</li>
+          <li>Florianópolis · com hora marcada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Mestre Engenharia Avaliações e Perícias Ltda · Itajaí e Florianópolis/SC · Todos os direitos reservados.</span>
+      <div class="f-social">
+        <a href="https://www.instagram.com/mestre_engenharia" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/mestreengenhariaepericias/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.2c0-1 .3-1.7 1.8-1.7H17V2.2c-.3 0-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5v3H7V13h3v9h3.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="${waHero}" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4.1.1.1.6-.3 1.1z"/></svg>
+</a>
+
+<div class="m-cta">
+  <a class="m-orc" href="${waHero}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4.1.1.1.6-.3 1.1z"/></svg>
+    Solicitar orçamento
+  </a>
+  <a class="m-tel" href="tel:+554730839548" aria-label="Ligar para a Mestre Engenharia">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+  </a>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>
+`;
+}
+
 const outDir = path.join(__dirname, 'servicos');
 fs.mkdirSync(outDir, { recursive: true });
 for (const s of SERVICES) {
+  if (s.pilar) continue;
   fs.writeFileSync(path.join(outDir, s.slug + '.html'), page(s), 'utf8');
   console.log('gerado: servicos/' + s.slug + '.html');
 }
 
+/* página pilar INSS de Obra e CND */
+const pilarDir = path.join(__dirname, 'inss-de-obra-cnd');
+fs.mkdirSync(pilarDir, { recursive: true });
+fs.writeFileSync(path.join(pilarDir, 'index.html'), pilarPage(), 'utf8');
+console.log('gerado: inss-de-obra-cnd/index.html');
+
 /* sitemap.xml */
-const pages = ['', ...SERVICES.map(s => `servicos/${s.slug}.html`)];
+const pages = ['', 'inss-de-obra-cnd/', ...SERVICES.filter(s => !s.pilar).map(s => `servicos/${s.slug}.html`)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(p => `  <url><loc>${SITE}/${p}</loc><changefreq>monthly</changefreq><priority>${p === '' ? '1.0' : '0.8'}</priority></url>`).join('\n')}
@@ -537,5 +1026,30 @@ ${pages.map(p => `  <url><loc>${SITE}/${p}</loc><changefreq>monthly</changefreq>
 `;
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap, 'utf8');
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
-console.log('gerado: sitemap.xml + robots.txt');
+
+/* llms.txt: mapa do site para assistentes e buscadores de IA (GEO/AEO) */
+const llms = `# Mestre Engenharia Avaliações e Perícias
+
+> Empresa de engenharia em Itajaí e Florianópolis (SC, Brasil). Avaliação de imóveis (NBR 14653), perícia judicial e assistência técnica, inspeção predial e vistorias, topografia e georreferenciamento, regularização de imóveis, incorporação, laudos ambientais e regularização de INSS de obra na Receita Federal (SERO, CNO, DCTFWeb, CND). CREA-SC PJ 177486-6. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS. WhatsApp (47) 99155-0224.
+
+## Serviços
+
+- [INSS de Obra e CND](${SITE}/inss-de-obra-cnd/): Regularização de obras na Receita Federal: aferição no SERO, CNO, prova de decadência com ART e emissão de CND para averbação. Página com dados normativos da IN RFB 2.021/2021, tabelas de fator social e do Anexo I para SC.
+- [Avaliação de Imóveis](${SITE}/servicos/avaliacao.html): Laudos conforme NBR 14653 para compra, venda, garantia e processos judiciais.
+- [Perícia Judicial e Assistência Técnica](${SITE}/servicos/pericia.html): Perito nomeado e assistente técnico das partes, quesitos, pareceres e impugnações.
+- [Topografia e Drones](${SITE}/servicos/topografia.html): Georreferenciamento INCRA/SIGEF, aerofotogrametria, locação de obra e volumetria.
+- [Regularização de Imóveis](${SITE}/servicos/regularizacao.html): Averbação, Habite-se, retificação de área, REURB e trâmites em cartório.
+- [Vistorias e Inspeções](${SITE}/servicos/vistorias.html): Inspeção predial (NBR 16747), cautelar de vizinhança, recebimento de obra e patologias.
+- [Incorporação e Viabilidade](${SITE}/servicos/incorporacao.html): EVTE, Quadros da NBR 12.721 e tabela de vendas.
+- [Laudos Ambientais](${SITE}/servicos/ambiental.html): Viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento.
+
+## Contato
+
+- WhatsApp: +55 47 99155-0224
+- Telefone: +55 47 3083-9548
+- E-mail: contato@mestreengenharia.com
+- Endereço: Rua João Bauer, 498, Sala 810, Centro, Itajaí/SC
+`;
+fs.writeFileSync(path.join(__dirname, 'llms.txt'), llms, 'utf8');
+console.log('gerado: sitemap.xml + robots.txt + llms.txt');
 console.log('OK: ' + SERVICES.length + ' páginas.');

@@ -621,7 +621,7 @@ function pilarPage() {
 <link rel="canonical" href="${SITE}/inss-de-obra-cnd/">
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <meta property="og:title" content="INSS de Obra e CND | Regularização na Receita Federal em SC">
-<meta property="og:description" content="A Receita presume uma equipe inteira de pedreiros na sua obra e cobra o INSS deles. Nosso trabalho é provar quem esteve lá de verdade, com ART e laudo de engenharia.">
+<meta property="og:description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Análise inicial sem custo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE}/inss-de-obra-cnd/">
 <meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
@@ -634,13 +634,6 @@ function pilarPage() {
   .prova{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
   .prova span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:9px 14px;color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
   .prova svg{width:15px;height:15px;fill:var(--gold-2);flex-shrink:0}
-  .nao-lista{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px;max-width:760px}
-  .nao-lista li{display:flex;gap:12px;align-items:flex-start;font-size:1.05rem;color:var(--ink-2);background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px}
-  .nao-lista li b{color:var(--ink)}
-  .nao-lista .x,.nao-lista .ok{font-weight:800;flex-shrink:0;font-size:1.05rem;line-height:1.5}
-  .nao-lista .x{color:#c0392b}
-  .nao-lista .ok{color:#1DA851}
-  .nao-lista li.sim{border-color:#1DA851;background:#f2faf5}
   .steps{width:100%;border-collapse:collapse;margin-top:30px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 14px rgba(6,37,61,.06)}
   .steps th{background:var(--deep);color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 16px;text-align:left}
   .steps td{padding:14px 16px;border-top:1px solid var(--line);font-size:.98rem;color:var(--ink-2);vertical-align:top}
@@ -713,32 +706,34 @@ ${pilarSchema()}
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>INSS de Obra e CND</span></div>
     <h1>INSS de Obra e CND: regularize sua construção na Receita Federal <span class="tag-novo">Novo</span></h1>
-    <p>A Receita presume que você contratou uma equipe inteira de pedreiros e cobra o INSS deles, mesmo os que nunca existiram. Nosso trabalho é provar quem esteve lá de verdade. Com ART, laudo e assinatura de engenheiro.</p>
+    <p>Da inscrição no CNO à certidão que o cartório exige para averbar: conduzimos a aferição da sua obra no SERO de ponta a ponta, com a prova técnica que só a engenharia assina.</p>
     <div class="hero-ctas">
-      <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Quero a análise da minha obra <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
-      <a class="btn btn-ghost" href="#alavancas">Como o valor é reduzido</a>
+      <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Solicitar análise sem custo <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      <a class="btn btn-ghost" href="#incluso">O que está incluído</a>
     </div>
     <div class="prova">
       <span>${I('shield')}CREA-SC PJ 177486-6</span>
-      <span>${I('doc')}Emitimos ART, o que contador e advogado não podem</span>
+      <span>${I('doc')}Responsáveis técnicos com emissão de ART</span>
       <span>${I('scale')}10+ anos · 80+ comarcas</span>
       <span>${I('drone')}Drone e topografia próprios</span>
     </div>
   </div>
 </section>
 
-<section class="section light">
+<section class="section light" id="incluso">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="kicker">O problema</span>
-      <h2>A Receita cobra o INSS de pedreiros que você nunca contratou.</h2>
-      <p>Chama-se aferição indireta. Quando não há comprovação de quanto se pagou de mão de obra, a Receita não pergunta: ela arbitra. Aplica o custo unitário oficial (VAU) sobre a metragem da obra e presume uma folha de pagamento inteira, que só existe na planilha dela.</p>
+      <span class="kicker">INSS de Obra e CND</span>
+      <h2>O valor da Receita é uma presunção. O nosso trabalho é o enquadramento correto.</h2>
+      <p>Quando a obra não tem escrituração contábil, a Receita apura o INSS por aferição indireta: aplica o custo unitário oficial (VAU) sobre a metragem registrada no CNO e presume a remuneração da mão de obra. Sem análise técnica antes do envio, o valor apurado tende ao máximo. Conduzimos o processo completo, aplicando as reduções e provas que a própria IN RFB 2.021/2021 prevê.</p>
     </div>
-    <div class="reveal" style="max-width:800px">
-      <p style="font-size:1.06rem;color:var(--ink-2);margin-bottom:16px">O resultado é uma dívida previdenciária de uma equipe fantasma. Você pagou os pedreiros de verdade, muitas vezes sem recibo, e agora paga de novo, sobre gente que nunca pisou no terreno.</p>
-      <p style="font-size:1.15rem;font-weight:700;color:var(--deep);margin-bottom:16px">Não dá para negociar com fantasma. Dá para provar que ele não existe.</p>
-      <p style="font-size:1.06rem;color:var(--ink-2)">É exatamente o que a legislação permite: decadência, créditos vinculados, fator de ajuste e enquadramento correto. Cada alavanca exige um tipo de prova. E prova de obra, em engenharia, tem assinatura e número de ART.</p>
-      <div style="margin-top:28px"><a class="btn btn-gold" href="${msgItem('descobrir quantos fantasmas tem na minha obra (INSS de obra)')}" target="_blank" rel="noopener">Descobrir quantos fantasmas tem na minha obra <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a></div>
+    <div class="inc-grid">
+      <a class="inc reveal" href="${msgItem('Inscrição ou correção do CNO da minha obra')}" target="_blank" rel="noopener" title="Solicitar pelo WhatsApp">${I('gear')}<b>Inscrição e correção do CNO</b><span>Cadastro da obra, correção de metragem e datas, vinculação de alvará e habite-se. Cadastro errado é imposto errado.</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>
+      <a class="inc reveal d1" href="${msgItem('Aferição da minha obra no SERO')}" target="_blank" rel="noopener" title="Solicitar pelo WhatsApp">${I('doc')}<b>Aferição da obra no SERO</b><span>Apuração das contribuições com enquadramento correto de categoria, destinação, tipo construtivo e áreas.</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>
+      <a class="inc reveal d2" href="${msgItem('Análise de decadência da minha obra com prova técnica e ART')}" target="_blank" rel="noopener" title="Solicitar pelo WhatsApp">${I('shield')}<b>Prova de decadência com ART</b><span>Obra com mais de 5 anos: análise do período decadente e produção da prova técnica aceita pela Receita.</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>
+      <a class="inc reveal" href="${msgItem('Resposta ao Aviso de Regularização de Obra (ARO) que recebi')}" target="_blank" rel="noopener" title="Solicitar pelo WhatsApp">${I('scale')}<b>Resposta ao ARO</b><span>Recebeu o Aviso de Regularização de Obra: análise da notificação, prazos e estratégia antes de qualquer envio.</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>
+      <a class="inc reveal d1" href="${msgItem('Varredura de créditos e fator de ajuste do INSS da minha obra')}" target="_blank" rel="noopener" title="Solicitar pelo WhatsApp">${I('chart')}<b>Créditos e fator de ajuste</b><span>Varredura de eSocial, GFIP e GPS vinculadas à obra e verificação do fator de ajuste para pessoa física.</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>
+      <a class="inc reveal d2" href="${msgItem('Emissão da CND da minha obra para averbação no cartório')}" target="_blank" rel="noopener" title="Solicitar pelo WhatsApp">${I('key')}<b>Emissão da CND para averbação</b><span>DCTFWeb, DARF ou parcelamento e a certidão que o cartório exige para averbar a construção na matrícula.</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -759,22 +754,14 @@ ${pilarSchema()}
   </div>
 </section>
 
-<section class="section light">
+<section class="section light" style="padding-top:0">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="kicker">Zero burocracia para você</span>
-      <h2>A lista do que você não vai fazer.</h2>
-      <p>O mercado vende o que faz. Nós preferimos mostrar o que sai das suas costas.</p>
+      <span class="kicker">Processo conduzido de ponta a ponta</span>
+      <h2>Você não precisa navegar no e-CAC.</h2>
+      <p>O acesso da nossa equipe aos sistemas da obra é feito por procuração eletrônica, o mecanismo oficial da Receita Federal: você assina dentro do próprio e-CAC, sem compartilhar senha, com escopo limitado aos serviços da obra e revogável a qualquer momento. A partir daí, CNO, SERO e DCTFWeb ficam por nossa conta, e você recebe a orientação exata de quais documentos servem como prova.</p>
     </div>
-    <ul class="nao-lista reveal">
-      <li><span class="x">✕</span><span>Você <b>não</b> vai abrir o e-CAC.</span></li>
-      <li><span class="x">✕</span><span>Você <b>não</b> vai precisar entender o que é CNO, RMT, VAU, SERO ou DCTFWeb.</span></li>
-      <li><span class="x">✕</span><span>Você <b>não</b> vai clicar em "Concluir" sem saber que aquilo é confissão de dívida.</span></li>
-      <li><span class="x">✕</span><span>Você <b>não</b> vai caçar conta de luz de 2016 sozinho. A gente diz exatamente qual documento serve e qual não serve.</span></li>
-      <li><span class="x">✕</span><span>Você <b>não</b> vai descobrir o valor final por susto.</span></li>
-      <li class="sim"><span class="ok">✓</span><span>Você assina uma procuração eletrônica, envia os documentos e recebe a CND.</span></li>
-    </ul>
-    <div style="margin-top:28px" class="reveal"><a class="btn btn-gold" href="${msgItem('começar a regularização da minha obra pela procuração eletrônica')}" target="_blank" rel="noopener">Começar pela procuração <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a></div>
+    <div class="reveal"><a class="btn btn-gold" href="${msgItem('começar a regularização da minha obra pela procuração eletrônica')}" target="_blank" rel="noopener">Falar com um especialista <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a></div>
   </div>
 </section>
 
@@ -796,23 +783,23 @@ ${pilarSchema()}
         </tbody>
       </table>
     </div>
-    <p class="reveal" style="margin-top:22px;font-weight:700;color:var(--deep);font-size:1.05rem">Só clicamos em "Concluir" depois de saber o número. Nunca antes.</p>
+    <p class="reveal" style="margin-top:22px;font-weight:700;color:var(--deep);font-size:1.05rem">A transmissão da aferição é confissão de dívida. Por isso, concluímos no SERO somente depois de validar o cálculo e a estratégia com você.</p>
   </div>
 </section>
 
 <section class="section fosso">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="kicker">O diferencial que não dá para copiar</span>
-      <h2>Prova de obra quem assina é engenheiro.</h2>
-      <p>A decadência do INSS de obra não se pede: se prova. E boa parte das provas aceitas pela Receita são peças técnicas de engenharia, não peças jurídicas nem contábeis.</p>
+      <span class="kicker">Diferencial de engenharia</span>
+      <h2>A prova técnica que sustenta a regularização.</h2>
+      <p>Decadência e enquadramento não se declaram: se provam. E boa parte das provas aceitas pela Receita são peças técnicas de engenharia, previstas na própria norma, que exigem responsável habilitado e ART.</p>
     </div>
     <div class="fosso-grid">
       <article class="reveal">${I('drone')}<b>Planta aerofotogramétrica com laudo e ART</b><span>Prova de que a obra já existia no período decadente, com a área construída identificada (IN RFB 2.021/2021, art. 42, § 4º).</span></article>
       <article class="reveal d1">${I('doc')}<b>Laudo de avaliação técnica com ART</b><span>Para obra inacabada, quando é preciso aferir apenas a parte executada (IN RFB 2.021/2021, art. 27).</span></article>
       <article class="reveal d2">${I('map')}<b>Levantamento cadastral e planialtimétrico</b><span>Quando a metragem do CNO não bate com a construção real. Metragem errada é imposto errado.</span></article>
     </div>
-    <p class="fosso-frase reveal">Outros preenchem o formulário. Nós produzimos a prova que sustenta o formulário.</p>
+    <p class="fosso-frase reveal">A ART é privativa de engenheiros e arquitetos (Lei 6.496/1977). Escritórios contábeis e jurídicos não a emitem.</p>
   </div>
 </section>
 
@@ -918,10 +905,10 @@ ${pilarSchema()}
   <div class="wrap">
     <div class="svc-cta reveal">
       <div>
-        <h3>A Receita já sabe da sua obra.</h3>
-        <p>Desde 2019 as prefeituras informam alvarás e habite-se direto à Receita Federal. A obra que não foi regularizada não está escondida: está na fila. Melhor chegar antes do envelope.</p>
+        <h3>Regularize antes da notificação.</h3>
+        <p>Desde 2019 as prefeituras informam alvarás e habite-se à Receita Federal pelo SisobraPref, e os avisos de regularização são enviados em massa. Regularizar espontaneamente evita a multa de ofício e garante o melhor enquadramento. A primeira conversa é por nossa conta.</p>
       </div>
-      <a class="btn btn-gold" href="${msgItem('falar com o engenheiro sobre a regularização da minha obra (INSS e CND)')}" target="_blank" rel="noopener">Falar com o engenheiro agora <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      <a class="btn btn-gold" href="${msgItem('falar com o engenheiro sobre a regularização da minha obra (INSS e CND)')}" target="_blank" rel="noopener">Falar com um especialista <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
     </div>
     <div style="margin-top:60px" class="reveal">
       <span class="kicker">Você também pode precisar</span>

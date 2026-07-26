@@ -24,12 +24,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <style>
-  .steps{width:100%;border-collapse:collapse;margin-top:30px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 14px rgba(6,37,61,.06)}
-  .steps th{background:var(--deep);color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 16px;text-align:left}
-  .steps td{padding:14px 16px;border-top:1px solid var(--line);font-size:.98rem;color:var(--ink-2);vertical-align:top}
-  .steps td:first-child{font-family:'Montserrat',sans-serif;font-weight:800;color:var(--gold-2);width:44px}
-  .steps td b{color:var(--ink)}
-  .steps .quem{white-space:nowrap;font-weight:600;color:var(--deep);width:130px}
+  .etp-list{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:14px}
+  .etp{display:flex;gap:18px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;box-shadow:0 2px 14px rgba(6,37,61,.05)}
+  .etp .num{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--deep);color:var(--gold-2);display:grid;place-items:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem}
+  .etp .etp-body{flex:1;min-width:0}
+  .etp .etp-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+  .etp b{color:var(--ink);font-size:1.02rem}
+  .etp p{color:var(--ink-2);font-size:.95rem;margin:0}
+  .etp .quem{flex-shrink:0;font-family:'Montserrat',sans-serif;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:999px;white-space:nowrap}
+  .etp .quem.m{background:var(--deep);color:#fff}
+  .etp .quem.v{background:var(--gold-soft);color:var(--gold-3,#8a6a15);border:1px solid var(--gold-line)}
+  @media(max-width:560px){.etp{padding:16px}.etp .num{width:34px;height:34px;font-size:.92rem}}
   .tbl-wrap{overflow-x:auto;margin-top:22px}
   .tbl{width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 14px rgba(6,37,61,.06);min-width:420px}
   .tbl th{background:var(--navy);color:#fff;font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:11px 14px;text-align:left}
@@ -360,18 +365,13 @@
       <span class="kicker">Como funciona</span>
       <h2>Cinco etapas. Você participa de duas.</h2>
     </div>
-    <div class="tbl-wrap reveal">
-      <table class="steps">
-        <thead><tr><th>#</th><th>Etapa</th><th>Quem faz</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td><b>Triagem técnica.</b> Responsável (PF ou PJ), categoria, destinação, tipo construtivo, áreas, datas e declarações do período.</td><td class="quem">Mestre</td></tr>
-          <tr><td>2</td><td><b>Procuração eletrônica no e-CAC.</b> Acesso da nossa equipe aos sistemas da obra, sem pedir a sua senha.</td><td class="quem">Você assina</td></tr>
-          <tr><td>3</td><td><b>CNO e diagnóstico.</b> Cadastro ou correção da obra, vinculação de alvará e habite-se, varredura de créditos existentes.</td><td class="quem">Mestre</td></tr>
-          <tr><td>4</td><td><b>Estratégia antes do cálculo.</b> Decadência, créditos, fator de ajuste e enquadramento. Só depois a aferição no SERO.</td><td class="quem">Mestre</td></tr>
-          <tr><td>5</td><td><b>DCTFWeb, DARF ou parcelamento e emissão da CND.</b></td><td class="quem">Mestre</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <ol class="etp-list">
+      <li class="etp reveal"><span class="num">1</span><div class="etp-body"><div class="etp-top"><b>Triagem técnica</b><span class="quem m">Mestre</span></div><p>Responsável (PF ou PJ), categoria, destinação, tipo construtivo, áreas, datas e declarações do período.</p></div></li>
+      <li class="etp reveal d1"><span class="num">2</span><div class="etp-body"><div class="etp-top"><b>Procuração eletrônica no e-CAC</b><span class="quem v">Você assina</span></div><p>Acesso da nossa equipe aos sistemas da obra, sem pedir a sua senha.</p></div></li>
+      <li class="etp reveal"><span class="num">3</span><div class="etp-body"><div class="etp-top"><b>CNO e diagnóstico</b><span class="quem m">Mestre</span></div><p>Cadastro ou correção da obra, vinculação de alvará e habite-se, varredura de créditos existentes.</p></div></li>
+      <li class="etp reveal d1"><span class="num">4</span><div class="etp-body"><div class="etp-top"><b>Estratégia antes do cálculo</b><span class="quem m">Mestre</span></div><p>Decadência, créditos, fator de ajuste e enquadramento. Só depois a aferição no SERO.</p></div></li>
+      <li class="etp reveal"><span class="num">5</span><div class="etp-body"><div class="etp-top"><b>DCTFWeb, DARF ou parcelamento e emissão da CND</b><span class="quem m">Mestre</span></div><p>Transmissão da declaração, guia de pagamento ou parcelamento e a certidão para averbar no cartório.</p></div></li>
+    </ol>
     <p class="reveal" style="margin-top:22px;font-weight:700;color:var(--deep);font-size:1.05rem">A transmissão da aferição é confissão de dívida. Por isso, concluímos no SERO somente depois de validar o cálculo e a estratégia com você.</p>
   </div>
 </section>

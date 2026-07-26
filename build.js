@@ -631,9 +631,6 @@ function pilarPage() {
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <style>
-  .prova{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-  .prova span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:9px 14px;color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-  .prova svg{width:15px;height:15px;fill:var(--gold-2);flex-shrink:0}
   .steps{width:100%;border-collapse:collapse;margin-top:30px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 14px rgba(6,37,61,.06)}
   .steps th{background:var(--deep);color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:13px 16px;text-align:left}
   .steps td{padding:14px 16px;border-top:1px solid var(--line);font-size:.98rem;color:var(--ink-2);vertical-align:top}
@@ -661,9 +658,7 @@ function pilarPage() {
   .fosso-grid b{display:block;color:#fff;font-size:1.02rem;margin-bottom:8px}
   .fosso-grid span{color:var(--mist);font-size:.93rem;line-height:1.55}
   .fosso-frase{margin-top:36px;text-align:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--gold-2)}
-  .assina{display:flex;gap:28px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:34px;margin-top:30px}
-  .assina .ini{flex-shrink:0;width:72px;height:72px;border-radius:50%;background:var(--deep);color:var(--gold-2);display:grid;place-items:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.5rem}
-  @media(max-width:900px){.alav,.fosso-grid{grid-template-columns:1fr}.assina{flex-direction:column}}
+  @media(max-width:900px){.alav,.fosso-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 ${pilarSchema()}
@@ -709,13 +704,6 @@ ${pilarSchema()}
     <p>Da inscrição no CNO à certidão que o cartório exige para averbar: conduzimos a aferição da sua obra no SERO de ponta a ponta, com a prova técnica que só a engenharia assina.</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Solicitar análise sem custo <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
-      <a class="btn btn-ghost" href="#incluso">O que está incluído</a>
-    </div>
-    <div class="prova">
-      <span>${I('shield')}CREA-SC PJ 177486-6</span>
-      <span>${I('doc')}Responsáveis técnicos com emissão de ART</span>
-      <span>${I('scale')}10+ anos · 80+ comarcas</span>
-      <span>${I('drone')}Drone e topografia próprios</span>
     </div>
   </div>
 </section>
@@ -870,23 +858,6 @@ ${pilarSchema()}
     <div class="reveal" style="margin-top:44px;padding:20px 24px;background:var(--mist-bg,#f5f7f9);border:1px solid var(--line);border-radius:var(--r)">
       <span class="kicker">Fontes oficiais</span>
       <p style="font-size:.9rem;color:var(--ink-2);margin-top:8px">Conteúdo elaborado com base na norma e nas páginas oficiais da Receita Federal: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/sero" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">Aferição de Obras (Sero)</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/cno" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">Cadastro Nacional de Obras</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/cnd" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">CND de Obra</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/construcao-civil/sero/decadencia" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:600">Regularização de construção antiga</a>. Norma central: IN RFB nº 2.021/2021 e alterações. Conteúdo revisado por engenheiro responsável. Atualizado em ${new Date().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })}.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section mistbg">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="kicker">Quem assina</span>
-      <h2>Responsabilidade técnica com nome e registro.</h2>
-    </div>
-    <div class="assina reveal">
-      <div class="ini">RS</div>
-      <div>
-        <h3 style="color:var(--deep);font-size:1.15rem;margin-bottom:6px">Robson Schneider · Sócio-Diretor</h3>
-        <p style="color:var(--ink-2);font-size:.98rem">Engenheiro, mestre em Tecnologia Ambiental, pós-graduado em Avaliações e Perícias, Direito Imobiliário e Agrimensura. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS.</p>
-        <p style="color:var(--ink-2);font-size:.98rem;margin-top:10px"><b style="color:var(--deep)">Por que isso importa aqui:</b> perito judicial passa a carreira provando fato técnico para juiz. Provar data e área de obra para a Receita é a mesma competência, aplicada a outro leitor.</p>
-      </div>
     </div>
   </div>
 </section>

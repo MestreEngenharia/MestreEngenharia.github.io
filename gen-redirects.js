@@ -65,7 +65,19 @@ const map = {
   'afericaodeobra': 'inss-de-obra-cnd/',
   'sero': 'inss-de-obra-cnd/',
   'cno': 'inss-de-obra-cnd/',
-  'regularizacao-de-obra': 'inss-de-obra-cnd/'
+  'regularizacao-de-obra': 'inss-de-obra-cnd/',
+  'inss-obra': 'inss-de-obra-cnd/',
+  'inssobra': 'inss-de-obra-cnd/',
+  'cnd-inss': 'inss-de-obra-cnd/',
+  'cndinssobra': 'inss-de-obra-cnd/',
+  'inss-da-obra': 'inss-de-obra-cnd/',
+  'cnd-da-obra': 'inss-de-obra-cnd/',
+  'regularizacao-de-obras': 'inss-de-obra-cnd/',
+  'afericao-de-obras': 'inss-de-obra-cnd/',
+  'afericao': 'inss-de-obra-cnd/',
+  'dctfweb': 'inss-de-obra-cnd/',
+  'aro': 'inss-de-obra-cnd/',
+  'decadencia': 'inss-de-obra-cnd/'
 };
 
 const tpl = (url) => `<!DOCTYPE html>

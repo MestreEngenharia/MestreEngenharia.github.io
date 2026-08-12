@@ -119,8 +119,8 @@ header.nav{
 header.nav.scrolled{background:rgba(4,27,45,.94);border-bottom-color:rgba(191,148,40,.25)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .3s var(--ease)}
 header.nav.scrolled .wrap{height:70px}
-.brand img{height:44px;width:auto;transition:height .3s var(--ease)}
-header.nav.scrolled .brand img{height:38px}
+.brand img{height:58px;width:auto;transition:height .3s var(--ease)}
+header.nav.scrolled .brand img{height:48px}
 nav.menu{display:flex;gap:30px;align-items:center}
 nav.menu>a{
   font-family:'Montserrat',sans-serif;font-weight:600;font-size:.76rem;
@@ -374,9 +374,8 @@ nav.menu>a:hover::after{width:100%}
 .about-panel .ppl{display:flex;gap:15px;align-items:center;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.09)}
 .about-panel .ppl:last-of-type{border-bottom:none}
 .about-panel .av{
-  width:46px;height:46px;border-radius:50%;background:linear-gradient(140deg,var(--gold),var(--gold-2));
-  flex-shrink:0;display:grid;place-items:center;
-  font-family:'Montserrat',sans-serif;font-weight:800;color:var(--deep);
+  width:58px;height:58px;border-radius:50%;flex-shrink:0;display:block;
+  object-fit:cover;background:var(--white);
 }
 .about-panel .ppl b{color:var(--white);font-family:'Montserrat',sans-serif;font-size:.92rem;display:block}
 .about-panel .ppl span{font-size:.8rem}
@@ -584,7 +583,7 @@ footer a:hover{color:var(--gold-3)}
   .scard.wide .ph{width:100%;height:210px}
   .scard.wide .bd{border-left:none;border-top:1px solid var(--gold-line)}
   .manifesto{padding:110px 0;background-attachment:scroll}
-  .brand img{height:36px}
+  .brand img{height:46px}
 
   /* ---- Topbar compacto: só telefone, uma linha ---- */
   .topbar .tb-right{display:none}

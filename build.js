@@ -377,7 +377,7 @@ ${schema(s)}
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="../index.html" aria-label="Mestre Engenharia, página inicial">
-      <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="240" height="120">
+      <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="412" height="100">
     </a>
     <nav class="menu" id="menu">
       <a href="../index.html#servicos">Todos os serviços</a>
@@ -467,7 +467,7 @@ ${schema(s)}
     <div class="f-grid">
       <div>
         <a class="brand" href="../index.html">
-          <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="240" height="120">
+          <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="412" height="100">
         </a>
         <p style="margin-top:18px;max-width:320px">Engenharia com propósito, precisão e resultado. Avaliações, perícias e laudos técnicos em engenharia civil, agronomia e meio ambiente.</p>
       </div>
@@ -686,7 +686,7 @@ ${pilarSchema()}
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="../index.html" aria-label="Mestre Engenharia, página inicial">
-      <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="240" height="120">
+      <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="412" height="100">
     </a>
     <nav class="menu" id="menu">
       <a href="../index.html#servicos">Todos os serviços</a>
@@ -897,7 +897,7 @@ ${pilarSchema()}
     <div class="f-grid">
       <div>
         <a class="brand" href="../index.html">
-          <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="240" height="120">
+          <img src="../assets/img/logo-lateral-branco.png" alt="Mestre Engenharia Avaliações e Perícias" width="412" height="100">
         </a>
         <p style="margin-top:18px;max-width:320px">Engenharia com propósito, precisão e resultado. Avaliações, perícias e laudos técnicos em engenharia civil, agronomia e meio ambiente.</p>
       </div>

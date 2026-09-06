@@ -30,13 +30,14 @@ const SERVICES = [
     slug: 'avaliacao',
     nav: 'Avaliação de Imóveis',
     title: 'Avaliação de Imóveis Urbanos e Rurais',
-    seoTitle: 'Avaliação de Imóveis (NBR 14653)',
-    seoDesc: 'Laudo de avaliação de imóveis urbanos e rurais conforme a NBR 14653, aceito por bancos, juízos e órgãos públicos, em Itajaí, Florianópolis e todo o Sul.',
+    seoTitle: 'Avaliação de Imóveis e Laudo NBR 14653 em Itajaí e SC',
+    seoDesc: 'Engenheiro avaliador de imóveis em Itajaí, Balneário Camboriú e Florianópolis. Laudo NBR 14653 aceito por bancos, juízos e órgãos públicos. Orçamento no WhatsApp.',
     tagline: 'O valor justo e fundamentado do seu imóvel, com laudo conforme a NBR 14653. Aceito por bancos, juízos e órgãos públicos.',
-    img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1560518883-ce09059eeffa-w1600.webp',
+    imgMobile: '../assets/img/fotos/1560518883-ce09059eeffa-w900.webp',
     wa: 'uma avaliação de imóvel',
     introTitle: 'Saber o valor real muda a sua negociação.',
-    intro: 'Uma avaliação bem feita evita que você venda barato, compre caro ou aceite uma indenização injusta. Nossos laudos analisam mercado, localização, acessos, zoneamento e o potencial de uso do imóvel, sempre com os métodos científicos da NBR 14653.',
+    intro: 'Uma avaliação bem feita evita que você venda barato, compre caro ou aceite uma indenização injusta. Nossos laudos analisam mercado, localização, acessos, zoneamento e o potencial de uso do imóvel, sempre com os métodos científicos da NBR 14653. Somos engenheiros avaliadores e peritos avaliadores com atuação em Itajaí, Balneário Camboriú, Florianópolis e em todo o litoral catarinense.',
     includes: [
       { i: 'home', b: 'Imóveis urbanos', s: 'Casas, apartamentos, salas comerciais, terrenos e galpões, para compra, venda e garantia bancária.' },
       { i: 'leaf', b: 'Imóveis rurais', s: 'Fazendas, sítios e chácaras, com análise de solo, benfeitorias, produtividade e Laudo de VTN para o ITR.' },
@@ -53,6 +54,9 @@ const SERVICES = [
     ],
     norms: ['NBR 14653-1 · Procedimentos gerais', 'NBR 14653-2 · Imóveis urbanos', 'NBR 14653-3 · Imóveis rurais', 'IBAPE'],
     faq: [
+      { q: 'Quanto custa um laudo de avaliação de imóvel?', a: 'O valor depende do tipo de imóvel (apartamento, casa, terreno, galpão ou área rural), da finalidade do laudo e da urgência. Enviamos a proposta em até um dia útil pelo WhatsApp, sem custo, e o prazo de entrega fica definido nela.' },
+      { q: 'Qual a diferença entre avaliador de imóveis e corretor?', a: 'O corretor emite o PTAM, uma opinião de valor voltada à comercialização. O engenheiro avaliador, registrado no CREA e no IBAPE, elabora o laudo de avaliação conforme a NBR 14653, com pesquisa de mercado, tratamento estatístico e responsabilidade técnica (ART). É esse laudo que bancos, juízos e órgãos públicos exigem.' },
+      { q: 'Fazem avaliação para inventário, partilha ou divórcio?', a: 'Sim. O laudo define o valor de mercado de cada bem para uma partilha justa entre herdeiros ou cônjuges e é aceito em processos judiciais e nos procedimentos extrajudiciais em cartório.' },
       { q: 'Quanto tempo leva uma avaliação de imóvel?', a: 'A maioria dos laudos urbanos fica pronta entre 7 e 15 dias depois da vistoria. Casos judiciais e rurais podem pedir mais tempo. Você recebe o prazo exato na proposta.' },
       { q: 'O laudo serve para banco e para a Justiça?', a: 'Sim. Os laudos seguem a NBR 14653 e são assinados por engenheiros registrados no CREA, com ART. É o que bancos, juízos e órgãos públicos exigem.' },
       { q: 'Vocês avaliam imóveis em outras cidades?', a: 'Sim. Atendemos Santa Catarina, Paraná e Rio Grande do Sul, a partir das nossas unidades de Itajaí e Florianópolis. O deslocamento entra na proposta.' }
@@ -63,10 +67,11 @@ const SERVICES = [
     slug: 'pericia',
     nav: 'Perícia e Assistência Técnica',
     title: 'Perícia Judicial e Assistência Técnica',
-    seoTitle: 'Perícia Judicial e Assistência Técnica',
-    seoDesc: 'Perícia judicial de engenharia e assistência técnica para advogados: quesitos, pareceres e impugnação de laudos. +500 processos assessorados em SC, PR e RS.',
+    seoTitle: 'Perícia Judicial, Perito Engenheiro e Assistente Técnico',
+    seoDesc: 'Engenheiro perito judicial e assistente técnico para advogados em Itajaí, Florianópolis e todo o Sul: quesitos, pareceres e impugnação de laudos. +500 processos.',
     tagline: 'Base técnica para decisões judiciais e apoio estratégico para advogados. Mais de 500 processos assessorados em SC, PR e RS.',
-    img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1450101499163-c8848c66ca85-w1600.webp',
+    imgMobile: '../assets/img/fotos/1450101499163-c8848c66ca85-w900.webp',
     wa: 'assistência técnica judicial ou perícia',
     introTitle: 'Engenharia aliada ao Direito.',
     intro: 'Atuamos como peritos nomeados pelo Juízo e como assistentes técnicos das partes. Produzimos prova técnica fundamentada nas normas ABNT e alinhada ao CPC, com uma equipe multidisciplinar que amplia as chances de êxito da ação.',
@@ -86,6 +91,8 @@ const SERVICES = [
     ],
     norms: ['NBR 13752 · Perícias', 'NBR 14653 · Avaliações', 'CPC · arts. 464 a 480', 'IBAPE'],
     faq: [
+      { q: 'Quanto custa um laudo pericial ou parecer técnico?', a: 'Na atuação como assistente técnico, os honorários são definidos em proposta, conforme a complexidade do caso, o volume do processo e o número de vistorias. Quando somos nomeados peritos do juízo, os honorários são arbitrados pelo juiz e depositados pela parte responsável. Nos dois casos, a conversa inicial não tem custo.' },
+      { q: 'Qual a diferença entre perito judicial e assistente técnico?', a: 'O perito judicial é o engenheiro nomeado pelo juiz, atua com imparcialidade e responde ao juízo. O assistente técnico é contratado por uma das partes para formular quesitos, acompanhar a perícia e apresentar parecer sobre o laudo. Atuamos nas duas funções, nunca no mesmo processo.' },
       { q: 'Qual o prazo para contratar um assistente técnico?', a: 'O ideal é logo depois da nomeação do perito. O CPC dá 15 dias para indicar assistente e apresentar quesitos (art. 465). Quanto antes, melhor a estratégia.' },
       { q: 'Vocês atuam em qual tipo de processo?', a: 'Ações que envolvem imóveis, obras, vícios construtivos, avaliações, desapropriações, servidões, usucapião, inventários e questões rurais e ambientais.' },
       { q: 'Atendem escritórios de advocacia de forma recorrente?', a: 'Sim. Somos parceiros técnicos de escritórios em SC, PR e RS, com condições especiais para demandas recorrentes.' }
@@ -99,7 +106,8 @@ const SERVICES = [
     seoTitle: 'Topografia, Georreferenciamento e Drone',
     seoDesc: 'Georreferenciamento INCRA/SIGEF, aerofotogrametria com drone, locação de obra e cálculo de volumes em SC. Precisão para projetos, regularização e obras.',
     tagline: 'Precisão cartográfica para regularizar, projetar e construir: do georreferenciamento à aerofotogrametria com drone, da locação de obra ao monitoramento de estruturas.',
-    img: 'https://images.unsplash.com/photo-1610081340031-ea312b8a9d9a?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1610081340031-ea312b8a9d9a-w1600.webp',
+    imgMobile: '../assets/img/fotos/1610081340031-ea312b8a9d9a-w900.webp',
     wa: 'um levantamento topográfico',
     introTitle: 'Limites precisos, decisões seguras.',
     intro: 'Unimos equipamentos de alta precisão (estação total e GNSS) ao mapeamento aéreo com drones. O resultado são produtos cartográficos confiáveis para projetar, regularizar, locar obras, monitorar estruturas e sustentar processos judiciais, no campo e na cidade.',
@@ -130,10 +138,11 @@ const SERVICES = [
     slug: 'regularizacao',
     nav: 'Regularização de Imóveis',
     title: 'Regularização de Imóveis e Regularização Fundiária',
-    seoTitle: 'Regularização de Imóveis e Habite-se',
-    seoDesc: 'Regularização de imóveis: averbação, Habite-se, retificação de área, REURB, INCRA e CAR. Do projeto ao registro em cartório, em Itajaí, Florianópolis e região.',
+    seoTitle: 'Regularização de Imóveis, Habite-se e Usucapião',
+    seoDesc: 'Regularização de imóveis em Itajaí, Balneário Camboriú e Florianópolis: averbação, Habite-se, retificação de área, usucapião extrajudicial e REURB.',
     tagline: 'Transformamos a sua propriedade em um ativo legalmente reconhecido, do alvará ao registro em cartório.',
-    img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1454165804606-c3d57bc86b40-w1600.webp',
+    imgMobile: '../assets/img/fotos/1454165804606-c3d57bc86b40-w900.webp',
     wa: 'regularização de imóvel',
     introTitle: 'Imóvel irregular vale menos e trava negócios.',
     intro: 'Construção sem averbação, área diferente da matrícula, pendência em órgão público: tudo isso impede financiamentos, vendas e inventários. A gente assume o processo técnico e administrativo completo para regularizar o seu imóvel.',
@@ -142,7 +151,7 @@ const SERVICES = [
       { i: 'home', b: 'Averbação de construção', s: 'Atualização da matrícula com a área real construída, destravando venda e financiamento.' },
       { i: 'map', b: 'Retificação e desmembramento', s: 'Correção de área e divisas com mapa e memorial georreferenciado.' },
       { i: 'leaf', b: 'INCRA, CAR e ITR', s: 'Cadastro e revisão de imóveis rurais: CCIR, CAR e revisão de IPTU e ITR.' },
-      { i: 'key', b: 'Regularização fundiária (REURB)', s: 'Núcleos urbanos informais e titulação de ocupações consolidadas.' },
+      { i: 'key', b: 'REURB e usucapião extrajudicial', s: 'Titulação de ocupações consolidadas e planta, memorial e ART para o usucapião em cartório, em apoio ao advogado.' },
       { i: 'gear', b: 'Trâmites completos', s: 'Diligências cartorárias e administrativas até o registro, sem você precisar correr atrás.' }
     ],
     scenarios: [
@@ -153,6 +162,9 @@ const SERVICES = [
     ],
     norms: ['Lei 13.465/2017 · REURB', 'Lei 6.015/73 · Registros Públicos', 'Norma INCRA · SIGEF'],
     faq: [
+      { q: 'O que é preciso para averbar uma construção na matrícula?', a: 'Em regra: Habite-se emitido pela prefeitura, CND da obra na Receita Federal (INSS), projeto aprovado com ART e requerimento ao cartório de registro de imóveis. Cuidamos do levantamento, dos projetos e da <a href="../inss-de-obra-cnd/">regularização do INSS da obra</a>, entregando o processo pronto para o registro.' },
+      { q: 'Como funciona o usucapião extrajudicial?', a: 'É o reconhecimento da propriedade direto no cartório, sem processo judicial, previsto no art. 216-A da Lei 6.015/73. O advogado conduz o pedido e o engenheiro elabora a planta e o memorial descritivo com ART, assinados pelos confrontantes. Fazemos a parte técnica e o levantamento georreferenciado em Itajaí, Balneário Camboriú, Florianópolis e região.' },
+      { q: 'Como tirar o Habite-se de uma obra pronta?', a: 'O Habite-se é emitido pela prefeitura após uma vistoria que confirma que a obra foi executada conforme o projeto aprovado. Quando a obra saiu diferente do projeto ou foi feita sem alvará, é preciso um projeto de regularização (as built) antes do pedido. Em Itajaí e nas demais cidades da região, acompanhamos o processo do protocolo à emissão.' },
       { q: 'Quanto tempo leva uma regularização?', a: 'Varia com a prefeitura e o cartório. Averbações simples costumam levar de 30 a 90 dias. Retificações e REURB, alguns meses. Você recebe um cronograma realista na proposta.' },
       { q: 'Imóvel irregular pode ser vendido?', a: 'Pode, mas com desconto grande e sem financiamento, porque o comprador não consegue crédito. Regularizar antes de vender costuma se pagar várias vezes.' },
       { q: 'Vocês cuidam de tudo ou eu preciso ir aos órgãos?', a: 'A gente conduz todo o processo técnico e administrativo: prefeitura, INCRA e cartório. Você só acompanha o andamento.' }
@@ -163,10 +175,11 @@ const SERVICES = [
     slug: 'vistorias',
     nav: 'Vistorias e Inspeções',
     title: 'Vistorias Cautelares, Laudos e Inspeções Técnicas',
-    seoTitle: 'Inspeção Predial e Vistoria Cautelar',
-    seoDesc: 'Inspeção predial (NBR 16747), vistoria cautelar (NBR 12722), recebimento de obra, patologias, fachada e laudo de desempenho (NBR 15575) em SC.',
+    seoTitle: 'Vistoria de Imóvel Novo, Inspeção Predial e Cautelar',
+    seoDesc: 'Vistoria de imóvel novo e entrega de chaves, inspeção predial (NBR 16747) e cautelar de vizinhança em Itajaí, Balneário Camboriú e Florianópolis.',
     tagline: 'Do recebimento de chaves à inspeção predial: o laudo técnico que evita litígios e protege quem constrói, compra e administra imóveis.',
-    img: 'https://images.unsplash.com/photo-1694521787799-ad4ad241cb39?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1694521787799-ad4ad241cb39-w1600.webp',
+    imgMobile: '../assets/img/fotos/1694521787799-ad4ad241cb39-w900.webp',
     wa: 'uma vistoria ou inspeção técnica',
     introTitle: 'Registrar antes é mais barato que litigar depois.',
     intro: 'Engenharia diagnóstica para cada momento do imóvel: antes da obra, na entrega, na compra e ao longo da vida do edifício. Cada vistoria vira um laudo técnico fundamentado, a sua proteção documental contra prejuízos e disputas.',
@@ -174,7 +187,7 @@ const SERVICES = [
       { i: 'shield', b: 'Vistoria cautelar de vizinhança', s: 'Registro fotográfico e relatório do estado dos imóveis confrontantes antes da obra (NBR 12722).' },
       { i: 'eye', b: 'Inspeção predial', s: 'Diagnóstico de conservação do edifício, classificação de anomalias e plano de manutenção (NBR 16747).' },
       { i: 'home', b: 'Inspeção residencial (pré-compra)', s: 'Estrutura, instalações, umidade e vícios ocultos avaliados antes de você fechar negócio.' },
-      { i: 'key', b: 'Recebimento e entrega de obra', s: 'Vistoria de unidades novas, documentando não conformidades para reparo pela construtora.' },
+      { i: 'key', b: 'Vistoria de imóvel novo (entrega de chaves)', s: 'Vistoria de apartamento ou casa nova antes do termo de recebimento, com laudo das não conformidades para reparo pela construtora.' },
       { i: 'gear', b: 'Patologias e vícios construtivos', s: 'Fissuras, infiltrações e recalques: causa, gravidade, responsabilidade e solução.' },
       { i: 'doc', b: 'Inspeção de estruturas', s: 'Vigas, pilares, lajes e fundações avaliados quanto à integridade e segurança estrutural.' },
       { i: 'scale', b: 'Inspeção de fachada', s: 'Segurança, desgaste e conformidade de revestimentos e elementos da fachada.' },
@@ -189,6 +202,9 @@ const SERVICES = [
     ],
     norms: ['NBR 16747 · Inspeção predial', 'NBR 12722 · Vizinhança', 'NBR 15575 · Desempenho', 'NBR 13752 · Perícias', 'IBAPE'],
     faq: [
+      { q: 'Quanto custa uma vistoria de imóvel novo?', a: 'O valor varia com a área e o tipo do imóvel (apartamento, casa ou sala comercial) e com a região. Enviamos a proposta no mesmo dia pelo WhatsApp. O laudo com ART costuma custar uma fração dos reparos que ele evita que fiquem por sua conta.' },
+      { q: 'Preciso de engenheiro para a vistoria de entrega de chaves?', a: 'Não é obrigatório, mas faz diferença. A vistoria feita por engenheiro, com laudo fotográfico e ART, tem valor probatório: a construtora precisa reparar as não conformidades apontadas e, se houver litígio, o documento fundamenta a reclamação. Um checklist comum não tem o mesmo peso.' },
+      { q: 'Fazem vistoria de imóvel para locação?', a: 'Sim. Vistoria de entrada e de saída com laudo fotográfico detalhado do estado do imóvel, útil para imobiliárias, locadores e locatários que querem evitar disputas ao fim do contrato.' },
       { q: 'A vistoria de vizinhança é obrigatória?', a: 'Muitos municípios exigem para liberar o alvará. E mesmo onde não é obrigatória, ela é a principal defesa da construtora contra alegações de danos que já existiam. O custo é pequeno perto do risco.' },
       { q: 'O que a inspeção residencial verifica?', a: 'Estrutura, cobertura, instalações elétricas e hidráulicas, esquadrias, revestimentos, umidade e indícios de vícios ocultos. Tudo com relatório fotográfico e classificação de gravidade.' },
       { q: 'Achei vícios depois de receber as chaves. E agora?', a: 'A construtora responde por vícios aparentes e ocultos dentro dos prazos legais. Um laudo técnico fundamenta a reclamação e, se for preciso, o processo.' }
@@ -202,7 +218,8 @@ const SERVICES = [
     seoTitle: 'Estudo de Viabilidade e Incorporação',
     seoDesc: 'Estudo de viabilidade (EVTE), Quadros da NBR 12.721, tabela de vendas e aferição de INSS de obra para construtoras e incorporadoras em Santa Catarina.',
     tagline: 'Da análise do terreno ao registro da incorporação: os números e os documentos técnicos que sustentam o seu empreendimento.',
-    img: 'https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1531973576160-7125cd663d86-w1600.webp',
+    imgMobile: '../assets/img/fotos/1531973576160-7125cd663d86-w900.webp',
     wa: 'estudo de viabilidade ou apoio à incorporação',
     introTitle: 'Decida com números, não com intuição.',
     intro: 'O estudo de viabilidade técnica e econômica analisa legislação, zoneamento, potencial construtivo, custos e retorno antes de você comprar o terreno. Depois, cuidamos dos Quadros da NBR 12.721 e de todo o suporte técnico até a entrega.',
@@ -236,7 +253,8 @@ const SERVICES = [
     seoTitle: 'Laudo Ambiental e Estudo Hidrológico',
     seoDesc: 'Laudos ambientais, viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento em SC. Diagnóstico de APPs, drenagem e conformidade com órgãos ambientais.',
     tagline: 'Nossa nova área de atuação: viabilidade ambiental, hidrologia e conformidade com os órgãos licenciadores. Segurança para o seu empreendimento desde a origem.',
-    img: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=80',
+    img: '../assets/img/fotos/1441974231531-c6227db76b6e-w1600.webp',
+    imgMobile: '../assets/img/fotos/1441974231531-c6227db76b6e-w1200.webp',
     wa: 'laudos ou estudos ambientais',
     introTitle: 'O ambiental deixou de ser detalhe. Virou condição de aprovação.',
     intro: 'Restrições ambientais mal avaliadas embargam obras, desvalorizam terrenos e geram passivos milionários. Integramos a análise ambiental aos estudos de viabilidade, topografia e regularização que você já contrata com a gente. Um diagnóstico completo, de uma só equipe.',
@@ -345,20 +363,28 @@ function page(s) {
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Mestre Engenharia">
 <meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
 <title>${s.seoTitle} | Mestre Engenharia</title>
 <meta name="description" content="${s.seoDesc}">
 <link rel="canonical" href="${SITE}/servicos/${s.slug}.html">
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
 <meta property="og:title" content="${s.seoTitle} | Mestre Engenharia">
 <meta property="og:description" content="${s.seoDesc}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE}/servicos/${s.slug}.html">
 <meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
 <meta property="og:locale" content="pt_BR">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:width" content="1409">
+<meta property="og:image:height" content="781">
+<meta property="og:image:alt" content="Mestre Engenharia Avaliações e Perícias">
+<link rel="preload" href="../assets/fonts/Montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/SourceSans3-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts.css">
 <link rel="stylesheet" href="../assets/style.css">
+<style>@media(max-width:640px){.svc-bg{background-image:url('${s.imgMobile}')!important}}</style>
 <script type="application/ld+json">
 ${schema(s)}
 </script>
@@ -501,7 +527,7 @@ ${schema(s)}
       </div>
     </div>
     <div class="f-bottom">
-      <span>© 2026 Mestre Engenharia Avaliações e Perícias Ltda · Itajaí e Florianópolis/SC · Todos os direitos reservados.</span>
+      <span>© 2026 Mestre Engenharia Avaliações e Perícias Ltda · Itajaí e Florianópolis/SC · Todos os direitos reservados. · <a href="../politica-de-privacidade/" style="color:inherit;text-decoration:underline">Política de Privacidade</a></span>
       <div class="f-social">
         <a href="https://www.instagram.com/mestre_engenharia" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg>
@@ -622,20 +648,28 @@ function pilarPage() {
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Mestre Engenharia">
 <meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
 <title>INSS de Obra e CND ${new Date().getFullYear()} | Regularização na Receita Federal</title>
 <meta name="description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Análise inicial sem custo.">
 <link rel="canonical" href="${SITE}/inss-de-obra-cnd/">
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
 <meta property="og:title" content="INSS de Obra e CND | Regularização na Receita Federal em SC">
 <meta property="og:description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Análise inicial sem custo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE}/inss-de-obra-cnd/">
 <meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
 <meta property="og:locale" content="pt_BR">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:width" content="1409">
+<meta property="og:image:height" content="781">
+<meta property="og:image:alt" content="Mestre Engenharia Avaliações e Perícias">
+<link rel="preload" href="../assets/fonts/Montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/SourceSans3-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts.css">
 <link rel="stylesheet" href="../assets/style.css">
+<style>@media(max-width:640px){.svc-bg{background-image:url('../assets/img/fotos/1429497419816-9ca5cfb4571a-w1200.webp')!important}}</style>
 <style>
   .etp-list{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:14px}
   .etp{display:flex;gap:18px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;box-shadow:0 2px 14px rgba(6,37,61,.05)}
@@ -708,7 +742,7 @@ ${pilarSchema()}
 </header>
 
 <section class="svc-hero">
-  <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=2000&q=80')"></div>
+  <div class="svc-bg" style="background-image:url('../assets/img/fotos/1429497419816-9ca5cfb4571a-w1600.webp')"></div>
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>INSS de Obra e CND</span></div>
     <h1>INSS de Obra e CND: regularize sua construção na Receita Federal <span class="tag-novo">Novo</span></h1>
@@ -934,7 +968,7 @@ ${pilarSchema()}
       </div>
     </div>
     <div class="f-bottom">
-      <span>© 2026 Mestre Engenharia Avaliações e Perícias Ltda · Itajaí e Florianópolis/SC · Todos os direitos reservados.</span>
+      <span>© 2026 Mestre Engenharia Avaliações e Perícias Ltda · Itajaí e Florianópolis/SC · Todos os direitos reservados. · <a href="../politica-de-privacidade/" style="color:inherit;text-decoration:underline">Política de Privacidade</a></span>
       <div class="f-social">
         <a href="https://www.instagram.com/mestre_engenharia" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg>
@@ -982,19 +1016,22 @@ fs.writeFileSync(path.join(pilarDir, 'index.html'), pilarPage(), 'utf8');
 console.log('gerado: inss-de-obra-cnd/index.html');
 
 /* sitemap.xml */
-const pages = ['', 'inss-de-obra-cnd/', ...SERVICES.filter(s => !s.pilar).map(s => `servicos/${s.slug}.html`)];
+const LASTMOD = '2026-09-06';
+const pages = ['', 'inss-de-obra-cnd/', 'politica-de-privacidade/', ...SERVICES.filter(s => !s.pilar).map(s => `servicos/${s.slug}.html`)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map(p => `  <url><loc>${SITE}/${p}</loc><changefreq>monthly</changefreq><priority>${p === '' ? '1.0' : '0.8'}</priority></url>`).join('\n')}
+${pages.map(p => `  <url><loc>${SITE}/${p}</loc><lastmod>${LASTMOD}</lastmod><changefreq>monthly</changefreq><priority>${p === '' ? '1.0' : p.startsWith('politica') ? '0.3' : '0.8'}</priority></url>`).join('\n')}
 </urlset>
 `;
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap, 'utf8');
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
 
 /* llms.txt: mapa do site para assistentes e buscadores de IA (GEO/AEO) */
+const stripHtml = t => t.replace(/<[^>]+>/g, '');
+const llmsFaq = SERVICES.filter(s => !s.pilar).map(s => s.faq.slice(0, 2).map(f => `- **${f.q}** ${stripHtml(f.a)}`).join('\n')).join('\n');
 const llms = `# Mestre Engenharia Avaliações e Perícias
 
-> Empresa de engenharia em Itajaí e Florianópolis (SC, Brasil). Avaliação de imóveis (NBR 14653), perícia judicial e assistência técnica, inspeção predial e vistorias, topografia e georreferenciamento, regularização de imóveis, incorporação, laudos ambientais e regularização de INSS de obra na Receita Federal (SERO, CNO, DCTFWeb, CND). CREA-SC PJ 177486-6. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS. WhatsApp (47) 99155-0224.
+> Empresa de engenharia com sede em Itajaí e unidade em Florianópolis (SC, Brasil), atendendo também Balneário Camboriú, Navegantes, Camboriú, Brusque, Blumenau, Joinville e todo o Sul do Brasil. Avaliação de imóveis (NBR 14653), perícia judicial e assistência técnica, inspeção predial e vistorias, topografia e georreferenciamento, regularização de imóveis, incorporação, laudos ambientais e regularização de INSS de obra na Receita Federal (SERO, CNO, DCTFWeb, CND). CREA-SC PJ 177486-6. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS. WhatsApp (47) 99155-0224.
 
 ## Serviços
 
@@ -1007,6 +1044,14 @@ const llms = `# Mestre Engenharia Avaliações e Perícias
 - [Incorporação e Viabilidade](${SITE}/servicos/incorporacao.html): EVTE, Quadros da NBR 12.721 e tabela de vendas.
 - [Laudos Ambientais](${SITE}/servicos/ambiental.html): Viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento.
 
+## Perguntas frequentes (resumo)
+
+${llmsFaq}
+
+## Outras páginas
+
+- [Política de Privacidade](${SITE}/politica-de-privacidade/)
+
 ## Contato
 
 - WhatsApp: +55 47 99155-0224
@@ -1017,3 +1062,6 @@ const llms = `# Mestre Engenharia Avaliações e Perícias
 fs.writeFileSync(path.join(__dirname, 'llms.txt'), llms, 'utf8');
 console.log('gerado: sitemap.xml + robots.txt + llms.txt');
 console.log('OK: ' + SERVICES.length + ' páginas.');
+
+/* páginas auxiliares: 404.html e política de privacidade (mesmo cabeçalho/rodapé) */
+require('./build-pages.js')({ SERVICES, SITE, fs, path, dir: __dirname });

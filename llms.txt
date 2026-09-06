@@ -1,6 +1,6 @@
 # Mestre Engenharia Avaliações e Perícias
 
-> Empresa de engenharia em Itajaí e Florianópolis (SC, Brasil). Avaliação de imóveis (NBR 14653), perícia judicial e assistência técnica, inspeção predial e vistorias, topografia e georreferenciamento, regularização de imóveis, incorporação, laudos ambientais e regularização de INSS de obra na Receita Federal (SERO, CNO, DCTFWeb, CND). CREA-SC PJ 177486-6. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS. WhatsApp (47) 99155-0224.
+> Empresa de engenharia com sede em Itajaí e unidade em Florianópolis (SC, Brasil), atendendo também Balneário Camboriú, Navegantes, Camboriú, Brusque, Blumenau, Joinville e todo o Sul do Brasil. Avaliação de imóveis (NBR 14653), perícia judicial e assistência técnica, inspeção predial e vistorias, topografia e georreferenciamento, regularização de imóveis, incorporação, laudos ambientais e regularização de INSS de obra na Receita Federal (SERO, CNO, DCTFWeb, CND). CREA-SC PJ 177486-6. Mais de 1.000 laudos emitidos e 500+ nomeações judiciais em 80+ comarcas de SC, PR e RS. WhatsApp (47) 99155-0224.
 
 ## Serviços
 
@@ -12,6 +12,27 @@
 - [Vistorias e Inspeções](https://www.mestreengenharia.com/servicos/vistorias.html): Inspeção predial (NBR 16747), cautelar de vizinhança, recebimento de obra e patologias.
 - [Incorporação e Viabilidade](https://www.mestreengenharia.com/servicos/incorporacao.html): EVTE, Quadros da NBR 12.721 e tabela de vendas.
 - [Laudos Ambientais](https://www.mestreengenharia.com/servicos/ambiental.html): Viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento.
+
+## Perguntas frequentes (resumo)
+
+- **Quanto custa um laudo de avaliação de imóvel?** O valor depende do tipo de imóvel (apartamento, casa, terreno, galpão ou área rural), da finalidade do laudo e da urgência. Enviamos a proposta em até um dia útil pelo WhatsApp, sem custo, e o prazo de entrega fica definido nela.
+- **Qual a diferença entre avaliador de imóveis e corretor?** O corretor emite o PTAM, uma opinião de valor voltada à comercialização. O engenheiro avaliador, registrado no CREA e no IBAPE, elabora o laudo de avaliação conforme a NBR 14653, com pesquisa de mercado, tratamento estatístico e responsabilidade técnica (ART). É esse laudo que bancos, juízos e órgãos públicos exigem.
+- **Quanto custa um laudo pericial ou parecer técnico?** Na atuação como assistente técnico, os honorários são definidos em proposta, conforme a complexidade do caso, o volume do processo e o número de vistorias. Quando somos nomeados peritos do juízo, os honorários são arbitrados pelo juiz e depositados pela parte responsável. Nos dois casos, a conversa inicial não tem custo.
+- **Qual a diferença entre perito judicial e assistente técnico?** O perito judicial é o engenheiro nomeado pelo juiz, atua com imparcialidade e responde ao juízo. O assistente técnico é contratado por uma das partes para formular quesitos, acompanhar a perícia e apresentar parecer sobre o laudo. Atuamos nas duas funções, nunca no mesmo processo.
+- **O que é o georreferenciamento e quando é obrigatório?** É o levantamento que amarra os limites do imóvel a coordenadas oficiais. Para imóveis rurais, é obrigatório em transferências, desmembramentos, remembramentos e partilhas.
+- **Drone substitui a topografia convencional?** Eles se complementam. O drone acelera o mapeamento de grandes áreas e gera produtos visuais ricos. Pontos de controle em solo garantem a precisão que as normas e os órgãos exigem.
+- **O que é preciso para averbar uma construção na matrícula?** Em regra: Habite-se emitido pela prefeitura, CND da obra na Receita Federal (INSS), projeto aprovado com ART e requerimento ao cartório de registro de imóveis. Cuidamos do levantamento, dos projetos e da regularização do INSS da obra, entregando o processo pronto para o registro.
+- **Como funciona o usucapião extrajudicial?** É o reconhecimento da propriedade direto no cartório, sem processo judicial, previsto no art. 216-A da Lei 6.015/73. O advogado conduz o pedido e o engenheiro elabora a planta e o memorial descritivo com ART, assinados pelos confrontantes. Fazemos a parte técnica e o levantamento georreferenciado em Itajaí, Balneário Camboriú, Florianópolis e região.
+- **Quanto custa uma vistoria de imóvel novo?** O valor varia com a área e o tipo do imóvel (apartamento, casa ou sala comercial) e com a região. Enviamos a proposta no mesmo dia pelo WhatsApp. O laudo com ART costuma custar uma fração dos reparos que ele evita que fiquem por sua conta.
+- **Preciso de engenheiro para a vistoria de entrega de chaves?** Não é obrigatório, mas faz diferença. A vistoria feita por engenheiro, com laudo fotográfico e ART, tem valor probatório: a construtora precisa reparar as não conformidades apontadas e, se houver litígio, o documento fundamenta a reclamação. Um checklist comum não tem o mesmo peso.
+- **Quando fazer o estudo de viabilidade?** Antes de comprar o terreno. É a forma mais barata de evitar um investimento ruim. Você decide com projeções de custo, receita e retorno fundamentadas em CUB/SC e dados reais de mercado.
+- **O que são os Quadros da NBR 12.721?** São os quadros de cálculo de áreas e custos (I a VIII) que compõem o memorial de incorporação registrado em cartório. Sem eles, não dá para vender unidades na planta.
+- **Por que fazer o estudo ambiental antes de comprar o terreno?** Porque APPs, nascentes, vegetação protegida e áreas alagáveis reduzem a área aproveitável, às vezes a ponto de inviabilizar o projeto. Descobrir isso antes do negócio protege o seu capital.
+- **O que é o estudo hidrológico (CIP)?** É a análise do comportamento das águas no terreno e no entorno: chuvas, drenagem e cheias. Municípios exigem esse estudo para aprovar empreendimentos, garantindo que o projeto não cause nem sofra alagamentos.
+
+## Outras páginas
+
+- [Política de Privacidade](https://www.mestreengenharia.com/politica-de-privacidade/)
 
 ## Contato
 

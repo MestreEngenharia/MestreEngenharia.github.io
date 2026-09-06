@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.mestreengenharia.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.mestreengenharia.com/inss-de-obra-cnd/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/avaliacao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/pericia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/topografia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/regularizacao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/vistorias.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/incorporacao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mestreengenharia.com/servicos/ambiental.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.mestreengenharia.com/inss-de-obra-cnd/</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/politica-de-privacidade/</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/avaliacao.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/pericia.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/topografia.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/regularizacao.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/vistorias.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/incorporacao.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mestreengenharia.com/servicos/ambiental.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

@@ -9,6 +9,7 @@ const map = {
   // --- confirmadas no indice do Google (migracao original) ---
   'avaliacao': 'servicos/avaliacao.html',
   'pericia': 'servicos/pericia.html',
+  'periciaeassistencia': 'servicos/pericia.html',
   'topografia': 'servicos/topografia.html',
   'incorporacao': 'servicos/incorporacao.html',
   'regularizacaofundiaria': 'servicos/regularizacao.html',

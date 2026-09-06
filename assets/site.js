@@ -110,3 +110,14 @@
     img.addEventListener('error', () => { img.style.display = 'none'; });
   });
 })();
+
+/* ---- Conversao Google Ads: clique em WhatsApp ----
+   Dispara no CLIQUE (nao no carregamento da pagina), pois o site nao tem
+   pagina de agradecimento: o botao leva direto ao WhatsApp.            */
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  if (!a) return;
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', { 'send_to': 'AW-10830906825/BrJ9CLuuwNADEMmLyqwo' });
+  }
+});

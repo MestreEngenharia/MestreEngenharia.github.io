@@ -335,6 +335,9 @@ function page(s) {
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) - Google Ads AW-10830906825 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10830906825"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-10830906825');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#06253D">
 <meta name="mobile-web-app-capable" content="yes">
@@ -609,6 +612,9 @@ function pilarPage() {
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) - Google Ads AW-10830906825 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10830906825"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-10830906825');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#06253D">
 <meta name="mobile-web-app-capable" content="yes">

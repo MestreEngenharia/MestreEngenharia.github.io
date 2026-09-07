@@ -231,7 +231,7 @@ nav.menu>a:hover::after{width:100%}
 .scard .card-cta svg{width:14px;height:14px;fill:var(--gold);transition:transform .3s var(--ease)}
 .scard:hover .card-cta svg{transform:translateX(6px)}
 .scard.novo::before{
-  content:"NOVO";position:absolute;top:14px;right:14px;z-index:3;
+  content:"DESTAQUE";position:absolute;top:14px;right:14px;z-index:3;
   background:var(--gold);color:var(--deep);font-family:'Montserrat',sans-serif;
   font-weight:800;font-size:.6rem;letter-spacing:.16em;padding:5px 13px;border-radius:2px;
 }

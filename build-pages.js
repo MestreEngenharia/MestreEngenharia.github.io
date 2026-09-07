@@ -111,7 +111,7 @@ ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
       <div>
         <h4>Serviços</h4>
         <ul>
-          ${SERVICES.map(x => `<li><a href="${svcHref(x)}">${x.nav}${x.novo ? ' <span class="tag-novo">Novo</span>' : ''}</a></li>`).join('\n          ')}
+          ${SERVICES.map(x => `<li><a href="${svcHref(x)}">${x.nav}${x.novo ? ' <span class="tag-novo">Destaque</span>' : ''}</a></li>`).join('\n          ')}
         </ul>
       </div>
       <div>

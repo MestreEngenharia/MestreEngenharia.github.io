@@ -346,7 +346,7 @@ function page(s) {
   ).join('\n      ');
   const related = s.related.map(slug => {
     const r = SERVICES.find(x => x.slug === slug);
-    return `<a class="rel reveal" href="${r.href || r.slug + '.html'}"><b>${r.nav}${r.novo ? ' <span class="tag-novo">Novo</span>' : ''}</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>`;
+    return `<a class="rel reveal" href="${r.href || r.slug + '.html'}"><b>${r.nav}${r.novo ? ' <span class="tag-novo">Destaque</span>' : ''}</b><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>`;
   }).join('\n      ');
 
   return `<!DOCTYPE html>
@@ -425,7 +425,7 @@ ${schema(s)}
   <div class="svc-bg" style="background-image:url('${s.img}')"></div>
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>${s.nav}</span></div>
-    <h1>${s.title}${s.novo ? ' <span class="tag-novo">Novo</span>' : ''}</h1>
+    <h1>${s.title}${s.novo ? ' <span class="tag-novo">Destaque</span>' : ''}</h1>
     <p>${s.tagline}</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="${waHref}" target="_blank" rel="noopener">Solicitar orçamento <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
@@ -503,7 +503,7 @@ ${schema(s)}
       <div>
         <h4>Serviços</h4>
         <ul>
-          ${SERVICES.map(x => `<li><a href="${x.href || x.slug + '.html'}">${x.nav}${x.novo ? ' <span class="tag-novo">Novo</span>' : ''}</a></li>`).join('\n          ')}
+          ${SERVICES.map(x => `<li><a href="${x.href || x.slug + '.html'}">${x.nav}${x.novo ? ' <span class="tag-novo">Destaque</span>' : ''}</a></li>`).join('\n          ')}
         </ul>
       </div>
       <div>
@@ -745,7 +745,7 @@ ${pilarSchema()}
   <div class="svc-bg" style="background-image:url('../assets/img/fotos/1429497419816-9ca5cfb4571a-w1600.webp')"></div>
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>INSS de Obra e CND</span></div>
-    <h1>INSS de Obra e CND: regularize sua construção na Receita Federal <span class="tag-novo">Novo</span></h1>
+    <h1>INSS de Obra e CND: regularize sua construção na Receita Federal <span class="tag-novo">Destaque</span></h1>
     <p>Da inscrição no CNO à certidão que o cartório exige para averbar: conduzimos a aferição da sua obra no SERO de ponta a ponta, com a prova técnica que só a engenharia assina.</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Solicitar análise sem custo <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
@@ -944,7 +944,7 @@ ${pilarSchema()}
       <div>
         <h4>Serviços</h4>
         <ul>
-          ${SERVICES.map(x => `<li><a href="${x.pilar ? './' : '../servicos/' + x.slug + '.html'}">${x.nav}${x.novo ? ' <span class="tag-novo">Novo</span>' : ''}</a></li>`).join('\n          ')}
+          ${SERVICES.map(x => `<li><a href="${x.pilar ? './' : '../servicos/' + x.slug + '.html'}">${x.nav}${x.novo ? ' <span class="tag-novo">Destaque</span>' : ''}</a></li>`).join('\n          ')}
         </ul>
       </div>
       <div>

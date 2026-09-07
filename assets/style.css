@@ -637,3 +637,6 @@ footer a:hover{color:var(--gold-3)}
   .m-cta .m-tel{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25);flex:0 0 52px}
   .m-cta svg{width:19px;height:19px;fill:currentColor}
 }
+
+/* compensa o cabeçalho fixo nos saltos de âncora */
+section[id],div[id],footer[id]{scroll-margin-top:96px}

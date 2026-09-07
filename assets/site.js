@@ -121,3 +121,46 @@ document.addEventListener('click', function (e) {
     gtag('event', 'conversion', { 'send_to': 'AW-10830906825/BrJ9CLuuwNADEMmLyqwo' });
   }
 });
+
+/* Âncoras internas: rolagem robusta com compensação do cabeçalho fixo e
+   fallback instantâneo quando a rolagem suave não acontece (aba em segundo
+   plano, economia de energia, navegadores antigos). */
+(function () {
+  var nav = document.querySelector('header.nav');
+  var offset = function () { return (nav ? nav.offsetHeight : 0) + 12; };
+  var instant = function (top) {
+    var h = document.documentElement, prev = h.style.scrollBehavior;
+    h.style.scrollBehavior = 'auto';
+    window.scrollTo(0, top);
+    h.style.scrollBehavior = prev;
+  };
+  var goTo = function (el, smooth) {
+    var top = el.getBoundingClientRect().top + window.pageYOffset - offset();
+    if (top < 0) top = 0;
+    if (!smooth) { instant(top); return; }
+    try { window.scrollTo({ top: top, behavior: 'smooth' }); } catch (e) { instant(top); }
+    setTimeout(function () {
+      if (Math.abs(window.pageYOffset - top) > 60) instant(top);
+    }, 900);
+  };
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="#"]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var i = href.indexOf('#');
+    var path = href.slice(0, i);
+    if (path && path !== location.pathname && path !== 'index.html' && path !== './' && path !== '/') return;
+    if (path === 'index.html' && !/(^|\/)(index\.html)?$/.test(location.pathname)) return;
+    var id = href.slice(i + 1);
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    e.preventDefault();
+    goTo(el, true);
+    if (history.pushState) history.pushState(null, '', '#' + id);
+  });
+  if (location.hash && location.hash.length > 1) {
+    var target = document.getElementById(location.hash.slice(1));
+    if (target) setTimeout(function () { goTo(target, false); }, 60);
+  }
+})();

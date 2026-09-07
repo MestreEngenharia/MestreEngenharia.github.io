@@ -1065,3 +1065,6 @@ console.log('OK: ' + SERVICES.length + ' páginas.');
 
 /* páginas auxiliares: 404.html e política de privacidade (mesmo cabeçalho/rodapé) */
 require('./build-pages.js')({ SERVICES, SITE, fs, path, dir: __dirname });
+
+/* guias (páginas satélite) */
+require('./build-guias.js')({ SERVICES, SITE, fs, path, dir: __dirname });

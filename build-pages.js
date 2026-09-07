@@ -2,7 +2,7 @@
 //   404.html                          (servida pelo GitHub Pages em qualquer URL inexistente)
 //   politica-de-privacidade/index.html (LGPD + aviso da tag do Google Ads)
 // Usa caminhos absolutos (/assets/...) porque a 404 pode ser servida em qualquer profundidade.
-module.exports = function ({ SERVICES, SITE, fs, path, dir }) {
+function shell({ SERVICES, SITE }) {
   const WA = 'https://wa.me/5547991550224?text=' + encodeURIComponent('Olá, vim pelo site da Mestre Engenharia e preciso de um orçamento.');
   const ARROW = '<svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg>';
   const svcHref = s => '/' + (s.href ? s.href.replace(/^\.\.\//, '') : 'servicos/' + s.slug + '.html');
@@ -150,6 +150,13 @@ ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
 </html>
 `;
 
+  return { WA, ARROW, svcHref, head, hero, footer };
+}
+
+module.exports = function (ctx) {
+  const { SERVICES, SITE, fs, path, dir } = ctx;
+  const { WA, ARROW, svcHref, head, hero, footer } = shell(ctx);
+
   /* ---------- 404 ---------- */
   const kw = {
     avaliacao: ['avalia', 'laudo-de-avaliacao', 'valor', 'vtn'],
@@ -275,3 +282,4 @@ ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
   fs.writeFileSync(path.join(privDir, 'index.html'), priv, 'utf8');
   console.log('gerado: politica-de-privacidade/index.html');
 };
+module.exports.shell = shell;

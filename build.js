@@ -229,7 +229,7 @@ const SERVICES = [
     slug: 'incorporacao',
     nav: 'Incorporação e Viabilidade',
     title: 'Incorporação Imobiliária e Estudo de Viabilidade',
-    seoTitle: 'Estudo de Viabilidade e Incorporação',
+    seoTitle: 'EVTE e Quadros da NBR 12.721 para Incorporação',
     seoDesc: 'Estudo de viabilidade (EVTE), Quadros da NBR 12.721, tabela de vendas e aferição de INSS de obra para construtoras e incorporadoras em Santa Catarina.',
     tagline: 'Da análise do terreno ao registro da incorporação: os números e os documentos técnicos que sustentam o seu empreendimento.',
     img: '../assets/img/fotos/1531973576160-7125cd663d86-w1600.webp',
@@ -266,41 +266,99 @@ const SERVICES = [
   },
   {
     slug: 'ambiental',
-    nav: 'Laudos Ambientais',
-    novo: true,
-    title: 'Laudos e Estudos Ambientais',
-    seoTitle: 'Laudo Ambiental e Estudo Hidrológico',
-    seoDesc: 'Laudos ambientais, viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento em SC. Diagnóstico de APPs, drenagem e conformidade com órgãos ambientais.',
-    tagline: 'Viabilidade ambiental, hidrologia e conformidade com os órgãos licenciadores. Segurança para o seu empreendimento desde a origem.',
+    nav: 'Serviços Ambientais',
+    title: 'Serviços Ambientais: Licenciamento, Laudos, Resíduos e Áreas Contaminadas',
+    seoTitle: 'Licenciamento Ambiental, Laudos e PGRS em Itajaí',
+    seoDesc: 'Licenciamento ambiental (LAP, LAI, LAO) no IMA/SC, laudos e perícias ambientais, PGRS, PGRSS, PGRCC, MTR, análise de solo em postos, passivo ambiental, hidrologia, drenagem e CAR em Itajaí e SC.',
+    tagline: 'Do diagnóstico do terreno à licença de operação: engenharia ambiental para empreendimentos, indústrias, postos, clínicas e imóveis rurais em Itajaí e Santa Catarina.',
     img: '../assets/img/fotos/1441974231531-c6227db76b6e-w1600.webp',
     imgMobile: '../assets/img/fotos/1441974231531-c6227db76b6e-w1200.webp',
-    wa: 'laudos ou estudos ambientais',
-    answer: 'Elaboramos estudos e laudos ambientais para viabilizar e licenciar empreendimentos: viabilidade ambiental, estudo hidrológico e CIP, laudos de APP e vegetação, CAR e apoio ao licenciamento no IMA e nos órgãos municipais. Tudo integrado aos demais estudos do seu projeto.',
-    deliver: ['Estudo de viabilidade ambiental do terreno antes da compra ou do projeto', 'Estudo hidrológico e CIP no formato exigido pelo município', 'Laudos ambientais e perícias com ART', 'Cadastro Ambiental Rural (CAR) e regularização ambiental', 'Apoio documental ao licenciamento até a emissão da licença'],
+    wa: 'serviços ambientais (licenciamento, laudos ou resíduos)',
+    answer: 'Prestamos serviços de engenharia ambiental completos: licenciamento e gestão de condicionantes no IMA/SC e nos órgãos municipais, laudos e perícias ambientais, planos de resíduos (PGRS, PGRSS e PGRCC), MTR e DMR, análise de solo e passivo ambiental em postos de combustíveis, hidrologia e drenagem, outorga, CAR e obrigações junto ao IBAMA (CTF, RAPP e TCFA). Atendemos Itajaí, o complexo portuário e todo o litoral catarinense.',
+    deliver: ['Licenças LAP, LAI e LAO protocoladas e acompanhadas até a emissão, com gestão de condicionantes', 'Laudos, estudos e pareceres com ART, no formato exigido pelo órgão ou pelo juízo', 'PGRS, PGRSS e PGRCC prontos para protocolo, com treinamento da equipe', 'Relatórios de monitoramento de solo, água subterrânea e efluentes', 'CAR, outorga, CTF do IBAMA e RAPP entregues e regularizados'],
     introTitle: 'O ambiental deixou de ser detalhe. Virou condição de aprovação.',
-    intro: 'Restrições ambientais mal avaliadas embargam obras, desvalorizam terrenos e geram passivos milionários. Integramos a análise ambiental aos estudos de viabilidade, topografia e regularização que você já contrata com a gente. Um diagnóstico completo, de uma só equipe.',
+    intro: 'Licença, condicionante, resíduo, efluente e passivo: cada um desses itens pode travar uma obra, uma operação ou uma venda. Reunimos em uma única equipe o licenciamento, os estudos técnicos, os planos de resíduos e as perícias, com a mesma responsabilidade técnica dos nossos laudos de avaliação e de engenharia.',
     includes: [
-      { i: 'leaf', b: 'Viabilidade ambiental', s: 'Diagnóstico de APPs, vegetação, recursos hídricos e condicionantes legais antes de comprar ou projetar.' },
-      { i: 'drop', b: 'Hidrologia e CIP', s: 'Estudos hidrológicos, hidráulicos e de drenagem para aprovação de projetos e proteção contra cheias.' },
-      { i: 'doc', b: 'Laudos ambientais', s: 'Laudos e pareceres para processos judiciais, licenciamento, órgãos públicos e transações.' },
-      { i: 'shield', b: 'Apoio ao licenciamento', s: 'Suporte técnico junto aos órgãos ambientais: condicionantes, supressão de vegetação e regularização.' },
-      { i: 'map', b: 'CAR e regularização ambiental', s: 'Cadastro Ambiental Rural, reserva legal e adequação de imóveis rurais.' },
-      { i: 'scale', b: 'Perícias ambientais', s: 'Prova técnica em ações que envolvem dano ambiental, APPs e conflitos de uso do solo.' }
+      { i: 'leaf', b: 'Licenciamento ambiental (LAP, LAI e LAO)', s: 'Enquadramento da atividade, protocolo, acompanhamento e renovação no IMA/SC e no órgão municipal, com gestão de condicionantes.' },
+      { i: 'drop', b: 'Hidrologia, drenagem e CIP', s: 'Estudos hidrológicos, hidráulicos e de drenagem, cota de aterro e Carta de Impacto Pluviométrico para aprovar projetos e loteamentos.' },
+      { i: 'gear', b: 'Efluentes e outorga', s: 'Projeto e laudo de ETE e ETA, automonitoramento de efluentes e outorga de captação de água e de lançamento.' },
+      { i: 'doc', b: 'Planos de resíduos: PGRS, PGRSS e PGRCC', s: 'Planos exigidos de geradores licenciados, serviços de saúde (RDC 222/2018) e obras (CONAMA 307), com MTR e DMR no sistema do IMA/SC.' },
+      { i: 'shield', b: 'Solo e áreas contaminadas', s: 'Análise de solo e água subterrânea em postos (CONAMA 273 e 420), investigação de passivo, gerenciamento de área contaminada e PRAD.' },
+      { i: 'map', b: 'Viabilidade ambiental e APP', s: 'Diagnóstico de APP, vegetação, recursos hídricos e condicionantes antes de comprar ou projetar; supressão de vegetação e inventário florestal.' },
+      { i: 'home', b: 'CAR e regularização de imóveis rurais', s: 'Cadastro Ambiental Rural, reserva legal e adequação ambiental de propriedades rurais.' },
+      { i: 'scale', b: 'Laudos e perícias ambientais', s: 'Laudos para licenciamento, transações e órgãos públicos; prova técnica em ações sobre dano ambiental, APP e uso do solo.' },
+      { i: 'chart', b: 'IBAMA: CTF, RAPP e TCFA', s: 'Certificado de Regularidade, Relatório Anual de Atividades Potencialmente Poluidoras e gestão da taxa trimestral.' }
     ],
     scenarios: [
-      { i: 'chart', b: 'Vou comprar um terreno para empreender', s: 'O diagnóstico ambiental prévio revela restrições que mudam ou até inviabilizam o projeto.' },
-      { i: 'drop', b: 'O município exige estudo hidrológico', s: 'Elaboramos o estudo de drenagem e o CIP exigidos para aprovar o projeto.' },
-      { i: 'scale', b: 'Processo judicial com questão ambiental', s: 'Laudos e assistência técnica especializada em dano ambiental e APPs.' },
-      { i: 'leaf', b: 'Imóvel rural com pendência ambiental', s: 'CAR, reserva legal e regularização junto aos órgãos competentes.' }
+      { i: 'map', b: 'Vou comprar um terreno para empreender', s: 'O diagnóstico de APP e restrições define a área aproveitável antes de você pagar.' },
+      { i: 'leaf', b: 'Minha empresa precisa de licença ou renovação', s: 'Enquadramento, protocolo e condicionantes no IMA/SC ou na prefeitura, sem parar a operação.' },
+      { i: 'shield', b: 'Tenho posto de combustível ou suspeita de contaminação', s: 'Análise de solo e água subterrânea, passivo ambiental e plano de intervenção.' },
+      { i: 'doc', b: 'Recebi exigência de PGRS, MTR ou RAPP', s: 'Planos de resíduos, manifesto de transporte e obrigações do IBAMA entregues no prazo.' }
     ],
-    norms: ['Código Florestal · Lei 12.651/2012', 'CONAMA', 'IMA/SC · Órgãos estaduais', 'Planos Diretores municipais'],
+    catalogTitle: 'Tudo o que fazemos na área ambiental.',
+    catalogIntro: 'Cada item abaixo pode ser contratado isoladamente ou como parte do licenciamento completo. Clique para pedir um orçamento pelo WhatsApp.',
+    catalog: [
+      { t: 'Licenciamento e conformidade', items: [
+        { n: 'Licenciamento ambiental (LAP, LAI e LAO)', s: 'Enquadramento, protocolo, acompanhamento e renovação no IMA/SC e no órgão municipal.' },
+        { n: 'Apoio ao licenciamento', s: 'Condicionantes, supressão de vegetação e regularização junto aos órgãos.' },
+        { n: 'Gestão de condicionantes', s: 'Controle de prazos e evidências do cumprimento das exigências da licença.' },
+        { n: 'Outorga de recursos hídricos', s: 'Autorização para captação de água e lançamento de efluentes em corpo hídrico.' } ] },
+      { t: 'Água, drenagem e efluentes', items: [
+        { n: 'Hidrologia', s: 'Estudos hidrológicos, hidráulicos e de drenagem para aprovação e proteção contra cheias.' },
+        { n: 'Estudo e projeto de drenagem', s: 'Dimensionamento da drenagem pluvial e cota de aterro para aprovação do empreendimento.' },
+        { n: 'Efluentes: ETE e ETA', s: 'Projeto, laudo e enquadramento de sistemas de tratamento de esgoto e de água.' },
+        { n: 'Automonitoramento de efluentes', s: 'Plano de coleta, análises laboratoriais e relatórios periódicos exigidos na licença.' } ] },
+      { t: 'Resíduos sólidos', items: [
+        { n: 'PGRS', s: 'Plano de Gerenciamento de Resíduos Sólidos para geradores sujeitos a licenciamento (Lei 12.305/2010).' },
+        { n: 'PGRSS', s: 'Resíduos de serviços de saúde: clínicas, consultórios, laboratórios e farmácias (RDC 222/2018 e CONAMA 358).' },
+        { n: 'PGRCC', s: 'Resíduos da construção civil para obras e canteiros (CONAMA 307).' },
+        { n: 'MTR e DMR', s: 'Manifesto de Transporte de Resíduos e Declaração de Movimentação no sistema do IMA/SC.' },
+        { n: 'Inventário e destinação (CADRI)', s: 'Rastreabilidade dos resíduos e comprovação de destinação final adequada.' } ] },
+      { t: 'Solo e áreas contaminadas', items: [
+        { n: 'Análise de solo em postos de combustíveis', s: 'Sondagem, coleta e monitoramento de solo e água subterrânea (CONAMA 273 e 420).' },
+        { n: 'Investigação de passivo ambiental', s: 'Avaliação preliminar e investigação confirmatória em terrenos e áreas de operação.' },
+        { n: 'Gerenciamento de área contaminada', s: 'Diagnóstico, plano de intervenção e acompanhamento da remediação junto ao órgão.' },
+        { n: 'PRAD', s: 'Projeto de Recuperação de Áreas Degradadas.' } ] },
+      { t: 'Viabilidade, vegetação e APP', items: [
+        { n: 'Viabilidade ambiental', s: 'Diagnóstico de APP, vegetação, recursos hídricos e condicionantes antes de comprar ou projetar.' },
+        { n: 'Diagnóstico de APP e restrições', s: 'Mapeamento de APP por curso de água, declividade e topo de morro.' },
+        { n: 'Supressão de vegetação e inventário florestal', s: 'Levantamento, autorização de corte e compensação junto ao órgão ambiental.' },
+        { n: 'CAR e regularização ambiental', s: 'Cadastro Ambiental Rural, reserva legal e adequação de imóveis rurais.' } ] },
+      { t: 'Laudos, perícias e gestão', items: [
+        { n: 'Laudos ambientais', s: 'Laudos e pareceres para processos judiciais, licenciamento, órgãos públicos e transações.' },
+        { n: 'Perícias ambientais', s: 'Prova técnica em ações sobre dano ambiental, APP e conflitos de uso do solo.' },
+        { n: 'Assistência técnica e gestão ambiental', s: 'Apoio contínuo à conformidade e ao sistema de gestão ambiental da empresa.' },
+        { n: 'Cartografia e geoprocessamento', s: 'Mapas temáticos e análises em SIG para estudos e licenças.' } ] },
+      { t: 'IBAMA', items: [
+        { n: 'Certificado de Regularidade (CR) e CTF', s: 'Cadastro Técnico Federal e certificado para estabelecimentos com potencial poluidor.' },
+        { n: 'RAPP', s: 'Relatório Anual de Atividades Potencialmente Poluidoras, exigido pelo Anexo VIII da Lei 6.938/1981.' },
+        { n: 'Gestão da TCFA', s: 'Conferência, contestação e regularização da taxa trimestral por porte e potencial poluidor.' } ] },
+      { t: 'Treinamentos', items: [
+        { n: 'Segregação e manejo de resíduos (PGRS)', s: 'Para equipes operacionais e de SSMA.' },
+        { n: 'Resíduos de serviços de saúde (PGRSS)', s: 'Para clínicas, consultórios e laboratórios.' },
+        { n: 'Resíduos da construção civil (PGRCC)', s: 'Para canteiros e obras.' },
+        { n: 'Emissão de MTR e DMR no sistema do IMA/SC', s: 'Capacitação das equipes que operam o sistema.' },
+        { n: 'Logística reversa, coleta seletiva e emergências ambientais', s: 'Programas internos, educação ambiental e Plano de Emergência Individual.' } ] }
+    ],
+    segments: [
+      { n: 'Portuário, logística e armazenagem', s: 'Licenciamento, gestão de condicionantes, PGRS, MTR e DMR e efluentes.' },
+      { n: 'Postos de combustíveis', s: 'Análise de solo, passivo ambiental e MTR.' },
+      { n: 'Saúde: clínicas, laboratórios e consultórios', s: 'PGRSS e MTR.' },
+      { n: 'Construção e loteamentos', s: 'Viabilidade ambiental, hidrologia e CIP, drenagem, PGRCC e diagnóstico de APP.' },
+      { n: 'Indústria e comércio', s: 'Licenciamento, efluentes, resíduos e outorga.' },
+      { n: 'Imóveis rurais', s: 'CAR, reserva legal e supressão de vegetação.' }
+    ],
+    norms: ['Lei 12.305/2010 · Resíduos sólidos', 'CONAMA 307 · Resíduos da construção', 'CONAMA 273 e 420 · Postos e solo', 'RDC ANVISA 222/2018 · PGRSS', 'Lei 6.938/1981 · CTF e RAPP', 'Lei 12.651/2012 · APP e CAR'],
     faq: [
-      { q: 'Vocês fazem laudo geotécnico ou de área de risco?', a: 'Dentro dos estudos ambientais e das perícias avaliamos, de forma preliminar, a estabilidade de encostas e as áreas de risco. Quando o caso exige sondagem e investigação de subsuperfície, incluímos essa etapa no escopo.' },
+      { q: 'O que é o PGRS e quem precisa ter?', a: 'O Plano de Gerenciamento de Resíduos Sólidos é o documento que descreve como a empresa gera, separa, armazena, transporta e destina seus resíduos. A Lei 12.305/2010 exige o plano dos geradores sujeitos a licenciamento ambiental, e o IMA/SC o cobra como condicionante. Clínicas e serviços de saúde têm a versão própria, o PGRSS, e obras têm o PGRCC.' },
+      { q: 'Posto de combustível precisa de análise de solo?', a: 'Sim. As Resoluções CONAMA 273 e 420 exigem investigação de solo e água subterrânea para licenciamento, renovação e encerramento de postos e sistemas de abastecimento. Fazemos a sondagem, a coleta, o monitoramento e, se houver contaminação, o plano de intervenção.' },
+      { q: 'O que são CTF, RAPP e TCFA do IBAMA?', a: 'O Cadastro Técnico Federal (CTF) é obrigatório para atividades potencialmente poluidoras e gera o Certificado de Regularidade. O RAPP é o relatório anual dessas atividades. A TCFA é a taxa trimestral calculada por porte e potencial poluidor. Cuidamos do cadastro, da entrega do relatório e da conferência da taxa.' },
+      { q: 'Por que fazer o estudo ambiental antes de comprar o terreno?', a: 'Porque APP, vegetação, nascentes e áreas alagáveis reduzem a área aproveitável e podem inviabilizar o projeto. O diagnóstico prévio mostra o que pode ser construído e evita comprar um terreno que não entrega o que promete.' },
+      { q: 'O que é o estudo hidrológico (CIP)?', a: 'A Carta de Impacto Pluviométrico, exigida por vários municípios, demonstra que o empreendimento não agrava o escoamento das águas de chuva. Ela sai do estudo hidrológico e do projeto de drenagem, que também definem a cota de aterro segura contra cheias.' },
+      { q: 'Vocês acompanham o licenciamento no IMA e na prefeitura?', a: 'Sim. Preparamos os estudos e a documentação, protocolamos, respondemos às exigências do órgão até a emissão da licença e depois cuidamos das condicionantes e das renovações.' },
       { q: 'Quanto custa um estudo de viabilidade ambiental?', a: 'Depende do tamanho e da localização do terreno e das restrições envolvidas, como APP, vegetação e recursos hídricos. Enviamos a proposta após uma análise inicial da área, sem custo.' },
-      { q: 'Vocês acompanham o licenciamento no IMA e na prefeitura?', a: 'Sim. Preparamos os estudos e a documentação, protocolamos e respondemos às exigências do órgão até a emissão da licença.' },
-      { q: 'Por que fazer o estudo ambiental antes de comprar o terreno?', a: 'Porque APPs, nascentes, vegetação protegida e áreas alagáveis reduzem a área aproveitável, às vezes a ponto de inviabilizar o projeto. Descobrir isso antes do negócio protege o seu capital.' },
-      { q: 'O que é o estudo hidrológico (CIP)?', a: 'É a análise do comportamento das águas no terreno e no entorno: chuvas, drenagem e cheias. Municípios exigem esse estudo para aprovar empreendimentos, garantindo que o projeto não cause nem sofra alagamentos.' },
-      { q: 'Esse serviço se integra aos demais da Mestre?', a: 'Sim, e essa é a vantagem: viabilidade técnica, econômica e ambiental, topografia e regularização em um único diagnóstico, sem retrabalho entre empresas diferentes.' }
+      { q: 'Vocês fazem laudo geotécnico ou de área de risco?', a: 'Dentro dos estudos ambientais e das perícias avaliamos, de forma preliminar, a estabilidade de encostas e as áreas de risco. Quando o caso exige sondagem e investigação de subsuperfície, incluímos essa etapa no escopo.' },
+      { q: 'Esse serviço se integra aos demais da Mestre?', a: 'Sim. O estudo ambiental entra no mesmo pacote da viabilidade do empreendimento, da topografia, da regularização e das perícias, com uma única equipe responsável e uma ART para cada entrega.' }
     ],
     related: ['incorporacao', 'topografia', 'pericia']
   },
@@ -365,10 +423,11 @@ function schema(s) {
         description: s.seoDesc,
         provider: {
           '@type': 'Organization',
+          '@id': SITE + '/#org',
           name: 'Mestre Engenharia Avaliações e Perícias',
           url: SITE
         },
-        areaServed: ['Santa Catarina', 'Paraná', 'Rio Grande do Sul'],
+        areaServed: ['Itajaí', 'Balneário Camboriú', 'Navegantes', 'Camboriú', 'Penha', 'Barra Velha', 'Itapema', 'Brusque', 'Blumenau', 'Joinville', 'Florianópolis', 'Santa Catarina', 'Paraná', 'Rio Grande do Sul'],
         url: `${SITE}/servicos/${s.slug}.html`
       },
       {
@@ -475,6 +534,7 @@ ${schema(s)}
       <a href="../index.html#servicos">Todos os serviços</a>
       <a href="../index.html#sobre">Sobre nós</a>
       <a href="../index.html#faq">Dúvidas</a>
+      <a href="../guias/">Guias</a>
       <a href="../index.html#contato">Contato</a>
     </nav>
     <div class="nav-cta">
@@ -527,6 +587,21 @@ ${schema(s)}
     </div>
   </div>
 </section>
+
+${s.catalog ? `
+<section class="section light cat">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Catálogo completo</span>
+      <h2>${s.catalogTitle || 'Tudo o que fazemos nesta área.'}</h2>
+      <p>${s.catalogIntro || ''}</p>
+    </div>
+    <div class="cat-grid">
+      ${s.catalog.map(g => `<div class="cat-group reveal"><h3>${g.t}</h3><ul>${g.items.map(it => `<li><a href="${msgItem(it.n)}" target="_blank" rel="noopener" title="Solicitar ${it.n} pelo WhatsApp"><b>${it.n}</b><span>${it.s}</span></a></li>`).join('')}</ul></div>`).join('\n      ')}
+    </div>
+    ${s.segments ? `<div class="cat-seg reveal"><span class="kicker">Para quem</span><ul>${s.segments.map(x => `<li><b>${x.n}</b><span>${x.s}</span></li>`).join('')}</ul></div>` : ''}
+  </div>
+</section>` : ''}
 
 <section class="section mistbg">
   <div class="wrap">
@@ -593,6 +668,7 @@ ${schema(s)}
           <li><a href="../index.html#sobre">Sobre nós</a></li>
           <li><a href="../index.html#processo">Como trabalhamos</a></li>
           <li><a href="../index.html#faq">Dúvidas frequentes</a></li>
+          <li><a href="../guias/">Guias técnicos</a></li>
           <li><a href="../index.html#contato">Contato</a></li>
         </ul>
       </div>
@@ -1034,6 +1110,7 @@ ${pilarSchema()}
           <li><a href="../index.html#sobre">Sobre nós</a></li>
           <li><a href="../index.html#processo">Como trabalhamos</a></li>
           <li><a href="../index.html#faq">Dúvidas frequentes</a></li>
+          <li><a href="../guias/">Guias técnicos</a></li>
           <li><a href="../index.html#contato">Contato</a></li>
         </ul>
       </div>
@@ -1134,6 +1211,13 @@ ${llmsFaq}
 ## Outras páginas
 
 - [Política de Privacidade](${SITE}/politica-de-privacidade/)
+
+## Dados da empresa
+
+- Razão social: Mestre Engenharia Avaliações e Perícias Ltda · CNPJ 39.971.644/0001-62 · CREA-SC PJ 177486-6 · membros titulares do IBAPE/SC
+- Fundação: dezembro de 2020 · Sede: Rua João Bauer, 498, Sala 810, Centro, Itajaí/SC, CEP 88301-500 · Unidade em Florianópolis com hora marcada
+- Área de atendimento: Itajaí, Balneário Camboriú, Navegantes, Camboriú, Penha, Barra Velha, Piçarras, Itapema, Porto Belo, Brusque, Blumenau, Indaial, Joinville, Florianópolis e todo o Sul do Brasil (SC, PR e RS)
+- Números: mais de 1.000 laudos emitidos, mais de 500 nomeações judiciais, mais de 80 comarcas atendidas, mais de R$ 2 bilhões em imóveis avaliados
 
 ## Contato
 

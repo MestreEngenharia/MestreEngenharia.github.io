@@ -77,6 +77,7 @@ ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
       <a href="/#servicos">Todos os serviços</a>
       <a href="/#sobre">Sobre nós</a>
       <a href="/#faq">Dúvidas</a>
+      <a href="/guias/">Guias</a>
       <a href="/#contato">Contato</a>
     </nav>
     <div class="nav-cta">
@@ -120,6 +121,7 @@ ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
           <li><a href="/#sobre">Sobre nós</a></li>
           <li><a href="/#processo">Como trabalhamos</a></li>
           <li><a href="/#faq">Dúvidas frequentes</a></li>
+          <li><a href="/guias/">Guias técnicos</a></li>
           <li><a href="/#contato">Contato</a></li>
           <li><a href="/politica-de-privacidade/">Política de Privacidade</a></li>
         </ul>

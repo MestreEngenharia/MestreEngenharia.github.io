@@ -650,3 +650,19 @@ section[id],div[id],footer[id]{scroll-margin-top:96px}
 .dir-deliver li:first-child{border-top:none}
 .dir-deliver li svg{width:20px;height:20px;flex:0 0 20px;fill:var(--gold);margin-top:3px}
 @media(max-width:800px){.dir-grid{grid-template-columns:1fr;gap:28px}.dir-answer p{font-size:1.05rem}.dir-answer .btn{width:100%;text-align:center}}
+
+/* catálogo completo (página ambiental) */
+.section.cat{padding-top:10px}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px 34px;margin-top:8px}
+.cat-group h3{font-size:1.02rem;letter-spacing:.02em;margin:0 0 8px;color:var(--navy);border-bottom:2px solid var(--gold);display:inline-block;padding-bottom:6px}
+.cat-group ul{list-style:none;margin:0;padding:0}
+.cat-group li a{display:block;padding:9px 0;border-top:1px solid rgba(6,37,61,.08);text-decoration:none;color:inherit}
+.cat-group li:first-child a{border-top:none}
+.cat-group li a b{display:block;font-weight:700}
+.cat-group li a span{display:block;font-size:.93rem;line-height:1.5;opacity:.85}
+.cat-group li a:hover b{color:var(--gold)}
+.cat-seg{margin-top:40px;padding:26px;border-radius:12px;background:rgba(6,37,61,.04)}
+.cat-seg ul{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 28px}
+.cat-seg li b{display:block}
+.cat-seg li span{font-size:.93rem;opacity:.85}
+@media(max-width:640px){.cat-grid{grid-template-columns:1fr;gap:22px}.cat-seg{padding:18px}}

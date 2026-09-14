@@ -146,7 +146,7 @@ const GUIAS = [
       { q: 'O que é Habite-se parcial?', a: 'É o certificado emitido para parte de uma edificação concluída, por exemplo uma torre pronta em um condomínio em obras. Permite averbar e ocupar a parte finalizada.' }
     ]
   }
-];
+].concat(require('./guias-2.js'));
 
 module.exports = function (ctx) {
   const { SERVICES, SITE, fs, path, dir } = ctx;
@@ -184,8 +184,8 @@ module.exports = function (ctx) {
         headline: g.title,
         description: g.desc,
         inLanguage: 'pt-BR',
-        dateModified: '2026-09-06',
-        datePublished: '2026-09-06',
+        dateModified: g.modified || g.published || '2026-09-06',
+        datePublished: g.published || '2026-09-06',
         author: { '@type': 'Organization', '@id': `${SITE}/#org`, name: 'Mestre Engenharia Avaliações e Perícias' },
         publisher: { '@id': `${SITE}/#org` },
         mainEntityOfPage: `${SITE}/guias/${g.slug}/`,
@@ -297,7 +297,7 @@ module.exports = function (ctx) {
   let xml = fs.readFileSync(sm, 'utf8');
   const entries = ['guias/', ...GUIAS.map(g => `guias/${g.slug}/`)]
     .filter(p => !xml.includes(`${SITE}/${p}</loc>`))
-    .map(p => `  <url><loc>${SITE}/${p}</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join('\n');
+    .map(p => `  <url><loc>${SITE}/${p}</loc><lastmod>${(GUIAS.find(x => p === 'guias/' + x.slug + '/') || {}).modified || (GUIAS.find(x => p === 'guias/' + x.slug + '/') || {}).published || '2026-09-06'}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join('\n');
   if (entries) fs.writeFileSync(sm, xml.replace('</urlset>', entries + '\n</urlset>'), 'utf8');
 
   const lp = path.join(dir, 'llms.txt');

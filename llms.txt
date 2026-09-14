@@ -29,8 +29,8 @@
 - **Preciso de engenheiro para a vistoria de entrega de chaves?** Não é obrigatório, mas faz diferença. A vistoria feita por engenheiro, com laudo fotográfico e ART, tem valor probatório: a construtora precisa reparar as não conformidades apontadas e, se houver litígio, o documento fundamenta a reclamação. Um checklist comum não tem o mesmo peso.
 - **Quanto custa o estudo de viabilidade e os quadros da NBR 12.721?** O valor depende do porte do empreendimento e do estágio do projeto. Enviamos a proposta em até um dia útil após conhecer o terreno e o produto pretendido.
 - **Os quadros da NBR 12.721 precisam de ART?** Sim. O cartório exige os quadros assinados por profissional habilitado com ART, junto com o memorial de incorporação e a documentação prevista na Lei 4.591/64.
-- **Vocês fazem laudo geotécnico ou de área de risco?** Dentro dos estudos ambientais e das perícias avaliamos, de forma preliminar, a estabilidade de encostas e as áreas de risco. Quando o caso exige sondagem e investigação de subsuperfície, incluímos essa etapa no escopo.
-- **Quanto custa um estudo de viabilidade ambiental?** Depende do tamanho e da localização do terreno e das restrições envolvidas, como APP, vegetação e recursos hídricos. Enviamos a proposta após uma análise inicial da área, sem custo.
+- **O que é o PGRS e quem precisa ter?** O Plano de Gerenciamento de Resíduos Sólidos é o documento que descreve como a empresa gera, separa, armazena, transporta e destina seus resíduos. A Lei 12.305/2010 exige o plano dos geradores sujeitos a licenciamento ambiental, e o IMA/SC o cobra como condicionante. Clínicas e serviços de saúde têm a versão própria, o PGRSS, e obras têm o PGRCC.
+- **Posto de combustível precisa de análise de solo?** Sim. As Resoluções CONAMA 273 e 420 exigem investigação de solo e água subterrânea para licenciamento, renovação e encerramento de postos e sistemas de abastecimento. Fazemos a sondagem, a coleta, o monitoramento e, se houver contaminação, o plano de intervenção.
 - **O que o assistente técnico faz na perícia trabalhista?** Formula quesitos, acompanha a diligência do perito, confere as medições e a documentação de SST e apresenta parecer técnico, concordando ou divergindo do laudo. Ele representa tecnicamente a parte que o contratou, empresa ou trabalhador.
 - **Engenheiro pode fazer perícia de insalubridade?** Sim, para agentes físicos e químicos, como ruído, calor, vibração e produtos químicos, nos termos da NR 15. Para agentes biológicos há decisões que exigem médico do trabalho; nesses casos atuamos em conjunto com um médico do trabalho ou limitamos o parecer aos aspectos de engenharia.
 
@@ -38,11 +38,25 @@
 
 - [Política de Privacidade](https://www.mestreengenharia.com/politica-de-privacidade/)
 
+## Dados da empresa
+
+- Razão social: Mestre Engenharia Avaliações e Perícias Ltda · CNPJ 39.971.644/0001-62 · CREA-SC PJ 177486-6 · membros titulares do IBAPE/SC
+- Fundação: dezembro de 2020 · Sede: Rua João Bauer, 498, Sala 810, Centro, Itajaí/SC, CEP 88301-500 · Unidade em Florianópolis com hora marcada
+- Área de atendimento: Itajaí, Balneário Camboriú, Navegantes, Camboriú, Penha, Barra Velha, Piçarras, Itapema, Porto Belo, Brusque, Blumenau, Indaial, Joinville, Florianópolis e todo o Sul do Brasil (SC, PR e RS)
+- Números: mais de 1.000 laudos emitidos, mais de 500 nomeações judiciais, mais de 80 comarcas atendidas, mais de R$ 2 bilhões em imóveis avaliados
+
 ## Guias técnicos
 
 - [Vistoria de imóvel novo: o que conferir antes de receber as chaves](https://www.mestreengenharia.com/guias/vistoria-de-imovel-novo/): Checklist de vistoria de apartamento ou casa nova, prazos legais para reclamar de vícios e por que o laudo de engenheiro com ART protege o comprador em Itajaí e Balneário Camboriú.
 - [Usucapião extrajudicial: a parte técnica que o cartório exige](https://www.mestreengenharia.com/guias/usucapiao-extrajudicial-parte-tecnica/): Como funciona o usucapião em cartório (art. 216-A da Lei 6.015/73), quais documentos técnicos são exigidos e o papel do engenheiro na planta, no memorial descritivo e no georreferenciamento.
 - [Habite-se: como obter para uma obra pronta em Itajaí e região](https://www.mestreengenharia.com/guias/habite-se-obra-pronta/): O que é o Habite-se, documentos exigidos pela prefeitura, o que fazer quando a obra saiu diferente do projeto e como ligar o Habite-se à CND do INSS e à averbação no cartório.
+- [O que é EVTE: estudo de viabilidade técnica e econômica de um empreendimento](https://www.mestreengenharia.com/guias/evte-estudo-de-viabilidade-tecnica-economica/): EVTE é o estudo que mostra se um terreno ou projeto imobiliário é viável tecnicamente e dá retorno. Veja o que ele analisa, quando fazer, o que entra no relatório e quem assina.
+- [Aferição de obra no SERO: o que é, como funciona e o que reduz o INSS](https://www.mestreengenharia.com/guias/afericao-de-obra-sero/): Aferição de obra é o cálculo da contribuição previdenciária da construção no SERO, da Receita Federal. Entenda a remuneração presumida, o fator social, as notas fiscais e a decadência.
+- [Valor da CND de obra em 2026: quanto custa regularizar a obra no INSS](https://www.mestreengenharia.com/guias/valor-da-cnd-de-obra-2026/): A CND de obra é gratuita; o custo é o INSS apurado na aferição. Veja como o valor é calculado em 2026, o que reduz (fator social, notas, decadência) e quando dá zero.
+- [Laudo de VTN: o que é o Valor da Terra Nua e como o laudo sustenta o ITR](https://www.mestreengenharia.com/guias/laudo-de-vtn-valor-da-terra-nua/): O laudo de VTN apura o Valor da Terra Nua do imóvel rural conforme a NBR 14653-3 e sustenta o valor declarado no ITR. Veja quando é exigido, o que contém e quem pode assinar.
+- [NBR 14653: o que é a norma de avaliação de bens e por que ela importa no seu laudo](https://www.mestreengenharia.com/guias/nbr-14653-norma-de-avaliacao-de-imoveis/): A NBR 14653 é a norma da ABNT que define como avaliar imóveis urbanos, rurais e outros bens. Entenda suas partes, os métodos, os graus de fundamentação e por que bancos e juízes a exigem.
+- [Quadros da NBR 12.721: o que são e como preencher para registrar a incorporação](https://www.mestreengenharia.com/guias/quadros-da-nbr-12721-incorporacao/): Os quadros da NBR 12.721 calculam áreas, frações ideais e custos do condomínio para o memorial de incorporação (Lei 4.591/64). Veja o que cada quadro contém, quem assina e os erros comuns.
+- [Adicional de insalubridade: o que a perícia trabalhista realmente mede](https://www.mestreengenharia.com/guias/adicional-de-insalubridade-o-que-a-pericia-mede/): Na perícia de insalubridade, o perito mede agentes físicos e químicos conforme a NR 15, confere EPI e EPC e enquadra o grau. Veja o que é medido, o que anula o adicional e como contestar o laudo.
 
 ## Contato
 

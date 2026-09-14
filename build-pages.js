@@ -166,6 +166,7 @@ module.exports = function (ctx) {
     vistorias: ['vistoria', 'inspec', 'cautelar', 'recebimento', 'patolog', 'fachada'],
     incorporacao: ['incorpora', 'viabilidade', 'evte', '12721', 'quadro'],
     ambiental: ['ambient', 'hidrolog', 'licenc', 'cip'],
+    trabalhista: ['trabalh', 'insalubr', 'periculos', 'nr15', 'nr-15', 'epi'],
     'inss-de-obra-cnd': ['inss', 'cnd', 'cno', 'sero', 'dctf', 'aro', 'decad', 'aferi', 'obra']
   };
   const nf = head({

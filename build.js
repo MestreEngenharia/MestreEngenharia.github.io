@@ -36,6 +36,8 @@ const SERVICES = [
     img: '../assets/img/fotos/1560518883-ce09059eeffa-w1600.webp',
     imgMobile: '../assets/img/fotos/1560518883-ce09059eeffa-w900.webp',
     wa: 'uma avaliação de imóvel',
+    answer: 'Fazemos a avaliação de imóveis urbanos e rurais conforme a NBR 14653, com laudo assinado por engenheiro registrado no CREA e no IBAPE/SC. O laudo é aceito por bancos, juízos, cartórios e órgãos públicos. Atendemos Itajaí, Balneário Camboriú, Florianópolis e todo o Sul.',
+    deliver: ['Laudo de avaliação em PDF, com fotos, pesquisa de mercado e tratamento estatístico', 'Metodologia e grau de fundamentação conforme a NBR 14653', 'Memória de cálculo e anexos: matrícula, plantas e comparáveis', 'ART registrada no CREA-SC', 'Prazo de entrega definido na proposta'],
     introTitle: 'Saber o valor real muda a sua negociação.',
     intro: 'Uma avaliação bem feita evita que você venda barato, compre caro ou aceite uma indenização injusta. Nossos laudos analisam mercado, localização, acessos, zoneamento e o potencial de uso do imóvel, sempre com os métodos científicos da NBR 14653. Somos engenheiros avaliadores e peritos avaliadores com atuação em Itajaí, Balneário Camboriú, Florianópolis e em todo o litoral catarinense.',
     includes: [
@@ -73,6 +75,8 @@ const SERVICES = [
     img: '../assets/img/fotos/1450101499163-c8848c66ca85-w1600.webp',
     imgMobile: '../assets/img/fotos/1450101499163-c8848c66ca85-w900.webp',
     wa: 'assistência técnica judicial ou perícia',
+    answer: 'Atuamos como peritos nomeados pelo juízo e como assistentes técnicos das partes em perícias de engenharia: avaliação, vícios construtivos, imóveis, obras e topografia. Mais de 500 processos assessorados em comarcas de SC, PR e RS, com trabalho fundamentado nas normas ABNT e no CPC.',
+    deliver: ['Quesitos técnicos objetivos, entregues antes do prazo processual', 'Acompanhamento da vistoria pericial com registro próprio', 'Parecer técnico ou laudo pericial em PDF, com fotos, medições e fundamentação normativa', 'Impugnação técnica de laudo, ponto a ponto', 'ART registrada no CREA-SC'],
     introTitle: 'Engenharia aliada ao Direito.',
     intro: 'Atuamos como peritos nomeados pelo Juízo e como assistentes técnicos das partes. Produzimos prova técnica fundamentada nas normas ABNT e alinhada ao CPC, com uma equipe multidisciplinar que amplia as chances de êxito da ação.',
     includes: [
@@ -91,6 +95,7 @@ const SERVICES = [
     ],
     norms: ['NBR 13752 · Perícias', 'NBR 14653 · Avaliações', 'CPC · arts. 464 a 480', 'IBAPE'],
     faq: [
+      { q: 'Vocês fazem perícia em ações trabalhistas?', a: 'Sim, por meio da frente de <a href="trabalhista.html">perícia e assistência técnica trabalhista</a>, voltada a insalubridade e periculosidade, com base nas NR 15, NR 16 e NR 6.' },
       { q: 'Quanto custa um laudo pericial ou parecer técnico?', a: 'Na atuação como assistente técnico, os honorários são definidos em proposta, conforme a complexidade do caso, o volume do processo e o número de vistorias. Quando somos nomeados peritos do juízo, os honorários são arbitrados pelo juiz e depositados pela parte responsável. Nos dois casos, a conversa inicial não tem custo.' },
       { q: 'Qual a diferença entre perito judicial e assistente técnico?', a: 'O perito judicial é o engenheiro nomeado pelo juiz, atua com imparcialidade e responde ao juízo. O assistente técnico é contratado por uma das partes para formular quesitos, acompanhar a perícia e apresentar parecer sobre o laudo. Atuamos nas duas funções, nunca no mesmo processo.' },
       { q: 'Qual o prazo para contratar um assistente técnico?', a: 'O ideal é logo depois da nomeação do perito. O CPC dá 15 dias para indicar assistente e apresentar quesitos (art. 465). Quanto antes, melhor a estratégia.' },
@@ -109,6 +114,8 @@ const SERVICES = [
     img: '../assets/img/fotos/1610081340031-ea312b8a9d9a-w1600.webp',
     imgMobile: '../assets/img/fotos/1610081340031-ea312b8a9d9a-w900.webp',
     wa: 'um levantamento topográfico',
+    answer: 'Executamos levantamentos topográficos, georreferenciamento certificado no SIGEF/INCRA e aerofotogrametria com drone, com ART e peças prontas para cartório, prefeitura e INCRA. Atendemos imóveis urbanos e rurais em Santa Catarina.',
+    deliver: ['Planta e memorial descritivo com coordenadas georreferenciadas', 'Certificação no SIGEF para imóveis rurais', 'Ortofoto e modelo digital do terreno, quando há voo de drone', 'Arquivos digitais em DWG, PDF e KML', 'ART registrada no CREA-SC'],
     introTitle: 'Limites precisos, decisões seguras.',
     intro: 'Unimos equipamentos de alta precisão (estação total e GNSS) ao mapeamento aéreo com drones. O resultado são produtos cartográficos confiáveis para projetar, regularizar, locar obras, monitorar estruturas e sustentar processos judiciais, no campo e na cidade.',
     includes: [
@@ -128,6 +135,9 @@ const SERVICES = [
     ],
     norms: ['Norma INCRA · SIGEF', 'NBR 13133 · Levantamentos', 'ANAC · Operação de drones'],
     faq: [
+      { q: 'Quanto custa um levantamento topográfico?', a: 'Depende da área, do relevo, da vegetação e da finalidade: cartório, projeto ou INCRA. Enviamos a proposta após conhecer o imóvel, com prazo definido.' },
+      { q: 'Quais arquivos vocês entregam?', a: 'Planta, memorial descritivo e ART, além dos arquivos digitais em DWG, PDF e KML. No caso de voo com drone, também a ortofoto e o modelo digital do terreno.' },
+      { q: 'Atendem imóveis rurais fora do litoral?', a: 'Sim. Fazemos georreferenciamento e levantamentos em todo o estado de Santa Catarina e em regiões vizinhas do Paraná e do Rio Grande do Sul.' },
       { q: 'O que é o georreferenciamento e quando é obrigatório?', a: 'É o levantamento que amarra os limites do imóvel a coordenadas oficiais. Para imóveis rurais, é obrigatório em transferências, desmembramentos, remembramentos e partilhas.' },
       { q: 'Drone substitui a topografia convencional?', a: 'Eles se complementam. O drone acelera o mapeamento de grandes áreas e gera produtos visuais ricos. Pontos de controle em solo garantem a precisão que as normas e os órgãos exigem.' },
       { q: 'Vocês cuidam do registro no cartório?', a: 'Sim. Nossa equipe conduz as diligências junto a INCRA, prefeituras e cartórios até a averbação final.' }
@@ -144,6 +154,8 @@ const SERVICES = [
     img: '../assets/img/fotos/1454165804606-c3d57bc86b40-w1600.webp',
     imgMobile: '../assets/img/fotos/1454165804606-c3d57bc86b40-w900.webp',
     wa: 'regularização de imóvel',
+    answer: 'Regularizamos imóveis do projeto ao registro: aprovação ou regularização da obra na prefeitura, Habite-se, CND do INSS da obra, retificação de área, usucapião extrajudicial e averbação na matrícula. Você acompanha o andamento e não precisa ir aos órgãos.',
+    deliver: ['Projeto de regularização (as built) aprovado na prefeitura', 'Habite-se emitido', 'CND da obra na Receita Federal', 'Planta e memorial descritivo com ART para o cartório', 'Matrícula atualizada com a construção ou a área corrigida'],
     introTitle: 'Imóvel irregular vale menos e trava negócios.',
     intro: 'Construção sem averbação, área diferente da matrícula, pendência em órgão público: tudo isso impede financiamentos, vendas e inventários. A gente assume o processo técnico e administrativo completo para regularizar o seu imóvel.',
     includes: [
@@ -181,6 +193,8 @@ const SERVICES = [
     img: '../assets/img/fotos/1694521787799-ad4ad241cb39-w1600.webp',
     imgMobile: '../assets/img/fotos/1694521787799-ad4ad241cb39-w900.webp',
     wa: 'uma vistoria ou inspeção técnica',
+    answer: 'Fazemos vistorias e inspeções técnicas com laudo fotográfico e ART: entrega de chaves de imóvel novo, cautelar de vizinhança antes da obra, inspeção predial (NBR 16747), inspeção de compra e diagnóstico de patologias. O laudo fixa o estado do imóvel na data e serve de prova.',
+    deliver: ['Laudo em PDF com fotos datadas, medições e classificação de gravidade de cada item', 'Lista de não conformidades pronta para protocolar na construtora', 'Revistoria após os reparos, quando contratada', 'Plano de manutenção, no caso da inspeção predial', 'ART registrada no CREA-SC'],
     introTitle: 'Registrar antes é mais barato que litigar depois.',
     intro: 'Engenharia diagnóstica para cada momento do imóvel: antes da obra, na entrega, na compra e ao longo da vida do edifício. Cada vistoria vira um laudo técnico fundamentado, a sua proteção documental contra prejuízos e disputas.',
     includes: [
@@ -221,6 +235,8 @@ const SERVICES = [
     img: '../assets/img/fotos/1531973576160-7125cd663d86-w1600.webp',
     imgMobile: '../assets/img/fotos/1531973576160-7125cd663d86-w900.webp',
     wa: 'estudo de viabilidade ou apoio à incorporação',
+    answer: 'Damos suporte técnico à incorporação: estudo de viabilidade (EVTE), Quadros da NBR 12.721 para o registro do memorial de incorporação, análise de terrenos e tabela de vendas. Você decide com números e registra sem retrabalho no cartório.',
+    deliver: ['Estudo de viabilidade técnica e econômica com cenários', 'Quadros da NBR 12.721 assinados, prontos para o registro de imóveis', 'Análise do terreno: potencial construtivo, restrições e custos', 'Tabela de vendas com áreas e frações ideais', 'ART registrada no CREA-SC'],
     introTitle: 'Decida com números, não com intuição.',
     intro: 'O estudo de viabilidade técnica e econômica analisa legislação, zoneamento, potencial construtivo, custos e retorno antes de você comprar o terreno. Depois, cuidamos dos Quadros da NBR 12.721 e de todo o suporte técnico até a entrega.',
     includes: [
@@ -239,6 +255,9 @@ const SERVICES = [
     ],
     norms: ['NBR 12721 · Incorporação', 'Lei 4.591/64 · Incorporações', 'CUB/SC · Sinduscon', 'Receita Federal · CNO'],
     faq: [
+      { q: 'Quanto custa o estudo de viabilidade e os quadros da NBR 12.721?', a: 'O valor depende do porte do empreendimento e do estágio do projeto. Enviamos a proposta em até um dia útil após conhecer o terreno e o produto pretendido.' },
+      { q: 'Os quadros da NBR 12.721 precisam de ART?', a: 'Sim. O cartório exige os quadros assinados por profissional habilitado com ART, junto com o memorial de incorporação e a documentação prevista na Lei 4.591/64.' },
+      { q: 'Vocês analisam o terreno antes da compra?', a: 'Sim. Verificamos potencial construtivo, restrições urbanísticas e ambientais, custos de infraestrutura e o resultado esperado, para você decidir antes de assinar.' },
       { q: 'Quando fazer o estudo de viabilidade?', a: 'Antes de comprar o terreno. É a forma mais barata de evitar um investimento ruim. Você decide com projeções de custo, receita e retorno fundamentadas em CUB/SC e dados reais de mercado.' },
       { q: 'O que são os Quadros da NBR 12.721?', a: 'São os quadros de cálculo de áreas e custos (I a VIII) que compõem o memorial de incorporação registrado em cartório. Sem eles, não dá para vender unidades na planta.' },
       { q: 'Vocês acompanham o empreendimento inteiro?', a: 'Sim. Da due diligence do terreno à vistoria cautelar de vizinhança, entrega das unidades e pós-obra. Um único parceiro técnico em todas as fases.' }
@@ -252,10 +271,12 @@ const SERVICES = [
     title: 'Laudos e Estudos Ambientais',
     seoTitle: 'Laudo Ambiental e Estudo Hidrológico',
     seoDesc: 'Laudos ambientais, viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento em SC. Diagnóstico de APPs, drenagem e conformidade com órgãos ambientais.',
-    tagline: 'Nossa nova área de atuação: viabilidade ambiental, hidrologia e conformidade com os órgãos licenciadores. Segurança para o seu empreendimento desde a origem.',
+    tagline: 'Viabilidade ambiental, hidrologia e conformidade com os órgãos licenciadores. Segurança para o seu empreendimento desde a origem.',
     img: '../assets/img/fotos/1441974231531-c6227db76b6e-w1600.webp',
     imgMobile: '../assets/img/fotos/1441974231531-c6227db76b6e-w1200.webp',
     wa: 'laudos ou estudos ambientais',
+    answer: 'Elaboramos estudos e laudos ambientais para viabilizar e licenciar empreendimentos: viabilidade ambiental, estudo hidrológico e CIP, laudos de APP e vegetação, CAR e apoio ao licenciamento no IMA e nos órgãos municipais. Tudo integrado aos demais estudos do seu projeto.',
+    deliver: ['Estudo de viabilidade ambiental do terreno antes da compra ou do projeto', 'Estudo hidrológico e CIP no formato exigido pelo município', 'Laudos ambientais e perícias com ART', 'Cadastro Ambiental Rural (CAR) e regularização ambiental', 'Apoio documental ao licenciamento até a emissão da licença'],
     introTitle: 'O ambiental deixou de ser detalhe. Virou condição de aprovação.',
     intro: 'Restrições ambientais mal avaliadas embargam obras, desvalorizam terrenos e geram passivos milionários. Integramos a análise ambiental aos estudos de viabilidade, topografia e regularização que você já contrata com a gente. Um diagnóstico completo, de uma só equipe.',
     includes: [
@@ -274,11 +295,53 @@ const SERVICES = [
     ],
     norms: ['Código Florestal · Lei 12.651/2012', 'CONAMA', 'IMA/SC · Órgãos estaduais', 'Planos Diretores municipais'],
     faq: [
+      { q: 'Vocês fazem laudo geotécnico ou de área de risco?', a: 'Dentro dos estudos ambientais e das perícias avaliamos, de forma preliminar, a estabilidade de encostas e as áreas de risco. Quando o caso exige sondagem e investigação de subsuperfície, incluímos essa etapa no escopo.' },
+      { q: 'Quanto custa um estudo de viabilidade ambiental?', a: 'Depende do tamanho e da localização do terreno e das restrições envolvidas, como APP, vegetação e recursos hídricos. Enviamos a proposta após uma análise inicial da área, sem custo.' },
+      { q: 'Vocês acompanham o licenciamento no IMA e na prefeitura?', a: 'Sim. Preparamos os estudos e a documentação, protocolamos e respondemos às exigências do órgão até a emissão da licença.' },
       { q: 'Por que fazer o estudo ambiental antes de comprar o terreno?', a: 'Porque APPs, nascentes, vegetação protegida e áreas alagáveis reduzem a área aproveitável, às vezes a ponto de inviabilizar o projeto. Descobrir isso antes do negócio protege o seu capital.' },
       { q: 'O que é o estudo hidrológico (CIP)?', a: 'É a análise do comportamento das águas no terreno e no entorno: chuvas, drenagem e cheias. Municípios exigem esse estudo para aprovar empreendimentos, garantindo que o projeto não cause nem sofra alagamentos.' },
       { q: 'Esse serviço se integra aos demais da Mestre?', a: 'Sim, e essa é a vantagem: viabilidade técnica, econômica e ambiental, topografia e regularização em um único diagnóstico, sem retrabalho entre empresas diferentes.' }
     ],
     related: ['incorporacao', 'topografia', 'pericia']
+  },
+  {
+    slug: 'trabalhista',
+    nav: 'Perícia Trabalhista',
+    title: 'Perícia e Assistência Técnica Trabalhista em Engenharia',
+    seoTitle: 'Assistente Técnico Trabalhista: Insalubridade',
+    seoDesc: 'Assistência técnica de engenharia em perícias trabalhistas em Itajaí, Florianópolis e SC: insalubridade, periculosidade, EPI, PGR, LTCAT, quesitos e impugnação de laudos.',
+    tagline: 'Prova técnica de engenharia para ações de insalubridade e periculosidade, do quesito à impugnação do laudo.',
+    img: '../assets/img/fotos/1504307651254-35680f356dfd-w1200.webp',
+    imgMobile: '../assets/img/fotos/1504307651254-35680f356dfd-w1200.webp',
+    wa: 'assistência técnica em perícia trabalhista',
+    answer: 'Atuamos como assistentes técnicos de engenharia em perícias trabalhistas de insalubridade e periculosidade: avaliação de agentes físicos e químicos, análise de EPI e EPC, revisão de PGR e LTCAT, quesitos e impugnação de laudos. Atendemos advogados e empresas em Itajaí, Florianópolis e todo o Sul.',
+    deliver: ['Quesitos técnicos para a perícia de insalubridade ou periculosidade', 'Acompanhamento da perícia no local, com medições próprias quando cabível', 'Parecer técnico divergente ou de concordância, com base nas NR 15, NR 16 e NR 6', 'Análise da documentação de SST: PGR, PPRA, LTCAT, fichas de EPI e CA', 'Impugnação técnica de laudo pericial, ponto a ponto'],
+    introTitle: 'Adicional se prova com medição, não com opinião.',
+    intro: 'Em ações de insalubridade e periculosidade, o laudo pericial decide o valor da causa. Um assistente técnico de engenharia confere se o perito mediu o que devia, no local e no tempo certos, e se os EPIs e EPCs foram considerados. Atuamos para a empresa ou para o trabalhador, sempre com base nas Normas Regulamentadoras.',
+    includes: [
+      { i: 'chart', b: 'Insalubridade: agentes físicos e químicos', s: 'Ruído, calor, vibração, poeiras, fumos e produtos químicos avaliados conforme a NR 15 e seus anexos.' },
+      { i: 'shield', b: 'Periculosidade', s: 'Inflamáveis, explosivos, energia elétrica e demais hipóteses da NR 16, com verificação de área de risco e tempo de exposição.' },
+      { i: 'gear', b: 'EPI e EPC', s: 'Análise das fichas de entrega, dos certificados de aprovação (CA) e da eficácia real na neutralização do agente, conforme a NR 6.' },
+      { i: 'doc', b: 'PGR, PPRA e LTCAT', s: 'Revisão técnica dos documentos de SST que sustentam ou derrubam a tese, com apontamento de lacunas.' },
+      { i: 'scale', b: 'Quesitos e acompanhamento', s: 'Quesitos objetivos e presença na perícia, com medições próprias quando cabível.' },
+      { i: 'eye', b: 'Impugnação de laudo', s: 'Parecer técnico divergente apontando erros de método, de medição e de enquadramento.' }
+    ],
+    scenarios: [
+      { i: 'scale', b: 'Sou advogado(a) com perícia de insalubridade marcada', s: 'Quesitos e acompanhamento antes que o prazo corra.' },
+      { i: 'home', b: 'Minha empresa foi acionada por adicional', s: 'Conferimos o laudo, os EPIs e a documentação de SST para a defesa.' },
+      { i: 'doc', b: 'O laudo ignorou os EPIs ou mediu errado', s: 'A impugnação técnica pode reverter o enquadramento.' },
+      { i: 'shield', b: 'Quero prevenir passivos trabalhistas', s: 'Diagnóstico de exposição e documentação antes de a ação existir.' }
+    ],
+    norms: ['NR 15 · Insalubridade', 'NR 16 · Periculosidade', 'NR 6 · EPI', 'NR 1 · PGR', 'NBR 13752 · Perícias'],
+    faq: [
+      { q: 'O que o assistente técnico faz na perícia trabalhista?', a: 'Formula quesitos, acompanha a diligência do perito, confere as medições e a documentação de SST e apresenta parecer técnico, concordando ou divergindo do laudo. Ele representa tecnicamente a parte que o contratou, empresa ou trabalhador.' },
+      { q: 'Engenheiro pode fazer perícia de insalubridade?', a: 'Sim, para agentes físicos e químicos, como ruído, calor, vibração e produtos químicos, nos termos da NR 15. Para agentes biológicos há decisões que exigem médico do trabalho; nesses casos atuamos em conjunto com um médico do trabalho ou limitamos o parecer aos aspectos de engenharia.' },
+      { q: 'O EPI elimina o adicional de insalubridade?', a: 'Só quando neutraliza de fato o agente, com CA válido, fornecimento comprovado, treinamento e fiscalização de uso. É exatamente isso que o parecer técnico verifica, ficha por ficha.' },
+      { q: 'Quanto custa a assistência técnica trabalhista?', a: 'Os honorários são definidos em proposta, conforme o número de reclamantes, os agentes envolvidos e a necessidade de medições. A conversa inicial para entender o caso não tem custo.' },
+      { q: 'Vocês atendem empresas de forma preventiva?', a: 'Sim. Avaliamos a exposição, revisamos PGR, LTCAT e o programa de EPI e apontamos o que precisa mudar para reduzir o risco de passivo trabalhista.' },
+      { q: 'Atendem fora de Itajaí?', a: 'Sim. Atendemos varas do trabalho de Santa Catarina, Paraná e Rio Grande do Sul, com atuação presencial nas diligências.' }
+    ],
+    related: ['pericia', 'vistorias', 'ambiental']
   },
   {
     /* Página PILAR gerada por template próprio (pilarPage) em /inss-de-obra-cnd/.
@@ -425,11 +488,29 @@ ${schema(s)}
   <div class="svc-bg" style="background-image:url('${s.img}')"></div>
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>${s.nav}</span></div>
-    <h1>${s.title}${s.novo ? ' <span class="tag-novo">Destaque</span>' : ''}</h1>
+    <h1>${s.title}</h1>
     <p>${s.tagline}</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="${waHref}" target="_blank" rel="noopener">Solicitar orçamento <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
       <a class="btn btn-ghost" href="#incluso">O que está incluído</a>
+    </div>
+  </div>
+</section>
+
+<section class="section light dir">
+  <div class="wrap">
+    <div class="dir-grid">
+      <div class="dir-answer reveal">
+        <span class="kicker">Em resumo</span>
+        <p>${s.answer}</p>
+        <a class="btn btn-navy" href="${waHref}" target="_blank" rel="noopener">Pedir orçamento no WhatsApp <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      </div>
+      <div class="dir-deliver reveal d1">
+        <span class="kicker">O que você recebe</span>
+        <ul>
+          ${(s.deliver || []).map(x => `<li>${I('check')}<span>${x}</span></li>`).join('\n          ')}
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -745,7 +826,7 @@ ${pilarSchema()}
   <div class="svc-bg" style="background-image:url('../assets/img/fotos/1429497419816-9ca5cfb4571a-w1600.webp')"></div>
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>INSS de Obra e CND</span></div>
-    <h1>INSS de Obra e CND: regularize sua construção na Receita Federal <span class="tag-novo">Destaque</span></h1>
+    <h1>INSS de Obra e CND: regularize sua construção na Receita Federal</h1>
     <p>Da inscrição no CNO à certidão que o cartório exige para averbar: conduzimos a aferição da sua obra no SERO de ponta a ponta, com a prova técnica que só a engenharia assina.</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Solicitar análise sem custo <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
@@ -1016,7 +1097,7 @@ fs.writeFileSync(path.join(pilarDir, 'index.html'), pilarPage(), 'utf8');
 console.log('gerado: inss-de-obra-cnd/index.html');
 
 /* sitemap.xml */
-const LASTMOD = '2026-09-06';
+const LASTMOD = '2026-09-14';
 const pages = ['', 'inss-de-obra-cnd/', 'politica-de-privacidade/', ...SERVICES.filter(s => !s.pilar).map(s => `servicos/${s.slug}.html`)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -1043,6 +1124,8 @@ const llms = `# Mestre Engenharia Avaliações e Perícias
 - [Vistorias e Inspeções](${SITE}/servicos/vistorias.html): Inspeção predial (NBR 16747), cautelar de vizinhança, recebimento de obra e patologias.
 - [Incorporação e Viabilidade](${SITE}/servicos/incorporacao.html): EVTE, Quadros da NBR 12.721 e tabela de vendas.
 - [Laudos Ambientais](${SITE}/servicos/ambiental.html): Viabilidade ambiental, hidrologia, CIP e apoio ao licenciamento.
+- [Perícia e Assistência Técnica Trabalhista](${SITE}/servicos/trabalhista.html): Assistente técnico de engenharia em perícias de insalubridade e periculosidade (NR 15, NR 16, NR 6), revisão de PGR e LTCAT, quesitos e impugnação de laudos.
+- [Perícia e Assistência Técnica Trabalhista](${SITE}/servicos/trabalhista.html): Assistente técnico de engenharia em perícias de insalubridade e periculosidade (NR 15, NR 16, NR 6), revisão de PGR e LTCAT, quesitos e impugnação de laudos.
 
 ## Perguntas frequentes (resumo)
 

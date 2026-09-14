@@ -1,4 +1,4 @@
-/* Mestre Engenharia v2.1 — interações compartilhadas */
+/* Mestre Engenharia v2.1 : interações compartilhadas */
 (function () {
   'use strict';
 
@@ -26,7 +26,7 @@
     onScroll();
   }
 
-  /* Reveal on scroll — com dupla rede de segurança:
+  /* Reveal on scroll : com dupla rede de segurança:
      1) tudo que já está no viewport é revelado imediatamente no load;
      2) se o IntersectionObserver não disparar (navegador antigo,
         aba em segundo plano, leitor de conteúdo), um timer revela tudo. */
@@ -52,7 +52,7 @@
     revealAll();
   }
 
-  /* Contadores animados (barra de números) — com fallback para o valor final */
+  /* Contadores animados (barra de números) : com fallback para o valor final */
   const counters = Array.from(document.querySelectorAll('[data-count]'));
   const fmt = new Intl.NumberFormat('pt-BR');
   const finalText = el =>
@@ -163,4 +163,31 @@ document.addEventListener('click', function (e) {
     var target = document.getElementById(location.hash.slice(1));
     if (target) setTimeout(function () { goTo(target, false); }, 60);
   }
+})();
+
+/* Áreas em destaque: o selo "Destaque" alterna diariamente entre os serviços.
+   Sem JS o HTML mantém o padrão (ambiental e INSS de obra). */
+(function () {
+  var pool = ['ambiental', 'inss-de-obra-cnd', 'trabalhista', 'vistorias', 'regularizacao', 'avaliacao', 'pericia', 'topografia', 'incorporacao'];
+  var day = Math.floor(Date.now() / 864e5);
+  var i = day % pool.length;
+  var featured = [pool[i], pool[(i + 1) % pool.length]];
+  var match = function (href) { return featured.some(function (s) { return href.indexOf(s) > -1; }); };
+  document.querySelectorAll('.scard').forEach(function (c) {
+    c.classList.toggle('novo', match(c.getAttribute('href') || ''));
+  });
+  document.querySelectorAll('.tag-novo').forEach(function (t) {
+    var a = t.closest('a');
+    if (a && !match(a.getAttribute('href') || '')) t.remove();
+  });
+  document.querySelectorAll('footer a, .rel, nav a, .nf-grid a').forEach(function (a) {
+    var href = a.getAttribute('href') || '';
+    if (!/servicos\/|inss-de-obra-cnd/.test(href) || !match(href) || a.querySelector('.tag-novo')) return;
+    var host = a.querySelector('b') || a;
+    var s = document.createElement('span');
+    s.className = 'tag-novo';
+    s.textContent = 'Destaque';
+    host.appendChild(document.createTextNode(' '));
+    host.appendChild(s);
+  });
 })();

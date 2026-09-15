@@ -8,7 +8,7 @@ const GUIAS = [
     slug: 'vistoria-de-imovel-novo',
     title: 'Vistoria de imóvel novo: o que conferir antes de receber as chaves',
     seoTitle: 'Vistoria de Imóvel Novo e Entrega de Chaves',
-    desc: 'Checklist de vistoria de apartamento ou casa nova, prazos legais para reclamar de vícios e por que o laudo de engenheiro com ART protege o comprador em Itajaí e Balneário Camboriú.',
+    desc: 'Checklist de vistoria de imóvel novo, prazos legais para reclamar de vícios e por que o laudo com ART protege o comprador em Itajaí e Balneário Camboriú.',
     crumb: 'Vistoria de imóvel novo',
     lead: 'O termo de recebimento das chaves é o momento em que o comprador mais tem força para exigir reparos. Este guia mostra o que conferir, quais prazos a lei garante e como um laudo técnico transforma a reclamação em prova.',
     updated: '6 de setembro de 2026',
@@ -55,7 +55,7 @@ const GUIAS = [
     slug: 'usucapiao-extrajudicial-parte-tecnica',
     title: 'Usucapião extrajudicial: a parte técnica que o cartório exige',
     seoTitle: 'Usucapião Extrajudicial: Planta, Memorial e ART',
-    desc: 'Como funciona o usucapião em cartório (art. 216-A da Lei 6.015/73), quais documentos técnicos são exigidos e o papel do engenheiro na planta, no memorial descritivo e no georreferenciamento.',
+    desc: 'Usucapião em cartório (art. 216-A da Lei 6.015/73): documentos técnicos exigidos e o papel do engenheiro na planta, no memorial e no georreferenciamento.',
     crumb: 'Usucapião extrajudicial',
     lead: 'Desde 2015 é possível reconhecer a propriedade por usucapião diretamente no registro de imóveis, sem processo judicial. O procedimento é conduzido por advogado, mas depende de um levantamento técnico assinado por engenheiro. Este guia explica essa parte.',
     updated: '6 de setembro de 2026',
@@ -106,7 +106,7 @@ const GUIAS = [
     slug: 'habite-se-obra-pronta',
     title: 'Habite-se: como obter para uma obra pronta em Itajaí e região',
     seoTitle: 'Habite-se: Como Tirar para Obra Pronta',
-    desc: 'O que é o Habite-se, documentos exigidos pela prefeitura, o que fazer quando a obra saiu diferente do projeto e como ligar o Habite-se à CND do INSS e à averbação no cartório.',
+    desc: 'O que é o Habite-se, documentos da prefeitura, o que fazer quando a obra saiu diferente do projeto e como ligar o Habite-se à CND do INSS e à averbação.',
     crumb: 'Habite-se',
     lead: 'O Habite-se é o certificado da prefeitura que declara a obra concluída conforme o projeto aprovado. Sem ele não há averbação na matrícula, e sem averbação o imóvel não pode ser financiado nem vendido com segurança. Este guia mostra o caminho completo.',
     updated: '6 de setembro de 2026',
@@ -251,8 +251,34 @@ module.exports = function (ctx) {
   }
 
   /* índice /guias/ */
-  let idx = head({ title: 'Guias Técnicos', desc: 'Guias práticos da Mestre Engenharia sobre vistoria de imóvel novo, usucapião extrajudicial, Habite-se e regularização de imóveis em Itajaí, Balneário Camboriú e Florianópolis.', canonical: `${SITE}/guias/` });
-  idx = idx.replace('</head>', STYLE + '\n</head>');
+  const idxDesc = 'Guias técnicos da Mestre Engenharia: vistoria de imóvel novo, usucapião, Habite-se, EVTE, CND de obra, laudo de VTN, NBR 14653 e insalubridade.';
+  let idx = head({ title: 'Guias Técnicos', desc: idxDesc, canonical: `${SITE}/guias/` });
+  const idxSchema = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage',
+        '@id': `${SITE}/guias/#page`,
+        name: 'Guias técnicos',
+        description: idxDesc,
+        inLanguage: 'pt-BR',
+        url: `${SITE}/guias/`,
+        publisher: { '@id': `${SITE}/#org` },
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: GUIAS.map((g, i) => ({ '@type': 'ListItem', position: i + 1, name: g.title, url: `${SITE}/guias/${g.slug}/` }))
+        }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Início', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: 'Guias', item: `${SITE}/guias/` }
+        ]
+      }
+    ]
+  }, null, 1);
+  idx = idx.replace('</head>', `<script type="application/ld+json">\n${idxSchema}\n</script>\n${STYLE}\n</head>`);
   idx += hero({ crumb: 'Guias', h1: 'Guias técnicos', p: 'Respostas diretas, com base normativa, para as dúvidas que recebemos todos os dias sobre imóveis, obras e regularização.' });
   idx += `
 <section class="section light">

@@ -28,6 +28,7 @@ ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
 <meta property="og:title" content="${title} | Mestre Engenharia">
 <meta property="og:description" content="${desc}">
 <meta property="og:type" content="website">
+${canonical ? `<meta property="og:url" content="${canonical}">` : ''}
 <meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
 <meta property="og:locale" content="pt_BR">
 <link rel="preload" href="/assets/fonts/Montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -215,7 +216,7 @@ module.exports = function (ctx) {
   /* ---------- Política de Privacidade ---------- */
   const priv = head({
     title: 'Política de Privacidade',
-    desc: 'Como a Mestre Engenharia trata dados pessoais no site e no atendimento: dados coletados, finalidades, cookies e tag do Google Ads, prazos de guarda e direitos do titular conforme a LGPD.',
+    desc: 'Como a Mestre Engenharia trata dados pessoais no site e no atendimento: finalidades, cookies, tag do Google Ads, prazos de guarda e direitos pela LGPD.',
     canonical: SITE + '/politica-de-privacidade/'
   }) + hero({
     crumb: 'Política de Privacidade',

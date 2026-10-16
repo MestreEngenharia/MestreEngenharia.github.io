@@ -11,10 +11,7 @@ function shell({ SERVICES, SITE }) {
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) - Google Ads AW-10830906825 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10830906825"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-10830906825');</script>
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager (cuida da tag do Google Ads e das conversoes) -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=

@@ -111,16 +111,11 @@
   });
 })();
 
-/* ---- Conversao Google Ads: clique em WhatsApp ----
-   Dispara no CLIQUE (nao no carregamento da pagina), pois o site nao tem
-   pagina de agradecimento: o botao leva direto ao WhatsApp.            */
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
-  if (!a) return;
-  if (typeof gtag === 'function') {
-    gtag('event', 'conversion', { 'send_to': 'AW-10830906825/BrJ9CLuuwNADEMmLyqwo' });
-  }
-});
+/* ---- Conversao do clique em WhatsApp ----
+   Quem dispara agora e o Gerenciador de Tags (container GTM-NV4L64Q), com
+   gatilho de clique em link cuja URL contem wa.me. O disparo direto por
+   gtag foi retirado em 16/10/2026 porque contava a mesma conversao duas
+   vezes. Nao recolocar aqui: a medicao mora no container.              */
 
 /* Âncoras internas: rolagem robusta com compensação do cabeçalho fixo e
    fallback instantâneo quando a rolagem suave não acontece (aba em segundo

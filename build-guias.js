@@ -6,15 +6,16 @@ const { shell } = require('./build-pages.js');
 const GUIAS = [
   {
     slug: 'vistoria-de-imovel-novo',
-    title: 'Vistoria de imóvel novo: o que conferir antes de receber as chaves',
-    seoTitle: 'Vistoria de Imóvel Novo e Entrega de Chaves',
-    desc: 'Checklist de vistoria de imóvel novo, prazos legais para reclamar de vícios e por que o laudo com ART protege o comprador em Itajaí e Balneário Camboriú.',
+    title: 'Vistoria de apartamento ou imóvel novo: como fazer, checklist e o que observar antes de receber as chaves',
+    seoTitle: 'Vistoria de Apartamento Novo: Checklist e Como Fazer',
+    desc: 'Como fazer a vistoria de apartamento ou imóvel novo: checklist, o que observar, quem pode fazer, quanto custa e os prazos para reclamar vícios. Laudo com ART.',
     crumb: 'Vistoria de imóvel novo',
     lead: 'O termo de recebimento das chaves é o momento em que o comprador mais tem força para exigir reparos. Este guia mostra o que conferir, quais prazos a lei garante e como um laudo técnico transforma a reclamação em prova.',
-    updated: '6 de setembro de 2026',
+    updated: '1º de novembro de 2026',
+    modified: '2026-11-01',
     services: ['vistorias', 'pericia'],
     wa: 'uma vistoria de imóvel novo',
-    keywords: 'vistoria de imóvel novo, vistoria de apartamento, entrega de chaves, vistoria de recebimento, vícios construtivos, Itajaí, Balneário Camboriú',
+    keywords: 'vistoria de imóvel novo, vistoria de apartamento novo, como fazer vistoria de apartamento novo, vistoria de recebimento de imóvel, checklist vistoria apartamento, entrega de chaves, vícios construtivos, Itajaí, Balneário Camboriú',
     body: `
 <h2>Por que fazer a vistoria antes de assinar o termo de recebimento</h2>
 <p>Ao assinar o termo, o comprador declara que recebeu o imóvel no estado em que ele se encontra. Tudo o que não foi registrado ali passa a depender de reclamação posterior, com ônus de provar que o defeito já existia. Uma vistoria técnica feita antes da assinatura inverte essa lógica: o laudo lista as não conformidades, a construtora as corrige dentro de um prazo e só então as chaves são recebidas.</p>
@@ -48,20 +49,23 @@ const GUIAS = [
       { q: 'Quanto custa a vistoria de um apartamento novo?', a: 'O valor depende da área e do tipo do imóvel. Enviamos a proposta no mesmo dia pelo WhatsApp. Em geral o laudo custa uma fração dos reparos que ele evita que fiquem por conta do comprador.' },
       { q: 'A construtora é obrigada a aceitar a presença do engenheiro na vistoria?', a: 'O comprador pode ser acompanhado por quem desejar na vistoria de entrega. Recomendamos avisar a construtora com antecedência e agendar um horário com tempo suficiente, normalmente de duas a três horas para um apartamento.' },
       { q: 'Já assinei o termo de recebimento. Ainda posso reclamar?', a: 'Sim. Os prazos do Código de Defesa do Consumidor e do Código Civil continuam valendo. A vistoria técnica documenta os vícios e o laudo fundamenta a reclamação formal ou, se preciso, a ação judicial.' },
-      { q: 'Vocês atendem Balneário Camboriú, Navegantes e Camboriú?', a: 'Sim. Atendemos Itajaí, Balneário Camboriú, Navegantes, Camboriú, Brusque, Blumenau, Joinville, Florianópolis e todo o litoral catarinense.' }
+      { q: 'Vocês atendem Balneário Camboriú, Navegantes e Camboriú?', a: 'Sim. Atendemos Itajaí, Balneário Camboriú, Navegantes, Camboriú, Brusque, Blumenau, Joinville, Florianópolis e todo o litoral catarinense.' },
+      { q: 'Quem pode fazer a vistoria de apartamento novo?', a: 'O comprador pode vistoriar sozinho, mas a vistoria feita por engenheiro, com laudo e ART, registra os vícios de forma técnica, com medições e fotos, e serve de prova na reclamação à construtora e em eventual processo.' },
+      { q: 'O que levar para a vistoria de apartamento novo?', a: 'Planta e memorial descritivo de venda, contrato, trena, nível, lanterna, carregador de celular para testar as tomadas e câmera para fotografar tudo. Na vistoria de engenharia, o profissional leva os instrumentos de medição.' }
     ]
   },
   {
     slug: 'usucapiao-extrajudicial-parte-tecnica',
-    title: 'Usucapião extrajudicial: a parte técnica que o cartório exige',
-    seoTitle: 'Usucapião Extrajudicial: Planta, Memorial e ART',
-    desc: 'Usucapião em cartório (art. 216-A da Lei 6.015/73): documentos técnicos exigidos e o papel do engenheiro na planta, no memorial e no georreferenciamento.',
+    title: 'Usucapião extrajudicial em cartório: requisitos, passo a passo e a parte técnica (planta, memorial descritivo e ART)',
+    seoTitle: 'Usucapião Extrajudicial: Requisitos, Planta e Memorial',
+    desc: 'Como fazer usucapião extrajudicial em cartório em SC: requisitos, documentos, ata notarial e a planta com memorial descritivo e ART feita pelo engenheiro.',
     crumb: 'Usucapião extrajudicial',
     lead: 'Desde 2015 é possível reconhecer a propriedade por usucapião diretamente no registro de imóveis, sem processo judicial. O procedimento é conduzido por advogado, mas depende de um levantamento técnico assinado por engenheiro. Este guia explica essa parte.',
-    updated: '6 de setembro de 2026',
+    updated: '1º de novembro de 2026',
+    modified: '2026-11-01',
     services: ['regularizacao', 'topografia'],
     wa: 'planta e memorial para usucapião extrajudicial',
-    keywords: 'usucapião extrajudicial, usucapião em cartório, planta e memorial descritivo, ART usucapião, georreferenciamento, Itajaí, Balneário Camboriú, Florianópolis',
+    keywords: 'usucapião extrajudicial, usucapião em cartório, como fazer usucapião extrajudicial, requisitos usucapião extrajudicial, quanto custa usucapião extrajudicial, planta e memorial descritivo usucapião, ART usucapião, ata notarial, georreferenciamento, Santa Catarina, Itajaí, Balneário Camboriú, Florianópolis',
     body: `
 <h2>O que é o usucapião extrajudicial</h2>
 <p>O usucapião extrajudicial está previsto no art. 216-A da Lei 6.015/73 (Lei de Registros Públicos), incluído pelo Código de Processo Civil de 2015 e detalhado pelas normas do Conselho Nacional de Justiça. O pedido é apresentado ao registro de imóveis da circunscrição do imóvel, por advogado, e tramita sem juiz. Quando a documentação está completa e não há impugnação, o registrador reconhece a propriedade e abre a matrícula em nome do possuidor.</p>
@@ -99,20 +103,24 @@ const GUIAS = [
       { q: 'Quanto tempo leva o usucapião extrajudicial?', a: 'Depende do cartório e da facilidade de obter as assinaturas dos confrontantes. Com a documentação completa, o procedimento costuma ser bem mais rápido que o processo judicial, que pode levar anos. A parte técnica é entregue em poucas semanas após o levantamento.' },
       { q: 'Preciso de advogado no usucapião em cartório?', a: 'Sim. A lei exige que o requerimento seja assinado por advogado. O engenheiro responde pela planta, pelo memorial descritivo e pela ART.' },
       { q: 'Posso usucapir um imóvel com matrícula em nome de outra pessoa?', a: 'Sim, desde que preenchidos os requisitos de tempo e de posse da modalidade escolhida. O titular registrado é notificado e pode concordar ou impugnar.' },
-      { q: 'Qual a diferença entre usucapião e regularização fundiária (REURB)?', a: 'O usucapião reconhece a propriedade de um possuidor individual. A REURB, prevista na Lei 13.465/2017, regulariza núcleos urbanos informais inteiros, com titulação coletiva conduzida pelo município. Atuamos nas duas frentes.' }
+      { q: 'Qual a diferença entre usucapião e regularização fundiária (REURB)?', a: 'O usucapião reconhece a propriedade de um possuidor individual. A REURB, prevista na Lei 13.465/2017, regulariza núcleos urbanos informais inteiros, com titulação coletiva conduzida pelo município. Atuamos nas duas frentes.' },
+      { q: 'Quem faz a planta e o memorial descritivo para o usucapião extrajudicial?', a: 'Engenheiro ou arquiteto com atribuição, registrado no CREA ou no CAU, com ART ou RRT. A planta e o memorial descritivo precisam bater com a matrícula e com os confrontantes, e acompanham a ata notarial no pedido feito em cartório.' },
+      { q: 'Quais são os requisitos do usucapião extrajudicial?', a: 'Posse mansa, pacífica e contínua pelo prazo da modalidade de usucapião; ata notarial lavrada pelo tabelião; planta e memorial descritivo assinados por profissional habilitado, com ART ou RRT, e pelos confrontantes; certidões negativas; documentos que comprovem a posse e o tempo; e representação por advogado (art. 216-A da Lei 6.015/73).' },
+      { q: 'Quanto custa o usucapião extrajudicial no cartório?', a: 'O custo soma os emolumentos do cartório, que em Santa Catarina seguem a tabela estadual conforme o valor do imóvel, os honorários do advogado e o trabalho técnico de planta, memorial e ART. Enviamos a proposta da parte técnica com valor e prazo.' }
     ]
   },
   {
     slug: 'habite-se-obra-pronta',
-    title: 'Habite-se: como obter para uma obra pronta em Itajaí e região',
-    seoTitle: 'Habite-se: Como Tirar para Obra Pronta',
-    desc: 'O que é o Habite-se, documentos da prefeitura, o que fazer quando a obra saiu diferente do projeto e como ligar o Habite-se à CND do INSS e à averbação.',
+    title: 'Habite-se em Itajaí e Santa Catarina: como tirar para obra pronta ou imóvel já construído',
+    seoTitle: 'Habite-se: Como Tirar para Imóvel Já Construído',
+    desc: 'O que é o Habite-se, quem emite, documentos da prefeitura, como tirar para imóvel já construído ou diferente do projeto e como ligar à CND do INSS e à averbação.',
     crumb: 'Habite-se',
     lead: 'O Habite-se é o certificado da prefeitura que declara a obra concluída conforme o projeto aprovado. Sem ele não há averbação na matrícula, e sem averbação o imóvel não pode ser financiado nem vendido com segurança. Este guia mostra o caminho completo.',
-    updated: '6 de setembro de 2026',
+    updated: '1º de novembro de 2026',
+    modified: '2026-11-01',
     services: ['regularizacao', 'inss'],
     wa: 'Habite-se e averbação de construção',
-    keywords: 'habite-se, habite-se Itajaí, como tirar habite-se, averbação de construção, projeto de regularização, as built, CND INSS obra',
+    keywords: 'habite-se, habite-se Itajaí, habite-se Santa Catarina, como tirar habite-se, como tirar habite-se de imóvel já construído, quem emite o habite-se, averbação de construção, projeto de regularização, as built, CND INSS obra',
     body: `
 <h2>O que é o Habite-se e para que ele serve</h2>
 <p>O Habite-se, também chamado de certificado de conclusão de obra, é emitido pela prefeitura após vistoria que confirma que a construção foi executada de acordo com o projeto aprovado e com o Código de Obras do município. Ele é exigido para averbar a construção na matrícula do imóvel, para ligações definitivas de água e energia em muitos municípios, para financiamento bancário e para a instituição de condomínio.</p>
@@ -143,7 +151,9 @@ const GUIAS = [
       { q: 'Quanto tempo leva para sair o Habite-se?', a: 'Com projeto aprovado e obra conforme, o prazo depende da agenda de vistorias da prefeitura, em geral algumas semanas. Quando é preciso regularizar a edificação antes, o processo de aprovação do projeto como construído entra na conta.' },
       { q: 'Posso vender um imóvel sem Habite-se?', a: 'Pode, mas a construção não estará averbada e o comprador não conseguirá financiamento bancário. Na prática o imóvel vale menos e o negócio fica restrito a pagamento à vista.' },
       { q: 'Preciso da CND do INSS para o Habite-se?', a: 'Depende do município. Alguns exigem a CND para emitir o Habite-se; outros exigem apenas na averbação, que é obrigatória por lei. Em qualquer caso a certidão será necessária para regularizar a matrícula.' },
-      { q: 'O que é Habite-se parcial?', a: 'É o certificado emitido para parte de uma edificação concluída, por exemplo uma torre pronta em um condomínio em obras. Permite averbar e ocupar a parte finalizada.' }
+      { q: 'O que é Habite-se parcial?', a: 'É o certificado emitido para parte de uma edificação concluída, por exemplo uma torre pronta em um condomínio em obras. Permite averbar e ocupar a parte finalizada.' },
+      { q: 'Quem emite o Habite-se?', a: 'A prefeitura do município onde está a obra, pelo setor de obras ou urbanismo, depois de vistoriar a construção e conferir se ela corresponde ao projeto aprovado.' },
+      { q: 'Quanto custa tirar o Habite-se de um imóvel já construído?', a: 'Depende do município e da situação da obra: taxas da prefeitura, projeto de regularização (as built) com ART quando a construção difere do projeto e, se houver INSS da obra pendente, a CND. Enviamos a proposta da parte técnica com valor e prazo.' }
     ]
   }
 ].concat(require('./guias-2.js'), require('./guias-3.js'));

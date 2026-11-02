@@ -3,16 +3,17 @@
 module.exports = [
   {
     slug: "evte-estudo-de-viabilidade-tecnica-economica",
-    title: "O que é EVTE: estudo de viabilidade técnica e econômica de um empreendimento",
-    seoTitle: "O que é EVTE (Estudo de Viabilidade Técnica e Econômica)",
-    desc: "EVTE é o estudo que mostra se um terreno ou projeto imobiliário é viável e dá retorno. Veja o que ele analisa, quando fazer e quem assina.",
+    title: "EVTE: o que é e como fazer o estudo de viabilidade técnica e econômica de um terreno ou empreendimento",
+    seoTitle: "EVTE: O Que É e Como Fazer o Estudo de Viabilidade",
+    desc: "EVTE (Estudo de Viabilidade Técnica e Econômica): o que é, como é feito, o que analisa em um terreno ou empreendimento, quem pode assinar e quanto custa.",
     crumb: "O que é EVTE",
     lead: "EVTE é a sigla de Estudo de Viabilidade Técnica e Econômica. É o documento que responde, com números, se um terreno ou projeto imobiliário vale o investimento antes de você comprar, aprovar ou lançar.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["incorporacao", "ambiental"],
     wa: "um estudo de viabilidade (EVTE)",
-    keywords: "EVTE, estudo de viabilidade técnica e econômica, o que é EVTE, viabilidade técnica, viabilidade de empreendimento imobiliário, VGV, TIR, incorporação",
+    keywords: "EVTE, estudo de viabilidade técnica e econômica, o que é EVTE, como fazer estudo de viabilidade técnica e econômica, estudo de viabilidade econômica de empreendimentos imobiliários, viabilidade de terreno, estudo de viabilidade imobiliária, VGV, TIR, incorporação",
     body: `
 <h2>O que é o EVTE</h2>
 <p>O Estudo de Viabilidade Técnica e Econômica (EVTE) reúne, em um único relatório, duas perguntas que costumam ser respondidas separadamente. A técnica: o que pode ser construído neste terreno, com que restrições e a que custo? A econômica: quanto o empreendimento rende, em quanto tempo e com que risco? Sem a primeira, o projeto pode não ser aprovado. Sem a segunda, pode ser aprovado e dar prejuízo.</p>
@@ -45,21 +46,24 @@ module.exports = [
       { q: "Qual a diferença entre EVTE e estudo de viabilidade técnica?", a: "O estudo de viabilidade técnica (EVT) responde se e como o empreendimento pode ser construído. O EVTE acrescenta a parte econômica: custos, receitas, fluxo de caixa e retorno. Para decidir um investimento, é o EVTE que importa." },
       { q: "Quanto custa um EVTE?", a: "Depende do porte do empreendimento, da quantidade de cenários e da disponibilidade de dados do terreno. Enviamos a proposta em até um dia útil após conhecer o terreno e o produto pretendido." },
       { q: "Quanto tempo leva?", a: "Um estudo preliminar, suficiente para decidir a compra de um terreno, é mais rápido que o estudo completo para captação de recursos. O prazo é definido na proposta conforme a complexidade e os dados disponíveis." },
-      { q: "O EVTE serve para apresentar ao banco ou ao investidor?", a: "Sim. Ele é elaborado com premissas rastreáveis, fontes citadas e indicadores usuais do mercado (VGV, TIR, VPL, payback e exposição de caixa), no formato que instituições financeiras e investidores analisam." }
+      { q: "O EVTE serve para apresentar ao banco ou ao investidor?", a: "Sim. Ele é elaborado com premissas rastreáveis, fontes citadas e indicadores usuais do mercado (VGV, TIR, VPL, payback e exposição de caixa), no formato que instituições financeiras e investidores analisam." },
+      { q: "Como fazer um estudo de viabilidade técnica e econômica?", a: "O estudo parte do terreno e da legislação (zoneamento, índices e restrições), define o produto possível, estima custos (terreno, projeto, obra pelo CUB, taxas e vendas), receitas (VGV) e prazos, e calcula TIR, VPL, payback e exposição de caixa, com todas as premissas documentadas." },
+      { q: "Quem pode fazer o EVTE?", a: "Não há exigência legal de um profissional específico, mas bancos, incorporadoras e investidores dão mais peso ao estudo assinado por engenheiro ou arquiteto com ART ou RRT, porque a parte técnica (índices urbanísticos, áreas, custos de obra) precisa de fundamentação." }
     ]
   },
   {
     slug: "afericao-de-obra-sero",
-    title: "Aferição de obra no SERO: o que é, como funciona e o que reduz o INSS",
-    seoTitle: "Aferição de Obra no SERO: Como Funciona",
-    desc: "Aferição de obra é o cálculo do INSS da construção no SERO, da Receita Federal. Entenda remuneração presumida, fator social, notas fiscais e decadência.",
+    title: "Aferição de obra no SERO: como fazer, como calcular o INSS da obra e o que reduz o valor",
+    seoTitle: "Aferição de Obra no SERO: Como Fazer e Calcular o INSS",
+    desc: "Como fazer a aferição de obra no SERO e calcular o INSS da construção: área aferida, remuneração presumida, fator social, notas fiscais, decadência e DCTFWeb.",
     crumb: "Aferição de obra",
     lead: "Aferição de obra é o procedimento da Receita Federal que calcula quanto de INSS uma construção deve. Ela é feita no SERO, o Serviço Eletrônico para Aferição de Obras, e é o passo que define se a CND sai com débito zero ou com uma guia para pagar.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["inss", "regularizacao"],
     wa: "aferição de obra no SERO",
-    keywords: "aferição de obra, SERO, o que é aferição de obra, como fazer aferição de obra, CNO, DCTFWeb, CND de obra, INSS de obra, área aferida, DISO",
+    keywords: "aferição de obra, SERO, o que é aferição de obra, como fazer aferição de obra sero, como calcular inss de obra, como retificar aferição de obra, fator social, CNO, DCTFWeb aferição de obras, CND de obra, INSS de obra, área aferida, DISO",
     body: `
 <h2>O que é a aferição de obra</h2>
 <p>Toda construção gera contribuição previdenciária sobre a mão de obra empregada (Lei 8.212/1991). A aferição é a apuração dessa remuneração e das contribuições devidas, conforme a IN RFB 2.021/2021. Quando a obra tem escrituração contábil regular, a aferição parte dos registros da empresa. Quando não tem, caso da grande maioria das obras de pessoa física, a Receita presume a remuneração a partir da área, do padrão e da destinação da obra. É a chamada aferição indireta.</p>
@@ -95,22 +99,26 @@ module.exports = [
     faq: [
       { q: "A aferição de obra tem custo?", a: "O procedimento no SERO é gratuito. O que custa é a contribuição apurada, quando houver, e os honorários de quem conduz o processo. Obras em período decadente ou com reduções bem aplicadas podem terminar com débito zero." },
       { q: "Preciso de engenheiro para aferir a obra?", a: "A lei não exige, mas a classificação da obra, a conferência da área e a prova de decadência dependem de ART e de conhecimento técnico. Um erro de enquadramento muda o valor e pode gerar cobrança posterior." },
-      { q: "O que era a área aferida na DISO?", a: "A DISO era a declaração antiga usada antes do SERO. A área aferida é a área considerada no cálculo da remuneração presumida. Hoje ela é informada diretamente no SERO, que substituiu a DISO." },
-      { q: "Quanto tempo leva a aferição?", a: "Com os documentos em mãos (matrícula, projeto ou levantamento da área, notas fiscais, ART e comprovantes do período), o preenchimento e a emissão da CND levam poucos dias. A parte demorada costuma ser reunir a documentação." }
+      { q: "O que é a área aferida na DISO e no SERO?", a: "A DISO era a declaração antiga usada antes do SERO. A área aferida é a área considerada no cálculo da remuneração presumida. Hoje ela é informada diretamente no SERO, que substituiu a DISO." },
+      { q: "Quanto tempo leva a aferição?", a: "Com os documentos em mãos (matrícula, projeto ou levantamento da área, notas fiscais, ART e comprovantes do período), o preenchimento e a emissão da CND levam poucos dias. A parte demorada costuma ser reunir a documentação." },
+      { q: "Qual é o fator social na aferição de obra?", a: "O fator social vale para obra de pessoa física (art. 26 da IN RFB 2.021/2021) e reduz a remuneração presumida conforme a área: até 100 m², a Receita considera 20% da remuneração; de 100 a 200 m², 40%. A tabela completa está na página INSS de Obra e CND." },
+      { q: "Qual é o valor do INSS de obra em 2026?", a: "Não existe um valor fixo. O INSS da obra sai da remuneração presumida, calculada pelo custo unitário de referência e pelos percentuais do Anexo I da IN RFB 2.021/2021, menos as reduções a que a obra tem direito: fator social, notas fiscais de concreto usinado e pré-moldados e decadência. O guia Valor da CND de obra em 2026 mostra o cálculo." },
+      { q: "Como retificar a aferição de obra no SERO?", a: "A retificação é feita no próprio SERO, no e-CAC: abre-se a aferição transmitida, corrigem-se os dados (área, destinação, período, notas fiscais ou documentos) e transmite-se de novo. Em seguida é preciso retificar a DCTFWeb Aferição de Obras correspondente, para que o débito seja ajustado." }
     ]
   },
   {
     slug: "valor-da-cnd-de-obra-2026",
-    title: "Valor da CND de obra em 2026: quanto custa regularizar a obra no INSS",
-    seoTitle: "Valor da CND de Obra 2026: Quanto Custa",
-    desc: "A CND de obra é gratuita; o custo é o INSS apurado na aferição. Veja o cálculo em 2026, o que reduz (fator social, notas, decadência) e quando zera.",
+    title: "Valor da CND de obra em 2026: quanto custa, como tirar e o que reduz o INSS da obra",
+    seoTitle: "Valor da CND de Obra 2026: Quanto Custa e Como Tirar",
+    desc: "Quanto custa a CND de obra em 2026 e como tirar: a certidão é gratuita, o custo é o INSS apurado na aferição no SERO. Veja o cálculo e as reduções.",
     crumb: "Valor da CND de obra",
     lead: "A emissão da CND de obra não tem taxa. O que custa é a contribuição previdenciária apurada na aferição, mais os honorários de quem conduz o processo. Este guia mostra do que depende o valor e por que obras parecidas pagam quantias muito diferentes.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["inss", "regularizacao"],
     wa: "regularização de obra no INSS e emissão da CND",
-    keywords: "valor da CND de obra, quanto custa CND de obra 2026, CND INSS obra, certidão INSS obra, regularização de obra INSS, INSS de obra, aferição",
+    keywords: "valor da CND de obra, quanto custa CND de obra 2026, CND de obra como tirar, o que é CND de obra, como fazer CND de obra antiga, certidão negativa de débito de obra, CND INSS obra, regularização de obra INSS, INSS de obra, aferição",
     body: `
 <h2>A CND é gratuita. O INSS da obra não é</h2>
 <p>A Certidão Negativa de Débitos da obra é emitida sem custo no e-CAC. Ela só sai, porém, depois da aferição no SERO e do pagamento (ou da comprovação de débito zero) das contribuições previdenciárias da construção. Quando alguém pergunta "quanto custa a CND", a resposta verdadeira é: depende de quanto INSS a obra deve.</p>
@@ -139,21 +147,24 @@ module.exports = [
       { q: "A CND de obra tem taxa de emissão?", a: "Não. A certidão é gratuita e emitida no e-CAC. O custo está nas contribuições apuradas na aferição e nos honorários do processo." },
       { q: "Posso parcelar o INSS da obra?", a: "Em regra sim. O débito apurado na DCTFWeb pode ser parcelado conforme as regras de parcelamento da Receita Federal. A CND positiva com efeito de negativa pode ser emitida com o parcelamento em dia." },
       { q: "Obra antiga paga INSS?", a: "Os períodos de execução com mais de 5 anos, comprovados por documentos e ART, são alcançados pela decadência e ficam fora do cálculo. Sem comprovação, a Receita presume que a obra é recente." },
-      { q: "Quanto tempo a CND leva para sair?", a: "Depois do pagamento ou da confirmação de débito zero, a emissão é imediata no e-CAC. O tempo total depende de reunir os documentos da obra e concluir a aferição." }
+      { q: "Quanto tempo a CND leva para sair?", a: "Depois do pagamento ou da confirmação de débito zero, a emissão é imediata no e-CAC. O tempo total depende de reunir os documentos da obra e concluir a aferição." },
+      { q: "O que é CND de obra?", a: "É a Certidão Negativa de Débitos da obra, emitida pela Receita Federal, que comprova que o INSS da construção foi apurado e quitado. O cartório exige a CND para averbar a construção na matrícula do imóvel." },
+      { q: "Como tirar a CND de obra?", a: "Passo a passo: inscrever ou atualizar a obra no CNO, fazer a aferição no SERO, transmitir a DCTFWeb Aferição de Obras, pagar ou parcelar o débito (ou comprovar débito zero) e emitir a certidão no e-CAC. Para obra antiga, a análise de decadência pode zerar o valor." }
     ]
   },
   {
     slug: "laudo-de-vtn-valor-da-terra-nua",
-    title: "Laudo de VTN: o que é o Valor da Terra Nua e como o laudo sustenta o ITR",
-    seoTitle: "Laudo de VTN: Valor da Terra Nua e ITR",
-    desc: "O laudo de VTN apura o Valor da Terra Nua do imóvel rural pela NBR 14653-3 e sustenta o valor declarado no ITR. Veja quando é exigido e quem assina.",
+    title: "VTN 2026: o que é o Valor da Terra Nua, como é calculado por hectare e quando o laudo é exigido no ITR",
+    seoTitle: "VTN 2026: O Que É o Valor da Terra Nua e o Laudo para o ITR",
+    desc: "O que é VTN (Valor da Terra Nua), como a Receita confere o valor por hectare no ITR 2026 pelo SIPT e quando o laudo pela NBR 14653-3 é exigido. Atendemos SC.",
     crumb: "Laudo de VTN",
     lead: "VTN é o Valor da Terra Nua: o valor de mercado do imóvel rural sem as construções, benfeitorias, culturas e pastagens cultivadas. Ele é a base de cálculo do ITR, e o laudo técnico é a prova que a Receita aceita quando o valor declarado é questionado.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["avaliacao", "topografia"],
     wa: "um laudo de VTN",
-    keywords: "laudo de VTN, valor da terra nua, ITR, avaliação de imóvel rural, NBR 14653-3, laudo para ITR, VTN por hectare",
+    keywords: "laudo de VTN, VTN 2026, o que é VTN, valor da terra nua, VTN por hectare, VTN Santa Catarina, laudo VTN ITR, laudo técnico VTN, SIPT, ITR, avaliação de imóvel rural, NBR 14653-3",
     body: `
 <h2>O que é o Valor da Terra Nua</h2>
 <p>A Lei 9.393/1996 define o VTN como o valor do imóvel rural excluídos construções, instalações e benfeitorias, culturas permanentes e temporárias, pastagens cultivadas e florestas plantadas. É sobre esse valor, ajustado pelo grau de utilização da terra, que se calcula o ITR. Quanto mais baixo o VTN declarado, menor o imposto, e é exatamente por isso que a Receita confere.</p>
@@ -183,21 +194,25 @@ module.exports = [
       { q: "Todo imóvel rural precisa de laudo de VTN?", a: "Não. O laudo é recomendado quando o VTN declarado fica abaixo da referência da Receita, quando há notificação ou lançamento, ou quando o valor da terra precisa ser comprovado em processo judicial ou administrativo." },
       { q: "O laudo de VTN reduz o ITR?", a: "Ele sustenta o valor real de mercado da terra nua. Se esse valor for menor que a referência usada pela Receita, o imposto calculado sobre ele será menor e a declaração fica defendida." },
       { q: "Qual o prazo para apresentar o laudo à Receita?", a: "O prazo consta na intimação ou na notificação recebida. Por isso vale manter o laudo pronto antes da entrega do ITR quando o valor declarado for inferior à referência." },
-      { q: "O laudo precisa de vistoria no imóvel?", a: "Sim. A NBR 14653-3 exige a vistoria para caracterizar a terra e as benfeitorias a serem excluídas. Sem vistoria o laudo perde fundamentação e pode ser rejeitado." }
+      { q: "O laudo precisa de vistoria no imóvel?", a: "Sim. A NBR 14653-3 exige a vistoria para caracterizar a terra e as benfeitorias a serem excluídas. Sem vistoria o laudo perde fundamentação e pode ser rejeitado." },
+      { q: "O que significa VTN?", a: "VTN é a sigla de Valor da Terra Nua: o valor de mercado do imóvel rural sem as construções, benfeitorias, culturas e pastagens cultivadas. É a base de cálculo do ITR." },
+      { q: "Onde consultar o VTN de referência de 2026?", a: "A Receita Federal usa o Sistema de Preços de Terras (SIPT), alimentado por municípios e estados, para comparar o VTN por hectare declarado no ITR. Quando o declarado fica abaixo da referência sem um laudo que o justifique, a Receita pode arbitrar o valor e cobrar a diferença." },
+      { q: "O VTN é calculado por hectare?", a: "Sim. O VTN total do imóvel é o valor por hectare da terra nua multiplicado pela área, e é esse valor por hectare que a Receita compara com a referência do SIPT do município." }
     ]
   },
   {
     slug: "nbr-14653-norma-de-avaliacao-de-imoveis",
-    title: "NBR 14653: o que é a norma de avaliação de bens e por que ela importa no seu laudo",
-    seoTitle: "NBR 14653: A Norma de Avaliação de Imóveis",
-    desc: "A NBR 14653 é a norma da ABNT para avaliação de imóveis e bens. Entenda suas partes, métodos, graus de fundamentação e por que bancos e juízes a exigem.",
+    title: "NBR 14653: o que é a norma de avaliação de imóveis, suas partes (1 a 7) e o grau de fundamentação",
+    seoTitle: "NBR 14653: Norma de Avaliação de Imóveis (Partes 1 a 7)",
+    desc: "NBR 14653 (ABNT): o que é a norma de avaliação de imóveis, as partes 1 a 7, a NBR 14653-2 para imóveis urbanos, métodos, grau de fundamentação e o texto oficial.",
     crumb: "NBR 14653",
     lead: "A NBR 14653 é a norma brasileira de avaliação de bens. Ela define os métodos, a pesquisa de mercado, o tratamento dos dados e o grau de fundamentação que um laudo precisa ter para valer perante bancos, juízos e órgãos públicos.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["avaliacao", "pericia"],
     wa: "um laudo de avaliação conforme a NBR 14653",
-    keywords: "NBR 14653, norma de avaliação de imóveis, NBR 14653-1, NBR 14653-2, NBR 14653-3, grau de fundamentação, laudo de avaliação, método comparativo",
+    keywords: "NBR 14653, norma de avaliação de imóveis, o que é NBR 14653, NBR 14653-1, NBR 14653-2, NBR 14653-3, NBR 14653-4, NBR 14653 pdf, NBR 14653 atualizada, grau de fundamentação NBR 14653-2, inferência estatística, laudo de avaliação, método comparativo, ABNT avaliação de imóveis",
     body: `
 <h2>As partes da norma</h2>
 <ul>
@@ -229,21 +244,26 @@ module.exports = [
       { q: "A NBR 14653 é obrigatória?", a: "Para o profissional de engenharia, sim: o CREA e o IBAPE exigem que o laudo siga a norma. Para o cliente, é ela que dá ao laudo a aceitação por bancos, juízos e órgãos públicos." },
       { q: "Quem pode assinar um laudo conforme a NBR 14653?", a: "Engenheiros, agrônomos e arquitetos com atribuição, registrados no CREA ou no CAU, com ART ou RRT. Corretores emitem PTAM, que é um documento diferente." },
       { q: "Qual grau de fundamentação eu preciso?", a: "Depende do uso. Para financiamento e processos judiciais, o grau II costuma ser o mínimo exigido. O grau III exige mais dados de mercado e tratamento estatístico completo." },
-      { q: "A norma vale para avaliação de imóvel rural?", a: "Sim. A parte 3 trata dos imóveis rurais e é a referência para o laudo de VTN usado no ITR e em desapropriações." }
+      { q: "A norma vale para avaliação de imóvel rural?", a: "Sim. A parte 3 trata dos imóveis rurais e é a referência para o laudo de VTN usado no ITR e em desapropriações." },
+      { q: "Quais são as partes da NBR 14653?", a: "São sete: NBR 14653-1 (procedimentos gerais), 14653-2 (imóveis urbanos), 14653-3 (imóveis rurais), 14653-4 (empreendimentos), 14653-5 (máquinas, equipamentos, instalações e bens industriais), 14653-6 (recursos naturais e ambientais) e 14653-7 (bens de patrimônio histórico e artístico). Para imóveis, as partes 1, 2 e 3 são as usadas no dia a dia." },
+      { q: "Onde baixar a NBR 14653 em PDF?", a: "A norma é vendida pela ABNT, no Catálogo ABNT, e não pode ser distribuída de graça. Universidades, bibliotecas e conselhos profissionais costumam ter acesso por assinatura. Este guia resume as partes e os conceitos, mas não substitui o texto oficial." },
+      { q: "O que diz a NBR 14653-2?", a: "A parte 2 trata dos imóveis urbanos: define a vistoria, a pesquisa de mercado, o tratamento dos dados (por inferência estatística ou por fatores), os graus de fundamentação (I, II e III) e de precisão, e o conteúdo mínimo do laudo de avaliação." },
+      { q: "O que é inferência estatística na NBR 14653-2?", a: "É o tratamento científico dos dados de mercado por regressão: um modelo explica o preço pelas características dos imóveis (área, localização, padrão, idade), com testes de significância e intervalo de confiança. É o tratamento que alcança os graus de fundamentação mais altos." }
     ]
   },
   {
     slug: "quadros-da-nbr-12721-incorporacao",
-    title: "Quadros da NBR 12.721: o que são e como preencher para registrar a incorporação",
-    seoTitle: "Quadros da NBR 12.721: Guia para Incorporação",
-    desc: "Os quadros da NBR 12.721 calculam áreas, frações ideais e custos do condomínio para a incorporação (Lei 4.591/64). Veja o que cada quadro contém e quem assina.",
+    title: "Quadros da NBR 12721: o que são, quadro de áreas, fração ideal e como preencher para o registro da incorporação",
+    seoTitle: "Quadros da NBR 12721: Quadro de Áreas e Memorial de Incorporação",
+    desc: "Quadros da NBR 12721: quadro de áreas, fração ideal e custos para o memorial e o registro da incorporação (Lei 4.591/64). O que cada quadro contém e quem assina.",
     crumb: "Quadros da NBR 12.721",
     lead: "Os quadros da NBR 12.721 são as planilhas técnicas que acompanham o memorial de incorporação no registro de imóveis. Eles definem as áreas de cada unidade, a fração ideal do terreno e o custo estimado da construção, e são assinados por profissional habilitado com ART.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["incorporacao", "regularizacao"],
     wa: "os quadros da NBR 12.721 para registro de incorporação",
-    keywords: "quadros NBR 12721, NBR 12.721, memorial de incorporação, fração ideal, Lei 4.591, registro de incorporação, CUB, quadro de áreas",
+    keywords: "quadros NBR 12721, NBR 12.721, o que é NBR 12721, quadro de áreas NBR 12721, quadro de áreas NBR 12721 excel, memorial de incorporação, o que é memorial de incorporação, registro de incorporação, fração ideal cálculo, Lei 4.591, CUB",
     body: `
 <h2>Por que os quadros existem</h2>
 <p>A Lei 4.591/1964 exige que o incorporador registre o memorial de incorporação antes de vender unidades na planta. Entre os documentos, estão o cálculo das áreas, a discriminação das frações ideais e a avaliação do custo global e unitário da obra. A NBR 12.721 padroniza esses cálculos em quadros, para que cartório, compradores e bancos comparem informações no mesmo formato.</p>
@@ -283,21 +303,24 @@ module.exports = [
       { q: "Quem pode assinar os quadros da NBR 12.721?", a: "Engenheiro civil ou arquiteto com atribuição, registrado no CREA ou no CAU, com ART ou RRT específica. O incorporador assina junto." },
       { q: "Os quadros mudam se o projeto for alterado?", a: "Sim. Qualquer alteração de área aprovada exige revisão dos quadros e, se a incorporação já estiver registrada, a averbação da modificação no cartório." },
       { q: "O que é fração ideal?", a: "É a parte do terreno e das áreas comuns que corresponde a cada unidade autônoma. A soma de todas as frações ideais do empreendimento deve ser igual a 1." },
-      { q: "Quanto tempo leva para elaborar os quadros?", a: "Com o projeto aprovado e o memorial de acabamentos definidos, poucos dias. O prazo é fixado na proposta conforme o número de unidades." }
+      { q: "Quanto tempo leva para elaborar os quadros?", a: "Com o projeto aprovado e o memorial de acabamentos definidos, poucos dias. O prazo é fixado na proposta conforme o número de unidades." },
+      { q: "Existe planilha dos quadros da NBR 12721 em Excel ou PDF para baixar?", a: "Circulam planilhas e PDFs com o formato dos quadros, e a ABNT vende a norma oficial. O formato ajuda, mas não substitui o cálculo: cada quadro depende das áreas reais do projeto aprovado e do CUB vigente, e precisa de ART ou RRT de quem assina." },
+      { q: "O que é o memorial de incorporação?", a: "É o conjunto de documentos que o incorporador leva ao registro de imóveis para registrar a incorporação (art. 32 da Lei 4.591/64): projeto aprovado, quadros da NBR 12721, minuta da convenção de condomínio, certidões e outros. Só depois desse registro as unidades podem ser vendidas na planta." }
     ]
   },
   {
     slug: "adicional-de-insalubridade-o-que-a-pericia-mede",
-    title: "Adicional de insalubridade: o que a perícia trabalhista realmente mede",
-    seoTitle: "Adicional de Insalubridade: O Que a Perícia Mede",
-    desc: "O perito mede agentes físicos e químicos pela NR 15, confere EPI e EPC e enquadra o grau de insalubridade. Veja o que anula o adicional e como contestar o laudo.",
+    title: "Adicional de insalubridade: quem tem direito, como é calculado (10%, 20% e 40%) e o que a perícia trabalhista mede",
+    seoTitle: "Adicional de Insalubridade: Quem Tem Direito e a Perícia",
+    desc: "Quem tem direito ao adicional de insalubridade, como é calculado (10%, 20% ou 40% do salário mínimo) e o que a perícia trabalhista mede pela NR 15.",
     crumb: "Perícia de insalubridade",
     lead: "O adicional de insalubridade não depende do nome da função, e sim da exposição comprovada a um agente nocivo acima dos limites da NR 15, sem neutralização eficaz. A perícia existe para medir essa exposição. Este guia explica o que o perito mede, o que anula o adicional e onde os laudos costumam errar.",
-    updated: "14 de setembro de 2026",
+    updated: "1º de novembro de 2026",
+    modified: "2026-11-01",
     published: "2026-09-14",
     services: ["trabalhista", "pericia"],
     wa: "assistência técnica em perícia de insalubridade",
-    keywords: "adicional de insalubridade, perícia de insalubridade, NR 15, limite de tolerância, EPI neutraliza insalubridade, graus de insalubridade, assistente técnico trabalhista",
+    keywords: "adicional de insalubridade, quem tem direito ao adicional de insalubridade, como é calculado o adicional de insalubridade, adicional de insalubridade 10 20 40, perícia de insalubridade, perícia trabalhista insalubridade como funciona, laudo de insalubridade, NR 15, limite de tolerância, EPI neutraliza insalubridade, graus de insalubridade, assistente técnico trabalhista",
     body: `
 <h2>Base legal e graus</h2>
 <p>A CLT (arts. 189 a 192) define insalubres as atividades que expõem o trabalhador a agentes nocivos acima dos limites de tolerância. Os agentes, os limites e os métodos estão na NR 15 e seus anexos. O adicional é calculado sobre o salário mínimo nos graus mínimo (10%), médio (20%) e máximo (40%), conforme o anexo em que o agente se enquadra.</p>
@@ -332,7 +355,9 @@ module.exports = [
       { q: "Insalubridade e periculosidade são a mesma coisa?", a: "Não. Insalubridade trata de agentes nocivos à saúde (NR 15) e paga 10%, 20% ou 40% do salário mínimo. Periculosidade trata de risco de acidente grave, como inflamáveis, explosivos e eletricidade (NR 16), e paga 30% do salário-base." },
       { q: "O PPRA ou o PGR da empresa substitui a perícia?", a: "Não. São documentos de gestão de riscos que o perito analisa, mas o adicional é definido pela medição no posto de trabalho e pela prova de neutralização." },
       { q: "Engenheiro pode ser perito de insalubridade?", a: "Sim, para agentes físicos e químicos, nos termos da NR 15. Para agentes biológicos há decisões que exigem médico do trabalho, e por isso adotamos a ressalva descrita neste guia." },
-      { q: "Quanto custa contratar um assistente técnico?", a: "Os honorários dependem do número de reclamantes, dos agentes envolvidos e da necessidade de medições próprias. A conversa inicial para entender o caso não tem custo." }
+      { q: "Quanto custa contratar um assistente técnico?", a: "Os honorários dependem do número de reclamantes, dos agentes envolvidos e da necessidade de medições próprias. O orçamento é enviado sem compromisso de contratação." },
+      { q: "Quem tem direito ao adicional de insalubridade?", a: "Quem trabalha exposto a agente nocivo (ruído, calor, agentes químicos, poeiras, agentes biológicos) acima dos limites da NR 15, sem neutralização por EPI ou EPC eficaz, comprovado por perícia. O nome do cargo não garante o direito; a exposição real é que define." },
+      { q: "Como é calculado o adicional de insalubridade?", a: "Pela CLT (art. 192): 10% no grau mínimo, 20% no grau médio e 40% no grau máximo, sobre o salário mínimo, salvo norma coletiva mais favorável. O grau é definido pelo agente e pelo anexo da NR 15 em que ele se enquadra." }
     ]
   }
 ];

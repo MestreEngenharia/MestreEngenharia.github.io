@@ -1129,7 +1129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="svc-cta reveal">
       <div>
         <h3>Regularize antes da notificação.</h3>
-        <p>Desde 2019 as prefeituras informam alvarás e habite-se à Receita Federal pelo SisobraPref, e os avisos de regularização são enviados em massa. Regularizar espontaneamente evita a multa de ofício e garante o melhor enquadramento. A primeira conversa é por nossa conta.</p>
+        <p>Desde 2019 as prefeituras informam alvarás e habite-se à Receita Federal pelo SisobraPref, e os avisos de regularização são enviados em massa. Regularizar espontaneamente evita a multa de ofício e garante o melhor enquadramento. Conte o caso da sua obra pelo WhatsApp e receba a proposta com valor e prazo.</p>
       </div>
       <a class="btn btn-gold" href="${msgItem('falar com o engenheiro sobre a regularização da minha obra (INSS e CND)')}" target="_blank" rel="noopener">Falar com um especialista <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
     </div>

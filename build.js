@@ -35,8 +35,10 @@ const SERVICES = [
     tagline: 'O valor justo e fundamentado do seu imóvel, com laudo conforme a NBR 14653. Aceito por bancos, juízos e órgãos públicos.',
     img: '../assets/img/fotos/1560518883-ce09059eeffa-w1600.webp',
     imgMobile: '../assets/img/fotos/1560518883-ce09059eeffa-w900.webp',
-    wa: 'uma avaliação de imóvel',
-    answer: 'Fazemos a avaliação de imóveis urbanos e rurais conforme a NBR 14653, com laudo assinado por engenheiro registrado no CREA e no IBAPE/SC. O laudo é aceito por bancos, juízos, cartórios e órgãos públicos. Atendemos Itajaí, Balneário Camboriú, Florianópolis e todo o Sul.',
+    wa: 'um laudo de avaliação de imóvel',
+    waSuffix: 'Finalidade: ___',
+    priceFrom: 1900,
+    answer: 'Fazemos a avaliação de imóveis urbanos e rurais conforme a NBR 14653, com laudo assinado por engenheiro registrado no CREA e no IBAPE/SC. O laudo é aceito por bancos, juízos, cartórios e órgãos públicos. É um serviço técnico contratado: laudos urbanos partem de R$ 1.900 e a proposta com valor e prazo chega em até um dia útil. Atendemos Itajaí, Balneário Camboriú, Florianópolis e todo o Sul.',
     deliver: ['Laudo de avaliação em PDF, com fotos, pesquisa de mercado e tratamento estatístico', 'Metodologia e grau de fundamentação conforme a NBR 14653', 'Memória de cálculo e anexos: matrícula, plantas e comparáveis', 'ART registrada no CREA-SC', 'Prazo de entrega definido na proposta'],
     introTitle: 'Saber o valor real muda a sua negociação.',
     intro: 'Uma avaliação bem feita evita que você venda barato, compre caro ou aceite uma indenização injusta. Nossos laudos analisam mercado, localização, acessos, zoneamento e o potencial de uso do imóvel, sempre com os métodos científicos da NBR 14653. Somos engenheiros avaliadores e peritos avaliadores com atuação em Itajaí, Balneário Camboriú, Florianópolis e em todo o litoral catarinense.',
@@ -44,7 +46,7 @@ const SERVICES = [
       { i: 'home', b: 'Imóveis urbanos', s: 'Casas, apartamentos, salas comerciais, terrenos e galpões, para compra, venda e garantia bancária.' },
       { i: 'leaf', b: 'Imóveis rurais', s: 'Fazendas, sítios e chácaras, com análise de solo, benfeitorias, produtividade e Laudo de VTN para o ITR.' },
       { i: 'scale', b: 'Avaliações judiciais', s: 'Laudos para inventários, partilhas, execuções, desapropriações e disputas societárias.' },
-      { i: 'chart', b: 'Análise de mercado', s: 'Pesquisa de comparáveis, tratamento estatístico e diagnóstico do potencial do imóvel.' },
+      { i: 'chart', b: 'Laudo de valor de mercado', s: 'Laudo técnico com ART para compra, venda e negociação: pesquisa de comparáveis, tratamento estatístico e valor fundamentado na NBR 14653.', wa: 'Olá, vim pelo site da Mestre Engenharia e preciso de um laudo de avaliação de imóvel. Finalidade: ___' },
       { i: 'doc', b: 'Cálculo de indenizações', s: 'Quantificação técnica para desapropriações, servidões de passagem e danos ao imóvel.' },
       { i: 'shield', b: 'Garantia e seguros', s: 'Avaliações para financiamento, hipoteca, alienação fiduciária e seguradoras.' }
     ],
@@ -56,13 +58,25 @@ const SERVICES = [
     ],
     norms: ['NBR 14653-1 · Procedimentos gerais', 'NBR 14653-2 · Imóveis urbanos', 'NBR 14653-3 · Imóveis rurais', 'IBAPE'],
     faq: [
-      { q: 'Quanto custa um laudo de avaliação de imóvel?', a: 'O valor depende do tipo de imóvel (apartamento, casa, terreno, galpão ou área rural), da finalidade do laudo e da urgência. Enviamos a proposta em até um dia útil pelo WhatsApp, sem custo, e o prazo de entrega fica definido nela.' },
+      { q: 'Quanto custa um laudo de avaliação de imóvel?', a: 'Laudos de imóveis urbanos a partir de R$ 1.900. O valor final depende do tipo de imóvel (apartamento, casa, terreno, galpão ou área rural), da finalidade do laudo e da urgência. Enviamos a proposta com valor e prazo em até um dia útil pelo WhatsApp.' },
+      { q: 'A avaliação é gratuita?', a: 'Não. O laudo de avaliação é um trabalho técnico conforme a NBR 14653, com vistoria, pesquisa de mercado, tratamento estatístico e ART de engenheiro registrado no CREA. O orçamento é enviado sem compromisso de contratação.' },
       { q: 'Qual a diferença entre avaliador de imóveis e corretor?', a: 'O corretor emite o PTAM, uma opinião de valor voltada à comercialização. O engenheiro avaliador, registrado no CREA e no IBAPE, elabora o laudo de avaliação conforme a NBR 14653, com pesquisa de mercado, tratamento estatístico e responsabilidade técnica (ART). É esse laudo que bancos, juízos e órgãos públicos exigem.' },
       { q: 'Fazem avaliação para inventário, partilha ou divórcio?', a: 'Sim. O laudo define o valor de mercado de cada bem para uma partilha justa entre herdeiros ou cônjuges e é aceito em processos judiciais e nos procedimentos extrajudiciais em cartório.' },
       { q: 'Quanto tempo leva uma avaliação de imóvel?', a: 'A maioria dos laudos urbanos fica pronta entre 7 e 15 dias depois da vistoria. Casos judiciais e rurais podem pedir mais tempo. Você recebe o prazo exato na proposta.' },
       { q: 'O laudo serve para banco e para a Justiça?', a: 'Sim. Os laudos seguem a NBR 14653 e são assinados por engenheiros registrados no CREA, com ART. É o que bancos, juízos e órgãos públicos exigem.' },
       { q: 'Vocês avaliam imóveis em outras cidades?', a: 'Sim. Atendemos Santa Catarina, Paraná e Rio Grande do Sul, a partir das nossas unidades de Itajaí e Florianópolis. O deslocamento entra na proposta.' }
     ],
+    ctaTitle: 'Precisa de um laudo de avaliação?',
+    ctaText: 'Conte a finalidade do laudo pelo WhatsApp e receba a proposta com valor e prazo em até um dia útil.',
+    note: {
+      kicker: 'Opinião de preço x laudo técnico',
+      title: 'Não é a mesma coisa, e o destino do documento mostra a diferença.',
+      body: [
+        'Uma opinião de preço, como a de corretor ou imobiliária, orienta a venda e não substitui um laudo. A Mestre Engenharia não emite opinião de preço.',
+        'O engenheiro avaliador elabora o laudo de avaliação conforme a NBR 14653, com vistoria, pesquisa de mercado, tratamento estatístico e ART registrada no CREA.',
+        'É esse laudo que bancos, juízes, cartórios e órgãos públicos exigem. Por ser um trabalho técnico, ele é contratado por proposta, com valor e prazo definidos.'
+      ]
+    },
     related: ['pericia', 'topografia', 'regularizacao']
   },
   {
@@ -96,7 +110,7 @@ const SERVICES = [
     norms: ['NBR 13752 · Perícias', 'NBR 14653 · Avaliações', 'CPC · arts. 464 a 480', 'IBAPE'],
     faq: [
       { q: 'Vocês fazem perícia em ações trabalhistas?', a: 'Sim, por meio da frente de <a href="trabalhista.html">perícia e assistência técnica trabalhista</a>, voltada a insalubridade e periculosidade, com base nas NR 15, NR 16 e NR 6.' },
-      { q: 'Quanto custa um laudo pericial ou parecer técnico?', a: 'Na atuação como assistente técnico, os honorários são definidos em proposta, conforme a complexidade do caso, o volume do processo e o número de vistorias. Quando somos nomeados peritos do juízo, os honorários são arbitrados pelo juiz e depositados pela parte responsável. Nos dois casos, a conversa inicial não tem custo.' },
+      { q: 'Quanto custa um laudo pericial ou parecer técnico?', a: 'Na atuação como assistente técnico, os honorários são definidos em proposta, conforme a complexidade do caso, o volume do processo e o número de vistorias. Quando somos nomeados peritos do juízo, os honorários são arbitrados pelo juiz e depositados pela parte responsável. Nos dois casos, o orçamento é enviado sem compromisso de contratação.' },
       { q: 'Qual a diferença entre perito judicial e assistente técnico?', a: 'O perito judicial é o engenheiro nomeado pelo juiz, atua com imparcialidade e responde ao juízo. O assistente técnico é contratado por uma das partes para formular quesitos, acompanhar a perícia e apresentar parecer sobre o laudo. Atuamos nas duas funções, nunca no mesmo processo.' },
       { q: 'Qual o prazo para contratar um assistente técnico?', a: 'O ideal é logo depois da nomeação do perito. O CPC dá 15 dias para indicar assistente e apresentar quesitos (art. 465). Quanto antes, melhor a estratégia.' },
       { q: 'Vocês atuam em qual tipo de processo?', a: 'Ações que envolvem imóveis, obras, vícios construtivos, avaliações, desapropriações, servidões, usucapião, inventários e questões rurais e ambientais.' },
@@ -356,7 +370,7 @@ const SERVICES = [
       { q: 'Por que fazer o estudo ambiental antes de comprar o terreno?', a: 'Porque APP, vegetação, nascentes e áreas alagáveis reduzem a área aproveitável e podem inviabilizar o projeto. O diagnóstico prévio mostra o que pode ser construído e evita comprar um terreno que não entrega o que promete.' },
       { q: 'O que é o estudo hidrológico (CIP)?', a: 'A Carta de Impacto Pluviométrico, exigida por vários municípios, demonstra que o empreendimento não agrava o escoamento das águas de chuva. Ela sai do estudo hidrológico e do projeto de drenagem, que também definem a cota de aterro segura contra cheias.' },
       { q: 'Vocês acompanham o licenciamento no IMA e na prefeitura?', a: 'Sim. Preparamos os estudos e a documentação, protocolamos, respondemos às exigências do órgão até a emissão da licença e depois cuidamos das condicionantes e das renovações.' },
-      { q: 'Quanto custa um estudo de viabilidade ambiental?', a: 'Depende do tamanho e da localização do terreno e das restrições envolvidas, como APP, vegetação e recursos hídricos. Enviamos a proposta após uma análise inicial da área, sem custo.' },
+      { q: 'Quanto custa um estudo de viabilidade ambiental?', a: 'Depende do tamanho e da localização do terreno e das restrições envolvidas, como APP, vegetação e recursos hídricos. Enviamos a proposta, com valor e prazo, depois de conhecer a área e as restrições. O orçamento é sem compromisso de contratação.' },
       { q: 'Vocês fazem laudo geotécnico ou de área de risco?', a: 'Dentro dos estudos ambientais e das perícias avaliamos, de forma preliminar, a estabilidade de encostas e as áreas de risco. Quando o caso exige sondagem e investigação de subsuperfície, incluímos essa etapa no escopo.' },
       { q: 'Esse serviço se integra aos demais da Mestre?', a: 'Sim. O estudo ambiental entra no mesmo pacote da viabilidade do empreendimento, da topografia, da regularização e das perícias, com uma única equipe responsável e uma ART para cada entrega.' }
     ],
@@ -395,7 +409,7 @@ const SERVICES = [
       { q: 'O que o assistente técnico faz na perícia trabalhista?', a: 'Formula quesitos, acompanha a diligência do perito, confere as medições e a documentação de SST e apresenta parecer técnico, concordando ou divergindo do laudo. Ele representa tecnicamente a parte que o contratou, empresa ou trabalhador.' },
       { q: 'Engenheiro pode fazer perícia de insalubridade?', a: 'Sim, para agentes físicos e químicos, como ruído, calor, vibração e produtos químicos, nos termos da NR 15. Para agentes biológicos há decisões que exigem médico do trabalho; nesses casos atuamos em conjunto com um médico do trabalho ou limitamos o parecer aos aspectos de engenharia.' },
       { q: 'O EPI elimina o adicional de insalubridade?', a: 'Só quando neutraliza de fato o agente, com CA válido, fornecimento comprovado, treinamento e fiscalização de uso. É exatamente isso que o parecer técnico verifica, ficha por ficha.' },
-      { q: 'Quanto custa a assistência técnica trabalhista?', a: 'Os honorários são definidos em proposta, conforme o número de reclamantes, os agentes envolvidos e a necessidade de medições. A conversa inicial para entender o caso não tem custo.' },
+      { q: 'Quanto custa a assistência técnica trabalhista?', a: 'Os honorários são definidos em proposta, conforme o número de reclamantes, os agentes envolvidos e a necessidade de medições. O orçamento é enviado sem compromisso de contratação.' },
       { q: 'Vocês atendem empresas de forma preventiva?', a: 'Sim. Avaliamos a exposição, revisamos PGR, LTCAT e o programa de EPI e apontamos o que precisa mudar para reduzir o risco de passivo trabalhista.' },
       { q: 'Atendem fora de Itajaí?', a: 'Sim. Atendemos varas do trabalho de Santa Catarina, Paraná e Rio Grande do Sul, com atuação presencial nas diligências.' }
     ],
@@ -428,7 +442,14 @@ function schema(s) {
           url: SITE
         },
         areaServed: ['Itajaí', 'Balneário Camboriú', 'Navegantes', 'Camboriú', 'Penha', 'Barra Velha', 'Itapema', 'Brusque', 'Blumenau', 'Joinville', 'Florianópolis', 'Santa Catarina', 'Paraná', 'Rio Grande do Sul'],
-        url: `${SITE}/servicos/${s.slug}.html`
+        url: `${SITE}/servicos/${s.slug}.html`,
+        // Valor inicial declarado para buscadores e assistentes de IA; só quando o serviço informa priceFrom
+        offers: s.priceFrom ? {
+          '@type': 'Offer',
+          priceCurrency: 'BRL',
+          priceSpecification: { '@type': 'PriceSpecification', minPrice: s.priceFrom, priceCurrency: 'BRL' },
+          availability: 'https://schema.org/InStock'
+        } : undefined
       },
       {
         '@type': 'BreadcrumbList',
@@ -455,9 +476,15 @@ const WA_ICON = '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 
 const msgItem = t => WA + encodeURIComponent(`Olá, vim pelo site da Mestre Engenharia e preciso de "${t}".`);
 
 function page(s) {
-  const waHref = msg(s.wa);
+  // Sufixo opcional nas mensagens do WhatsApp do serviço (ex.: "Finalidade: ___"),
+  // para o lead já dizer para que precisa do laudo. Um card pode trazer a
+  // mensagem completa em `wa`.
+  const extra = s.waSuffix ? ' ' + s.waSuffix : '';
+  const svcMsg = t => WA + encodeURIComponent(`Olá, vim pelo site da Mestre Engenharia e preciso de ${t}.${extra}`);
+  const svcItem = it => it.wa ? WA + encodeURIComponent(it.wa) : WA + encodeURIComponent(`Olá, vim pelo site da Mestre Engenharia e preciso de "${it.b || it.n}".${extra}`);
+  const waHref = svcMsg(s.wa);
   const includes = s.includes.map((it, k) =>
-    `<a class="inc reveal${k % 3 ? ' d' + (k % 3) : ''}" href="${msgItem(it.b)}" target="_blank" rel="noopener" title="Solicitar ${it.b} pelo WhatsApp">${I(it.i)}<b>${it.b}</b><span>${it.s}</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>`
+    `<a class="inc reveal${k % 3 ? ' d' + (k % 3) : ''}" href="${svcItem(it)}" target="_blank" rel="noopener" title="Solicitar ${it.b} pelo WhatsApp">${I(it.i)}<b>${it.b}</b><span>${it.s}</span><span class="inc-go">${WA_ICON}Solicitar no WhatsApp</span></a>`
   ).join('\n      ');
   const scenarios = s.scenarios.map((it, k) =>
     `<div class="scn reveal${k % 2 ? ' d1' : ''}">${I(it.i)}<div><b>${it.b}</b><span>${it.s}</span></div></div>`
@@ -605,7 +632,7 @@ ${s.catalog ? `
       <p>${s.catalogIntro || ''}</p>
     </div>
     <div class="cat-grid">
-      ${s.catalog.map(g => `<div class="cat-group reveal"><h3>${g.t}</h3><ul>${g.items.map(it => `<li><a href="${msgItem(it.n)}" target="_blank" rel="noopener" title="Solicitar ${it.n} pelo WhatsApp"><b>${it.n}</b><span>${it.s}</span></a></li>`).join('')}</ul></div>`).join('\n      ')}
+      ${s.catalog.map(g => `<div class="cat-group reveal"><h3>${g.t}</h3><ul>${g.items.map(it => `<li><a href="${svcItem(it)}" target="_blank" rel="noopener" title="Solicitar ${it.n} pelo WhatsApp"><b>${it.n}</b><span>${it.s}</span></a></li>`).join('')}</ul></div>`).join('\n      ')}
     </div>
     ${s.segments ? `<div class="cat-seg reveal"><span class="kicker">Para quem</span><ul>${s.segments.map(x => `<li><b>${x.n}</b><span>${x.s}</span></li>`).join('')}</ul></div>` : ''}
   </div>
@@ -627,7 +654,17 @@ ${s.catalog ? `
   </div>
 </section>
 
-<section class="section light faq">
+${s.note ? `<section class="section mistbg">
+  <div class="wrap" style="max-width:900px">
+    <div class="section-head reveal">
+      <span class="kicker">${s.note.kicker}</span>
+      <h2>${s.note.title}</h2>
+      ${s.note.body.map(p => `<p>${p}</p>`).join('\n      ')}
+    </div>
+  </div>
+</section>
+
+` : ''}<section class="section light faq">
   <div class="wrap" style="max-width:900px">
     <div class="section-head center reveal">
       <span class="kicker center">Dúvidas frequentes</span>
@@ -641,8 +678,8 @@ ${s.catalog ? `
   <div class="wrap">
     <div class="svc-cta reveal">
       <div>
-        <h3>Conte seu caso. A primeira conversa é por nossa conta.</h3>
-        <p>Descreva a sua necessidade no WhatsApp e receba a orientação técnica inicial e uma proposta objetiva, sem compromisso.</p>
+        <h3>${s.ctaTitle || 'Conte o seu caso pelo WhatsApp.'}</h3>
+        <p>${s.ctaText || 'Descreva a sua necessidade e receba uma proposta com escopo, valor e prazo. O orçamento é sem compromisso de contratação.'}</p>
       </div>
       <a class="btn btn-gold" href="${waHref}" target="_blank" rel="noopener">Falar com um especialista <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
     </div>
@@ -788,7 +825,7 @@ const PILAR_FAQ = [
   { q: 'O que é o SERO?', a: 'É o Serviço Eletrônico para Aferição de Obras, criado pela IN RFB 2.021/2021 em substituição à antiga DISO. É o sistema onde a obra é aferida, ou seja, onde se calculam as contribuições devidas sobre a mão de obra da construção, com base nas informações do CNO e nos créditos vinculados.' },
   { q: 'O que é o CNO e qual o prazo para cadastrar a obra?', a: 'O CNO (Cadastro Nacional de Obras) é o banco de dados da Receita Federal que identifica cada obra de construção civil. A inscrição deve ser feita em até 30 dias do início das atividades (IN RFB 1.845/2018, atualizada pela IN 2.061/2021). Metragem ou datas erradas no CNO geram imposto errado, por isso a correção do cadastro faz parte do nosso trabalho.' },
   { q: 'O que acontece se eu não regularizar a obra?', a: 'Desde a implantação do SisobraPref, em 2019, as prefeituras informam alvarás e habite-se diretamente à Receita Federal, e os avisos de regularização são disparados em massa desde 2023. Sem regularização não há CND nem averbação, e a cobrança de ofício vem acompanhada de multa que parte de 75% e pode chegar a 225% das contribuições, além de juros.' },
-  { q: 'Quanto custa o serviço?', a: 'Depende da complexidade: área e destinação da obra, período de execução, documentação existente e necessidade de produção de prova em campo. Você recebe uma proposta fechada antes de qualquer trabalho. A análise inicial é sem custo e sem compromisso.' },
+  { q: 'Quanto custa o serviço?', a: 'Depende da complexidade: área e destinação da obra, período de execução, documentação existente e necessidade de produção de prova em campo. Você recebe uma proposta fechada, com valor e prazo, antes de qualquer trabalho. O orçamento é sem compromisso de contratação.' },
   { q: 'Meu contador não resolve isso sozinho?', a: 'Ele resolve bem a parte fiscal. Mas quando o caso depende de provar data de execução, área construída ou estágio da obra, a prova exige peça técnica com ART, como laudo e planta aerofotogramétrica. Isso só engenheiro ou arquiteto assina. Contador e advogado não emitem ART.' },
   { q: 'É seguro assinar a procuração eletrônica? Vou ter que dar minha senha?', a: 'Não. Você nunca compartilha a sua senha. A procuração eletrônica é assinada por você dentro do próprio e-CAC, vale somente para os serviços da obra (CNO, SERO e DCTFWeb) e pode ser revogada por você a qualquer momento, com um clique. É o mecanismo oficial da Receita Federal para representação.' },
   { q: 'Vocês atendem fora de Santa Catarina?', a: 'Sim. A legislação é federal e os sistemas (CNO, SERO, DCTFWeb) são todos eletrônicos. Atendemos SC, PR e RS com equipe de campo própria e o restante do país de forma remota. Quando o caso exige levantamento no local, temos drone e topografia próprios.' }
@@ -820,12 +857,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
 <title>INSS de Obra e CND ${new Date().getFullYear()} | Regularização na Receita Federal</title>
-<meta name="description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Análise inicial sem custo.">
+<meta name="description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Proposta com valor e prazo pelo WhatsApp.">
 <link rel="canonical" href="${SITE}/inss-de-obra-cnd/">
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
 <meta property="og:title" content="INSS de Obra e CND | Regularização na Receita Federal em SC">
-<meta property="og:description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Análise inicial sem custo.">
+<meta property="og:description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Proposta com valor e prazo pelo WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE}/inss-de-obra-cnd/">
 <meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
@@ -921,7 +958,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1>INSS de Obra e CND: regularize sua construção na Receita Federal</h1>
     <p>Da inscrição no CNO à certidão que o cartório exige para averbar: conduzimos a aferição da sua obra no SERO de ponta a ponta, com a prova técnica que só a engenharia assina.</p>
     <div class="hero-ctas">
-      <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Solicitar análise sem custo <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
+      <a class="btn btn-gold" href="${waAnalise}" target="_blank" rel="noopener">Solicitar análise da minha obra <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>
     </div>
   </div>
 </section>
@@ -1190,7 +1227,7 @@ fs.writeFileSync(path.join(pilarDir, 'index.html'), pilarPage(), 'utf8');
 console.log('gerado: inss-de-obra-cnd/index.html');
 
 /* sitemap.xml */
-const LASTMOD = '2026-09-14';
+const LASTMOD = '2026-11-01';
 const pages = ['', 'inss-de-obra-cnd/', 'politica-de-privacidade/', ...SERVICES.filter(s => !s.pilar).map(s => `servicos/${s.slug}.html`)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

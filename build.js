@@ -30,6 +30,7 @@ const SERVICES = [
     slug: 'avaliacao',
     nav: 'Avaliação de Imóveis',
     title: 'Avaliação de Imóveis Urbanos e Rurais',
+    h1: 'Avaliação de Imóveis Urbanos e Rurais em Itajaí e SC',
     seoTitle: 'Avaliação de Imóveis e Laudo NBR 14653 em Itajaí e SC',
     seoDesc: 'Engenheiro avaliador de imóveis em Itajaí, Balneário Camboriú e Florianópolis. Laudo NBR 14653 aceito por bancos, juízos e órgãos públicos. Orçamento no WhatsApp.',
     tagline: 'O valor justo e fundamentado do seu imóvel, com laudo conforme a NBR 14653. Aceito por bancos, juízos e órgãos públicos.',
@@ -83,6 +84,7 @@ const SERVICES = [
     slug: 'pericia',
     nav: 'Perícia e Assistência Técnica',
     title: 'Perícia Judicial e Assistência Técnica',
+    h1: 'Perícia Judicial e Assistência Técnica em Itajaí e SC',
     seoTitle: 'Perícia Judicial, Perito Engenheiro e Assistente Técnico',
     seoDesc: 'Engenheiro perito judicial e assistente técnico para advogados em Itajaí, Florianópolis e todo o Sul: quesitos, pareceres e impugnação de laudos. +500 processos.',
     tagline: 'Base técnica para decisões judiciais e apoio estratégico para advogados. Mais de 500 processos assessorados em SC, PR e RS.',
@@ -583,7 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="svc-bg" style="background-image:url('${s.img}')"></div>
   <div class="wrap">
     <div class="crumb"><a href="../index.html">Início</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><a href="../index.html#servicos">Serviços</a><svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg><span>${s.nav}</span></div>
-    <h1>${s.title}</h1>
+    <h1>${s.h1 || s.title}</h1>
     <p>${s.tagline}</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="${waHref}" target="_blank" rel="noopener">Solicitar orçamento <svg viewBox="0 0 24 24"><path d="M8.6 16.6 13.2 12 8.6 7.4 10 6l6 6-6 6z"/></svg></a>

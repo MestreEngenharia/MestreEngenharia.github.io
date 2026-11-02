@@ -146,7 +146,7 @@ const GUIAS = [
       { q: 'O que é Habite-se parcial?', a: 'É o certificado emitido para parte de uma edificação concluída, por exemplo uma torre pronta em um condomínio em obras. Permite averbar e ocupar a parte finalizada.' }
     ]
   }
-].concat(require('./guias-2.js'));
+].concat(require('./guias-2.js'), require('./guias-3.js'));
 
 module.exports = function (ctx) {
   const { SERVICES, SITE, fs, path, dir } = ctx;
@@ -251,7 +251,7 @@ module.exports = function (ctx) {
   }
 
   /* índice /guias/ */
-  const idxDesc = 'Guias técnicos da Mestre Engenharia: vistoria de imóvel novo, usucapião, Habite-se, EVTE, CND de obra, laudo de VTN, NBR 14653 e insalubridade.';
+  const idxDesc = 'Guias técnicos da Mestre Engenharia: avaliação, CND de obra, EVTE, laudo de VTN, NBR 14653, licenciamento ambiental, PGRS e análise de solo.';
   let idx = head({ title: 'Guias Técnicos', desc: idxDesc, canonical: `${SITE}/guias/` });
   const idxSchema = JSON.stringify({
     '@context': 'https://schema.org',

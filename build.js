@@ -85,7 +85,7 @@ const SERVICES = [
     nav: 'Perícia e Assistência Técnica',
     title: 'Perícia Judicial e Assistência Técnica',
     h1: 'Perícia Judicial e Assistência Técnica em Itajaí e SC',
-    seoTitle: 'Perícia Judicial, Perito Engenheiro e Assistente Técnico',
+    seoTitle: 'Perícia Judicial e Assistente Técnico em Itajaí: Perito Engenheiro',
     seoDesc: 'Engenheiro perito judicial e assistente técnico para advogados em Itajaí, Florianópolis e todo o Sul: quesitos, pareceres e impugnação de laudos. +500 processos.',
     tagline: 'Base técnica para decisões judiciais e apoio estratégico para advogados. Mais de 500 processos assessorados em SC, PR e RS.',
     img: '../assets/img/fotos/1450101499163-c8848c66ca85-w1600.webp',
@@ -124,7 +124,7 @@ const SERVICES = [
     slug: 'topografia',
     nav: 'Topografia e Drones',
     title: 'Topografia, Georreferenciamento e Drones',
-    seoTitle: 'Topografia, Georreferenciamento e Drone',
+    seoTitle: 'Topografia, Georreferenciamento com Drone e INCRA em SC',
     seoDesc: 'Georreferenciamento INCRA/SIGEF, aerofotogrametria com drone, locação de obra e cálculo de volumes em SC. Precisão para projetos, regularização e obras.',
     tagline: 'Precisão cartográfica para regularizar, projetar e construir: do georreferenciamento à aerofotogrametria com drone, da locação de obra ao monitoramento de estruturas.',
     img: '../assets/img/fotos/1610081340031-ea312b8a9d9a-w1600.webp',
@@ -164,7 +164,7 @@ const SERVICES = [
     slug: 'regularizacao',
     nav: 'Regularização de Imóveis',
     title: 'Regularização de Imóveis e Regularização Fundiária',
-    seoTitle: 'Regularização de Imóveis, Habite-se e Usucapião',
+    seoTitle: 'Regularização de Imóveis, Habite-se e Usucapião em Itajaí',
     seoDesc: 'Regularização de imóveis em Itajaí, Balneário Camboriú e Florianópolis: averbação, Habite-se, retificação de área, usucapião extrajudicial e REURB.',
     tagline: 'Transformamos a sua propriedade em um ativo legalmente reconhecido, do alvará ao registro em cartório.',
     img: '../assets/img/fotos/1454165804606-c3d57bc86b40-w1600.webp',
@@ -203,7 +203,7 @@ const SERVICES = [
     slug: 'vistorias',
     nav: 'Vistorias e Inspeções',
     title: 'Vistorias Cautelares, Laudos e Inspeções Técnicas',
-    seoTitle: 'Vistoria de Imóvel Novo, Inspeção Predial e Cautelar',
+    seoTitle: 'Vistoria Cautelar de Vizinhança, Inspeção Predial e Imóvel Novo',
     seoDesc: 'Vistoria de imóvel novo e entrega de chaves, inspeção predial (NBR 16747) e cautelar de vizinhança em Itajaí, Balneário Camboriú e Florianópolis.',
     tagline: 'Do recebimento de chaves à inspeção predial: o laudo técnico que evita litígios e protege quem constrói, compra e administra imóveis.',
     img: '../assets/img/fotos/1694521787799-ad4ad241cb39-w1600.webp',
@@ -245,7 +245,7 @@ const SERVICES = [
     slug: 'incorporacao',
     nav: 'Incorporação e Viabilidade',
     title: 'Incorporação Imobiliária e Estudo de Viabilidade',
-    seoTitle: 'EVTE e Quadros da NBR 12.721 para Incorporação',
+    seoTitle: 'EVTE, Estudo de Viabilidade e Quadros da NBR 12721',
     seoDesc: 'Estudo de viabilidade (EVTE), Quadros da NBR 12.721, tabela de vendas e aferição de INSS de obra para construtoras e incorporadoras em Santa Catarina.',
     tagline: 'Da análise do terreno ao registro da incorporação: os números e os documentos técnicos que sustentam o seu empreendimento.',
     img: '../assets/img/fotos/1531973576160-7125cd663d86-w1600.webp',
@@ -284,7 +284,7 @@ const SERVICES = [
     slug: 'ambiental',
     nav: 'Serviços Ambientais',
     title: 'Serviços Ambientais: Licenciamento, Laudos, Resíduos e Áreas Contaminadas',
-    seoTitle: 'Licenciamento Ambiental, Laudos e PGRS em Itajaí',
+    seoTitle: 'Licenciamento Ambiental, Laudos Ambientais e PGRS em Itajaí',
     seoDesc: 'Licenciamento ambiental no IMA/SC (LAP, LAI, LAO), laudos e perícias ambientais, PGRS, PGRSS, PGRCC, MTR, passivo, drenagem e CAR em Itajaí e SC.',
     tagline: 'Do diagnóstico do terreno à licença de operação: engenharia ambiental para empreendimentos, indústrias, postos, clínicas e imóveis rurais em Itajaí e Santa Catarina.',
     img: '../assets/img/fotos/1441974231531-c6227db76b6e-w1600.webp',
@@ -370,7 +370,7 @@ const SERVICES = [
       { q: 'Posto de combustível precisa de análise de solo?', a: 'Sim. As Resoluções CONAMA 273 e 420 exigem investigação de solo e água subterrânea para licenciamento, renovação e encerramento de postos e sistemas de abastecimento. Fazemos a sondagem, a coleta, o monitoramento e, se houver contaminação, o plano de intervenção.' },
       { q: 'O que são CTF, RAPP e TCFA do IBAMA?', a: 'O Cadastro Técnico Federal (CTF) é obrigatório para atividades potencialmente poluidoras e gera o Certificado de Regularidade. O RAPP é o relatório anual dessas atividades. A TCFA é a taxa trimestral calculada por porte e potencial poluidor. Cuidamos do cadastro, da entrega do relatório e da conferência da taxa.' },
       { q: 'Por que fazer o estudo ambiental antes de comprar o terreno?', a: 'Porque APP, vegetação, nascentes e áreas alagáveis reduzem a área aproveitável e podem inviabilizar o projeto. O diagnóstico prévio mostra o que pode ser construído e evita comprar um terreno que não entrega o que promete.' },
-      { q: 'O que é o estudo hidrológico (CIP)?', a: 'A Carta de Impacto Pluviométrico, exigida por vários municípios, demonstra que o empreendimento não agrava o escoamento das águas de chuva. Ela sai do estudo hidrológico e do projeto de drenagem, que também definem a cota de aterro segura contra cheias.' },
+      { q: 'O que é o laudo hidrológico e a Carta de Impacto Pluviométrico (CIP)?', a:'A Carta de Impacto Pluviométrico, exigida por vários municípios, demonstra que o empreendimento não agrava o escoamento das águas de chuva. Ela sai do estudo hidrológico e do projeto de drenagem, que também definem a cota de aterro segura contra cheias.' },
       { q: 'Vocês acompanham o licenciamento no IMA e na prefeitura?', a: 'Sim. Preparamos os estudos e a documentação, protocolamos, respondemos às exigências do órgão até a emissão da licença e depois cuidamos das condicionantes e das renovações.' },
       { q: 'Quanto custa um estudo de viabilidade ambiental?', a: 'Depende do tamanho e da localização do terreno e das restrições envolvidas, como APP, vegetação e recursos hídricos. Enviamos a proposta, com valor e prazo, depois de conhecer a área e as restrições. O orçamento é sem compromisso de contratação.' },
       { q: 'Vocês fazem laudo geotécnico ou de área de risco?', a: 'Dentro dos estudos ambientais e das perícias avaliamos, de forma preliminar, a estabilidade de encostas e as áreas de risco. Quando o caso exige sondagem e investigação de subsuperfície, incluímos essa etapa no escopo.' },
@@ -382,7 +382,7 @@ const SERVICES = [
     slug: 'trabalhista',
     nav: 'Perícia Trabalhista',
     title: 'Perícia e Assistência Técnica Trabalhista em Engenharia',
-    seoTitle: 'Assistente Técnico Trabalhista: Insalubridade',
+    seoTitle: 'Assistente Técnico Trabalhista e Perícia de Insalubridade',
     seoDesc: 'Assistente técnico em perícias trabalhistas em Itajaí, Florianópolis e SC: insalubridade, periculosidade, EPI, PGR, LTCAT, quesitos e impugnação de laudos.',
     tagline: 'Prova técnica de engenharia para ações de insalubridade e periculosidade, do quesito à impugnação do laudo.',
     img: '../assets/img/fotos/1504307651254-35680f356dfd-w1200.webp',
@@ -443,7 +443,7 @@ function schema(s) {
           name: 'Mestre Engenharia Avaliações e Perícias',
           url: SITE
         },
-        areaServed: ['Itajaí', 'Balneário Camboriú', 'Navegantes', 'Camboriú', 'Penha', 'Barra Velha', 'Itapema', 'Brusque', 'Blumenau', 'Joinville', 'Florianópolis', 'Santa Catarina', 'Paraná', 'Rio Grande do Sul'],
+        areaServed: ['Itajaí', 'Navegantes', 'Balneário Camboriú', 'Camboriú', 'Penha', 'Balneário Piçarras', 'Barra Velha', 'Itapema', 'Porto Belo', 'Bombinhas', 'Tijucas', 'Blumenau', 'Brusque', 'Gaspar', 'Ilhota', 'Luiz Alves', 'Guabiruba', 'Indaial', 'Timbó', 'Pomerode', 'Nova Trento', 'São João Batista', 'Joinville', 'Araquari', 'Jaraguá do Sul', 'São Francisco do Sul', 'Biguaçu', 'São José', 'Florianópolis', 'Santa Catarina', 'Paraná', 'Rio Grande do Sul'],
         url: `${SITE}/servicos/${s.slug}.html`,
         // Valor inicial declarado para buscadores e assistentes de IA; só quando o serviço informa priceFrom
         offers: s.priceFrom ? {
@@ -830,6 +830,9 @@ const PILAR_FAQ = [
   { q: 'Quanto custa o serviço?', a: 'Depende da complexidade: área e destinação da obra, período de execução, documentação existente e necessidade de produção de prova em campo. Você recebe uma proposta fechada, com valor e prazo, antes de qualquer trabalho. O orçamento é sem compromisso de contratação.' },
   { q: 'Meu contador não resolve isso sozinho?', a: 'Ele resolve bem a parte fiscal. Mas quando o caso depende de provar data de execução, área construída ou estágio da obra, a prova exige peça técnica com ART, como laudo e planta aerofotogramétrica. Isso só engenheiro ou arquiteto assina. Contador e advogado não emitem ART.' },
   { q: 'É seguro assinar a procuração eletrônica? Vou ter que dar minha senha?', a: 'Não. Você nunca compartilha a sua senha. A procuração eletrônica é assinada por você dentro do próprio e-CAC, vale somente para os serviços da obra (CNO, SERO e DCTFWeb) e pode ser revogada por você a qualquer momento, com um clique. É o mecanismo oficial da Receita Federal para representação.' },
+  { q: 'O que é o fator social de 40% na aferição no SERO?', a: 'É a redução da remuneração presumida para obra de pessoa física (art. 26 da IN RFB 2.021/2021), conforme a área total: até 100 m² a Receita considera 20% da remuneração presumida; de 100 a 200 m², 40%; de 200 a 300 m², 55%; de 300 a 400 m², 70%; acima de 400 m², 90%. A tabela completa está nesta página.' },
+  { q: 'Qual é a alíquota do INSS de obra (36,8%)?', a: 'No exemplo do Manual do SERO, sobre a remuneração aferida incidem 20% de contribuição patronal, 8% dos segurados, 5,8% de outras entidades e fundos e 3% de GILRAT, total usual de 36,8%. Empresas no Simples Nacional e com desoneração têm códigos e alíquotas diferentes.' },
+  { q: 'Como tirar a CND de obra na Receita Federal?', a: 'Inscrever ou atualizar a obra no CNO, fazer a aferição no SERO, transmitir a DCTFWeb Aferição de Obras, pagar ou parcelar o débito (ou comprovar débito zero) e emitir a certidão no e-CAC. Conduzimos todas as etapas por procuração eletrônica, com a prova técnica assinada por engenheiro.' },
   { q: 'Vocês atendem fora de Santa Catarina?', a: 'Sim. A legislação é federal e os sistemas (CNO, SERO, DCTFWeb) são todos eletrônicos. Atendemos SC, PR e RS com equipe de campo própria e o restante do país de forma remota. Quando o caso exige levantamento no local, temos drone e topografia próprios.' }
 ];
 
@@ -858,13 +861,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="format-detection" content="telephone=no">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
-<title>INSS de Obra e CND ${new Date().getFullYear()} | Regularização na Receita Federal</title>
-<meta name="description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Proposta com valor e prazo pelo WhatsApp.">
+<title>CND de Obra e INSS de Obra ${new Date().getFullYear()}: Regularização no SERO da Receita Federal</title>
+<meta name="description" content="Como regularizar o INSS de obra e tirar a CND de obra na Receita Federal: aferição no SERO, área aferida, fator social, alíquota de 36,8%, decadência e CNO. Proposta com valor e prazo.">
 <link rel="canonical" href="${SITE}/inss-de-obra-cnd/">
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
-<meta property="og:title" content="INSS de Obra e CND | Regularização na Receita Federal em SC">
-<meta property="og:description" content="Regularize o INSS da sua obra e emita a CND para averbar no cartório. Aferição no SERO, CNO e prova de decadência com ART. Proposta com valor e prazo pelo WhatsApp.">
+<meta property="og:title" content="CND de Obra e INSS de Obra: Regularização no SERO da Receita Federal em SC">
+<meta property="og:description" content="Como regularizar o INSS de obra e tirar a CND de obra na Receita Federal: aferição no SERO, área aferida, fator social, alíquota de 36,8%, decadência e CNO. Proposta com valor e prazo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE}/inss-de-obra-cnd/">
 <meta property="og:image" content="${SITE}/assets/img/logo-central-branco-dourado.png">
@@ -1229,7 +1232,7 @@ fs.writeFileSync(path.join(pilarDir, 'index.html'), pilarPage(), 'utf8');
 console.log('gerado: inss-de-obra-cnd/index.html');
 
 /* sitemap.xml */
-const LASTMOD = '2026-11-01';
+const LASTMOD = '2026-11-05';
 const pages = ['', 'inss-de-obra-cnd/', 'politica-de-privacidade/', ...SERVICES.filter(s => !s.pilar).map(s => `servicos/${s.slug}.html`)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

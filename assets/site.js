@@ -186,3 +186,23 @@
     host.appendChild(s);
   });
 })();
+
+/* Liquid Glass: o brilho especular segue o ponteiro nas superfícies de vidro.
+   Só em dispositivos com ponteiro fino e sem preferência por menos movimento;
+   no toque as superfícies ficam com o brilho fixo definido no CSS. */
+(function () {
+  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var sel = '.lg,.lgl,.hero-stats,.f-chip,.about-panel,.amb-item,.office,.c-card,.step,.svc-cta,.inc,.scn,.rel,.faq details,.dir-answer,.cat-seg,.g-tile,.scard,.manifesto .wrap';
+  var pending = null;
+  document.addEventListener('pointermove', function (e) {
+    var el = e.target.closest && e.target.closest(sel);
+    if (!el) return;
+    if (pending) cancelAnimationFrame(pending);
+    pending = requestAnimationFrame(function () {
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+      el.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+    });
+  }, { passive: true });
+})();
